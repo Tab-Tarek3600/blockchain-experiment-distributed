@@ -1,0 +1,1090 @@
+Linux 7.0.0-31-generic (node3) 	16/09/2026 	_x86_64_	(2 CPU)
+
+13:52:54      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:52:55     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:52:54      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:52:55     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:52:54      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:52:55     1000      2163      0,00      0,00      0,00       0  python
+
+13:52:55      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:52:56     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:52:55      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:52:56     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:52:55      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:52:56     1000      2163      0,00      0,00      0,00       0  python
+
+13:52:56      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:52:57     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:52:56      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:52:57     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:52:56      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:52:57     1000      2163      0,00      0,00      0,00       0  python
+
+13:52:57      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:52:58     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:52:57      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:52:58     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:52:57      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:52:58     1000      2163      0,00      0,00      0,00       0  python
+
+13:52:58      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:52:59     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:52:58      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:52:59     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:52:58      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:52:59     1000      2163      0,00      0,00      0,00       0  python
+
+13:52:59      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:00     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:52:59      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:00     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:52:59      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:00     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:00      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:01     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:00      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:01     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:00      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:01     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:01      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:02     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:53:01      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:02     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:01      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:02     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:02      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:03     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:02      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:03     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:02      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:03     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:03      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:04     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:03      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:04     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:03      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:04     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:04      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:05     1000      2163   99,01    0,00    0,00    0,00   99,01     1  python
+
+13:53:04      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:05     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:04      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:05     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:05      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:06     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:05      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:06     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:05      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:06     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:06      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:07     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:53:06      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:07     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:06      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:07     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:07      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:08     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:07      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:08     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:07      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:08     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:08      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:09     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:08      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:09     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:08      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:09     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:09      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:10     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:09      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:10     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:09      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:10     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:10      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:11     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:10      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:11     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:10      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:11     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:11      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:12     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:11      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:12     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:11      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:12     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:12      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:13     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:12      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:13     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:12      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:13     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:13      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:14     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:13      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:14     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:13      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:14     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:14      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:15     1000      2163   99,00    1,00    0,00    0,00  100,00     1  python
+
+13:53:14      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:15     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:14      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:15     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:15      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:16     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:15      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:16     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:15      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:16     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:16      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:17     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:53:16      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:17     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:16      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:17     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:17      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:18     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:17      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:18     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:17      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:18     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:18      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:19     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:18      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:19     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:18      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:19     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:19      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:20     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:19      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:20     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:19      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:20     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:20      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:21     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:20      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:21     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:20      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:21     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:21      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:22     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:21      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:22     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:21      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:22     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:22      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:23     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:53:22      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:23     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:22      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:23     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:23      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:24     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:23      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:24     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:23      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:24     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:24      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:25     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:24      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:25     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:24      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:25     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:25      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:26     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:25      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:26     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:25      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:26     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:26      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:27     1000      2163   99,00    1,00    0,00    0,00  100,00     1  python
+
+13:53:26      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:27     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:26      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:27     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:27      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:28     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:27      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:28     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:27      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:28     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:28      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:29     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:28      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:29     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:28      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:29     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:29      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:30     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:29      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:30     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:29      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:30     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:30      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:31     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:30      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:31     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:30      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:31     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:31      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:32     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:31      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:32     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:31      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:32     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:32      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:33     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:32      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:33     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:32      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:33     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:33      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:34     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:53:33      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:34     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:33      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:34     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:34      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:35     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:34      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:35     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:34      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:35     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:35      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:36     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:35      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:36     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:35      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:36     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:36      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:37     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:36      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:37     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:36      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:37     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:37      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:38     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:37      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:38     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:37      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:38     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:38      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:39     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:38      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:39     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:38      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:39     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:39      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:40     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:39      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:40     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:39      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:40     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:40      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:41     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:53:40      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:41     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:40      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:41     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:41      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:42     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:41      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:42     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:41      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:42     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:42      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:43     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:42      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:43     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:42      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:43     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:43      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:44     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:43      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:44     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:43      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:44     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:44      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:45     1000      2163  100,00    1,00    0,00    0,00  101,00     1  python
+
+13:53:44      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:45     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:44      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:45     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:45      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:46     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:53:45      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:46     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:45      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:46     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:46      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:47     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:46      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:47     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:46      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:47     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:47      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:48     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:47      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:48     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:47      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:48     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:48      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:49     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:48      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:49     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:48      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:49     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:49      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:50     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:49      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:50     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:49      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:50     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:50      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:51     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:50      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:51     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:50      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:51     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:51      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:52     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:51      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:52     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:51      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:52     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:52      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:53     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:53:52      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:53     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:52      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:53     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:53      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:54     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:53      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:54     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:53      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:54     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:54      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:55     1000      2163   99,01    0,00    0,00    0,00   99,01     1  python
+
+13:53:54      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:55     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:54      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:55     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:55      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:56     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:55      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:56     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:55      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:56     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:56      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:57     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:56      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:57     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:56      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:57     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:57      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:58     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:57      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:58     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:57      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:58     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:58      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:53:59     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:53:58      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:53:59     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:58      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:53:59     1000      2163      0,00      0,00      0,00       0  python
+
+13:53:59      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:00     1000      2163   99,00    1,00    0,00    0,00  100,00     1  python
+
+13:53:59      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:00     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:53:59      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:00     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:00      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:01     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:00      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:01     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:00      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:01     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:01      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:02     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:01      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:02     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:01      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:02     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:02      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:03     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:02      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:03     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:02      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:03     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:03      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:04     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:03      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:04     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:03      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:04     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:04      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:05     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:04      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:05     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:04      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:05     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:05      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:06     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:54:05      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:06     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:05      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:06     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:06      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:07     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:06      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:07     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:06      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:07     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:07      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:08     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:07      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:08     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:07      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:08     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:08      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:09     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:08      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:09     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:08      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:09     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:09      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:10     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:09      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:10     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:09      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:10     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:10      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:11     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:10      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:11     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:10      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:11     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:11      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:12     1000      2163   99,00    1,00    0,00    0,00  100,00     1  python
+
+13:54:11      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:12     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:11      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:12     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:12      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:13     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:12      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:13     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:12      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:13     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:13      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:14     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:13      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:14     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:13      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:14     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:14      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:15     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:14      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:15     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:14      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:15     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:15      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:16     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:15      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:16     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:15      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:16     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:16      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:17     1000      2163   99,00    1,00    0,00    0,00  100,00     1  python
+
+13:54:16      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:17     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:16      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:17     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:17      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:18     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:17      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:18     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:17      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:18     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:18      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:19     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:54:18      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:19     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:18      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:19     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:19      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:20     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:19      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:20     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:19      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:20     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:20      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:21     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:20      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:21     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:20      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:21     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:21      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:22     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:21      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:22     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:21      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:22     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:22      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:23     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:22      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:23     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:22      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:23     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:23      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:24     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:54:23      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:24     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:23      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:24     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:24      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:25     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:24      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:25     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:24      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:25     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:25      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:26     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:25      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:26     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:25      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:26     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:26      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:27     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:26      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:27     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:26      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:27     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:27      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:28     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:27      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:28     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:27      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:28     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:28      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:29     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:28      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:29     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:28      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:29     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:29      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:30     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:29      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:30     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:29      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:30     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:30      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:31     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:30      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:31     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:30      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:31     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:31      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:32     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:54:31      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:32     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:31      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:32     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:32      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:33     1000      2163  100,00    1,00    0,00    0,00  101,00     1  python
+
+13:54:32      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:33     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:32      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:33     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:33      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:34     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:33      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:34     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:33      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:34     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:34      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:35     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:34      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:35     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:34      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:35     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:35      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:36     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:35      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:36     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:35      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:36     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:36      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:37     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:36      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:37     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:36      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:37     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:37      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:38     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:37      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:38     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:37      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:38     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:38      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:39     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:38      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:39     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:38      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:39     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:39      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:40     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:39      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:40     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:39      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:40     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:40      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:41     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:54:40      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:41     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:40      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:41     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:41      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:42     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:41      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:42     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:41      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:42     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:42      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:43     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:42      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:43     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:42      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:43     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:43      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:44     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:43      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:44     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:43      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:44     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:44      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:45     1000      2163   99,01    0,00    0,00    0,00   99,01     1  python
+
+13:54:44      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:45     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:44      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:45     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:45      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:46     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:45      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:46     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:45      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:46     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:46      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:47     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:46      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:47     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:46      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:47     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:47      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:48     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:54:47      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:48     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:47      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:48     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:48      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:49     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:48      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:49     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:48      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:49     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:49      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:50     1000      2163  100,00    0,00    0,00    1,00  100,00     1  python
+
+13:54:49      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:50     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:49      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:50     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:50      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:51     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:50      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:51     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:50      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:51     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:51      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:52     1000      2163   99,00    0,00    0,00    0,00   99,00     1  python
+
+13:54:51      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:52     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:51      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:52     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:52      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:53     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:52      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:53     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:52      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:53     1000      2163      0,00      0,00      0,00       0  python
+
+13:54:53      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+13:54:54     1000      2163  100,00    0,00    0,00    0,00  100,00     1  python
+
+13:54:53      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+13:54:54     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+13:54:53      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+13:54:54     1000      2163      0,00      0,00      0,00       0  python
+
+Average:      UID       PID    %usr %system  %guest   %wait    %CPU   CPU  Command
+Average:     1000      2163   99,81    0,06    0,00    0,01   99,87     -  python
+
+Average:      UID       PID  minflt/s  majflt/s     VSZ     RSS   %MEM  Command
+Average:     1000      2163      0,00      0,00  384736   50284   3,08  python
+
+Average:      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+Average:     1000      2163      0,00      0,00      0,00       0  python

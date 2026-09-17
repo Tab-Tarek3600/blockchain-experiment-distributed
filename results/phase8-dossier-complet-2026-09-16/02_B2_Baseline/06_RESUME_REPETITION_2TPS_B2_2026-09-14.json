@@ -1,0 +1,14 @@
+{
+  "run_id": "b2-official-r05-rep02-2p0-20260914",
+  "submitted": 120,
+  "included_on_all_three": 119,
+  "success_rate_all_three": 0.9916666666666667,
+  "committed_tps_all_three_over_submission_window": 1.9833291937286401,
+  "converged_to_min_tip": true,
+  "source": "reported run output on 2026-09-14",
+  "notes": [
+    "This compact record does not replace the complete raw manifest, node logs, or block copies.",
+    "The run was performed with payload-size 0; byte goodput is therefore 0.",
+    "No final mempool size, final block hash, state root, or detailed acceptance counters are inferred here."
+  ]
+}

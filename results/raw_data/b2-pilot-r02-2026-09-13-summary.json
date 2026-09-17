@@ -1,0 +1,302 @@
+{
+  "benchmark": "phase8-b2-baseline-analysis",
+  "run_id": "b2-pilot-r02-2026-09-13",
+  "source_manifest": "results/raw_data/b2-pilot-r02-2026-09-13-node1-manifest.json",
+  "scope": {
+    "ingress": "node1 only",
+    "p2p_path": "node1 -> peers",
+    "payload": "synthetic controlled data only",
+    "tps_definition": "benchmark transactions included on all three nodes / submitted measurement duration"
+  },
+  "counts": {
+    "submitted": 6,
+    "included_node1": 0,
+    "included_node2": 0,
+    "included_node3": 0,
+    "included_on_all_three": 0,
+    "missing_on_all_three": 6,
+    "duplicate_locations": {
+      "node1": 0,
+      "node2": 0,
+      "node3": 0
+    }
+  },
+  "acceptance": {
+    "accepted_by_node1_direct_observation": 0,
+    "accepted_by_node1_direct_observation_note": "Counted from BENCHMARK_ACCEPT events in the optional node1 log; null means no log was supplied.",
+    "accepted_by_node1_inferred_lower_bound": 0,
+    "inferred_from_node1_block_inclusion": true,
+    "rejected_by_node1_direct_observation": 0,
+    "log": {
+      "status": "measured",
+      "log_path": "/tmp/b2-pilot-r02/node1.log",
+      "accepted_ids": [],
+      "rejected_ids": [],
+      "accepted_count": 0,
+      "rejected_count": 0,
+      "accept_wall_ns": {},
+      "errors": []
+    }
+  },
+  "rates": {
+    "offered_rate_from_manifest_tx_s": 0.1999992357562537,
+    "committed_tps_all_three_over_submission_window": 0.0,
+    "success_rate_all_three": 0.0
+  },
+  "success_failure": {
+    "committed_on_all_three": 0,
+    "not_committed_on_all_three": 6,
+    "rejected_by_node1_direct_observation": 0,
+    "note": "success means presence on all three persisted chains; no separate EVM receipt status is available here"
+  },
+  "backlog": {
+    "benchmark_transactions_not_committed_on_all_three": 6,
+    "node1_local_observation_missing": 6,
+    "final_mempool_size_observed": null
+  },
+  "latencies": {
+    "node1_inclusion": {
+      "status": "measured",
+      "unit": "ms",
+      "observed_count": 6,
+      "samples": [
+        160.70783,
+        176.138822,
+        263.010258,
+        309.076265,
+        311.700136,
+        318.321113
+      ],
+      "min": 160.70783,
+      "p50": 263.010258,
+      "p95": 311.700136,
+      "max": 318.321113,
+      "source": "node1 BENCHMARK_COMMIT commit_wall_ns minus manifest t_submit_wall_ns",
+      "missing_submission_time_count": 0
+    },
+    "node1_local_file_observation": {
+      "status": "not_measured",
+      "unit": "ms",
+      "observed_count": 0,
+      "missing_submission_time_count": 0,
+      "samples": [],
+      "min": null,
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "node1_commit_event": {
+      "status": "measured",
+      "unit": "ms",
+      "observed_count": 6,
+      "samples": [
+        160.70783,
+        176.138822,
+        263.010258,
+        309.076265,
+        311.700136,
+        318.321113
+      ],
+      "min": 160.70783,
+      "p50": 263.010258,
+      "p95": 311.700136,
+      "max": 318.321113,
+      "source": "node1 BENCHMARK_COMMIT commit_wall_ns minus manifest t_submit_wall_ns",
+      "missing_submission_time_count": 0
+    },
+    "convergence": {
+      "status": "not_measured",
+      "reason": "commit_wall_ns values are local to each VM; pass --clocks-synchronised only after an independent clock-synchronisation check",
+      "source": "BENCHMARK_COMMIT commit_wall_ns"
+    }
+  },
+  "timing": {
+    "measurement_start_monotonic_ns": 745285085007,
+    "measurement_end_monotonic_ns": 775285199644,
+    "measurement_start_wall_ns": 1789394955986217693,
+    "measurement_end_wall_ns": 1789394985986332995,
+    "drain_start_wall_ns": 1789394985986472116,
+    "drain_end_wall_ns": 1789395015997078758,
+    "submitted_duration_s": 30.000114637
+  },
+  "per_node": {
+    "node1": {
+      "tip_height": 6,
+      "block_count": 7,
+      "benchmark_transactions_included": 0,
+      "benchmark_block_heights": [],
+      "benchmark_transactions_per_block": {},
+      "load_errors": []
+    },
+    "node2": {
+      "tip_height": 6,
+      "block_count": 7,
+      "benchmark_transactions_included": 0,
+      "benchmark_block_heights": [],
+      "benchmark_transactions_per_block": {},
+      "load_errors": []
+    },
+    "node3": {
+      "tip_height": 6,
+      "block_count": 7,
+      "benchmark_transactions_included": 0,
+      "benchmark_block_heights": [],
+      "benchmark_transactions_per_block": {},
+      "load_errors": []
+    }
+  },
+  "final_chain": {
+    "node1": {
+      "height": 6,
+      "block_hash": "0989b732b0be2cfd321daa4186122c7b1fa58c3e3b4a407830c5df3fb1b9b3b5",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "transaction_count": 1
+    },
+    "node2": {
+      "height": 6,
+      "block_hash": "0989b732b0be2cfd321daa4186122c7b1fa58c3e3b4a407830c5df3fb1b9b3b5",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "transaction_count": 1
+    },
+    "node3": {
+      "height": 6,
+      "block_hash": "0989b732b0be2cfd321daa4186122c7b1fa58c3e3b4a407830c5df3fb1b9b3b5",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "transaction_count": 1
+    }
+  },
+  "transaction_locations": {
+    "node1": {},
+    "node2": {},
+    "node3": {}
+  },
+  "duplicates": {
+    "node1": {},
+    "node2": {},
+    "node3": {}
+  },
+  "convergence": {
+    "min_tip_height": 6,
+    "common_prefix_height": 6,
+    "all_same_to_min_tip": true,
+    "per_height_until_first_divergence": [
+      {
+        "height": 0,
+        "same_block_hash": true,
+        "same_state_root": true,
+        "block_hashes": {
+          "node1": "3ff93ff7c581582d53d9218d0368e4a35cc4c6828c0a6a683b54986f1c8fa590",
+          "node2": "3ff93ff7c581582d53d9218d0368e4a35cc4c6828c0a6a683b54986f1c8fa590",
+          "node3": "3ff93ff7c581582d53d9218d0368e4a35cc4c6828c0a6a683b54986f1c8fa590"
+        },
+        "state_roots": {
+          "node1": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node2": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node3": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+        }
+      },
+      {
+        "height": 1,
+        "same_block_hash": true,
+        "same_state_root": true,
+        "block_hashes": {
+          "node1": "c00c3d44db95f6916e7dde370009702a0aa542e73ed152cef17d724abd458b3f",
+          "node2": "c00c3d44db95f6916e7dde370009702a0aa542e73ed152cef17d724abd458b3f",
+          "node3": "c00c3d44db95f6916e7dde370009702a0aa542e73ed152cef17d724abd458b3f"
+        },
+        "state_roots": {
+          "node1": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node2": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node3": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+        }
+      },
+      {
+        "height": 2,
+        "same_block_hash": true,
+        "same_state_root": true,
+        "block_hashes": {
+          "node1": "5ba8d85412319e98c5a27258ea64171294aac788aa25fb18c8cbb064c24e7164",
+          "node2": "5ba8d85412319e98c5a27258ea64171294aac788aa25fb18c8cbb064c24e7164",
+          "node3": "5ba8d85412319e98c5a27258ea64171294aac788aa25fb18c8cbb064c24e7164"
+        },
+        "state_roots": {
+          "node1": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node2": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node3": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+        }
+      },
+      {
+        "height": 3,
+        "same_block_hash": true,
+        "same_state_root": true,
+        "block_hashes": {
+          "node1": "2dab98b6efa51550d20fe853156ffc864c57585c287b417b620824c4b295c41a",
+          "node2": "2dab98b6efa51550d20fe853156ffc864c57585c287b417b620824c4b295c41a",
+          "node3": "2dab98b6efa51550d20fe853156ffc864c57585c287b417b620824c4b295c41a"
+        },
+        "state_roots": {
+          "node1": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node2": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node3": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+        }
+      },
+      {
+        "height": 4,
+        "same_block_hash": true,
+        "same_state_root": true,
+        "block_hashes": {
+          "node1": "ed7680171da3a0ed902c162b17f61454e208ce889e07ed1ff8a7de1d9d86d5b6",
+          "node2": "ed7680171da3a0ed902c162b17f61454e208ce889e07ed1ff8a7de1d9d86d5b6",
+          "node3": "ed7680171da3a0ed902c162b17f61454e208ce889e07ed1ff8a7de1d9d86d5b6"
+        },
+        "state_roots": {
+          "node1": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node2": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node3": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+        }
+      },
+      {
+        "height": 5,
+        "same_block_hash": true,
+        "same_state_root": true,
+        "block_hashes": {
+          "node1": "48a2a705b7d2e48532f87a0eb5a508bed44815564b0a6138c48c9ee4576f731f",
+          "node2": "48a2a705b7d2e48532f87a0eb5a508bed44815564b0a6138c48c9ee4576f731f",
+          "node3": "48a2a705b7d2e48532f87a0eb5a508bed44815564b0a6138c48c9ee4576f731f"
+        },
+        "state_roots": {
+          "node1": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node2": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node3": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+        }
+      },
+      {
+        "height": 6,
+        "same_block_hash": true,
+        "same_state_root": true,
+        "block_hashes": {
+          "node1": "0989b732b0be2cfd321daa4186122c7b1fa58c3e3b4a407830c5df3fb1b9b3b5",
+          "node2": "0989b732b0be2cfd321daa4186122c7b1fa58c3e3b4a407830c5df3fb1b9b3b5",
+          "node3": "0989b732b0be2cfd321daa4186122c7b1fa58c3e3b4a407830c5df3fb1b9b3b5"
+        },
+        "state_roots": {
+          "node1": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node2": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+          "node3": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+        }
+      }
+    ]
+  },
+  "validity": {
+    "all_submitted_present_on_all_three": false,
+    "no_benchmark_transaction_duplicate_on_any_node": true,
+    "three_node_chain_converged_to_min_tip": true,
+    "load_files_valid": true
+  },
+  "interpretation": {
+    "accepted_rate_not_observed": true,
+    "remote_commit_times_not_inferred_from_unsynchronised_clocks": true,
+    "local_node1_persistence_observations_nonempty": false,
+    "not_a_mlkem_or_aesgcm_measurement": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "api_url": "http://127.0.0.1:5001/api/v0",
+  "cid_v1_ne_cid_v2": true,
+  "created_at": "2026-09-16T17:30:36.764525+00:00",
+  "kubo": {
+    "id": {
+      "Addresses": [
+        "/p2p/12D3KooWPgLBkD7P5coWZNBceoGcBtZVBwfVoESV5BK3vLTj59rU"
+      ],
+      "AgentVersion": "kubo/0.43.0",
+      "ID": "12D3KooWPgLBkD7P5coWZNBceoGcBtZVBwfVoESV5BK3vLTj59rU",
+      "Protocols": [
+        "/ipfs/bitswap",
+        "/ipfs/bitswap/1.0.0",
+        "/ipfs/bitswap/1.1.0",
+        "/ipfs/bitswap/1.2.0",
+        "/ipfs/id/1.0.0",
+        "/ipfs/id/push/1.0.0",
+        "/ipfs/ping/1.0.0",
+        "/libp2p/autonat/1.0.0",
+        "/libp2p/autonat/2/dial-back",
+        "/libp2p/autonat/2/dial-request",
+        "/libp2p/circuit/relay/0.2.0/stop",
+        "/x/"
+      ],
+      "PublicKey": "CAESIM30uoYzrt0v7uXIprpz5lyjUyrtPaTU8wzbzeQJHdUV"
+    },
+    "version": {
+      "Commit": "e9914bb47",
+      "Golang": "go1.26.5",
+      "Repo": "18",
+      "System": "amd64/linux",
+      "Version": "0.43.0"
+    }
+  },
+  "run_id": "b8c-ipfs-20260916",
+  "schema_version": "b8c-manifest-v1",
+  "seed_ok": true,
+  "sha256_v1_ne_sha256_v2": true,
+  "size_bytes_expected": 128,
+  "source_node": "node1",
+  "synthetic_only": true,
+  "versions": {
+    "v1": {
+      "add_latency_ms": 31.397228,
+      "cat_verify_latency_ms": 2.799388,
+      "cid": "bafkreihwpoaggern5b26htrvldoxwhmphgde5yjzbl6d3yv6sfxjza47ca",
+      "filename": "b8c-v1-synthetic-ciphertext.bin",
+      "pin_add_latency_ms": 5.664815,
+      "sha256": "f67b8063122de875e3ce3558dd7b1d8f39864ee1390afc3de2be916e9c839f10",
+      "size_bytes": 128
+    },
+    "v2": {
+      "add_latency_ms": 3.534486,
+      "cat_verify_latency_ms": 0.883446,
+      "cid": "bafkreidnrskdhumwzmd6qwhv67mwahu2v7nior22ylnj4hpxmteqwz45f4",
+      "filename": "b8c-v2-synthetic-ciphertext.bin",
+      "pin_add_latency_ms": 2.922806,
+      "sha256": "6d8c9433d196cb07e858f5f7d9601e9aafda87475ac2da9e1df764c90b679d2f",
+      "size_bytes": 128
+    }
+  }
+}

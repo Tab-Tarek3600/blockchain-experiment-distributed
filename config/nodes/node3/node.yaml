@@ -1,0 +1,89 @@
+# =====================================================================
+# node3 -- VM2
+# =====================================================================
+# GABARIT. Les champs marques REMPLACER doivent recevoir les vraies
+# valeurs de votre deploiement. Deux facons de les obtenir :
+#
+#   (a) automatique (recommande) : voir scripts/README-etape2.md
+#         python3 scripts/gen_validator_key.py --key-dir keys/node3
+#         python3 scripts/make_configs.py --nodes nodes.json --out config/
+#
+#   (b) manuelle : editer les champs ci-dessous a la main.
+#
+# ---------------------------------------------------------------------
+# REGLE ABSOLUE : les 4 champs suivants doivent etre IDENTIQUES,
+# octet pour octet, dans les trois fichiers node1/node2/node3.yaml :
+#     authorized_validators   (meme contenu ET meme ORDRE)
+#     genesis_validator_public_key
+#     genesis_timestamp
+#     block_interval_seconds
+# La moindre difference produit un genesis different, donc une chaine
+# differente, et plus aucun bloc n'est accepte entre les noeuds.
+#
+# L'ordre de authorized_validators fixe le tour PoA :
+#     proposeur(hauteur) = authorized_validators[hauteur % 3]
+# Le genesis occupe la hauteur 0, donc le PREMIER bloc produit (h=1)
+# revient a authorized_validators[1] = node2, pas a node1.
+#
+# genesis_validator_public_key doit deriver vers
+# authorized_validators[0] (contrainte verifiee par NodeConfig).
+# C'est une donnee de configuration partagee : elle n'appartient a
+# aucun noeud en particulier au sens du consensus.
+#
+# JAMAIS de cle SECRETE dans ce fichier. Les cles vivent dans
+# validator_key_dir, en local, et ne sont jamais copiees ailleurs.
+# =====================================================================
+
+# --- Identite de CE noeud (propre a cette machine) -------------------
+node_id: "node3"
+node_name: "Vm2"
+
+# Repertoire de la chaine persistee. Propre a la machine.
+data_dir: "./data/node3"
+
+# Repertoire des cles ML-DSA de CE validateur.
+# Contient validator_public_key.bin et validator_secret_key.bin.
+# La cle secrete ne quitte JAMAIS cette machine.
+validator_key_dir: "./keys/node3"
+
+# --- Ecoute TCP -------------------------------------------------------
+# host = adresse sur laquelle ce noeud ECOUTE.
+#   "0.0.0.0" ecoute sur toutes les interfaces (le plus simple).
+#   Mettre l IP precise (192.168.1.103) restreint l ecoute a cette interface.
+host: "0.0.0.0"
+port: 5000
+
+# --- Pairs a contacter ------------------------------------------------
+# Adresses des DEUX autres noeuds. Topologie en triangle complet :
+# chaque noeud connait les deux autres.
+# Le transport reessaie en boucle : l ordre de demarrage des trois
+# machines n a aucune importance.
+peers:
+  - host: "192.168.1.101"   # node1   <-- REMPLACER par l IP reelle
+    port: 5000
+  - host: "192.168.1.102"   # node2   <-- REMPLACER par l IP reelle
+    port: 5000
+
+# --- Configuration RESEAU : identique sur les 3 machines --------------
+# Adresses (20 octets, hex) des 3 validateurs autorises.
+# L ORDRE compte : il definit le tour de role PoA.
+authorized_validators:
+  - "REMPLACER_adresse_hex_node1"   # 40 caracteres hex
+  - "REMPLACER_adresse_hex_node2"
+  - "REMPLACER_adresse_hex_node3"
+
+# Cle publique ML-DSA (1312 octets => 2624 caracteres hex) utilisee
+# pour construire le bloc genesis. Doit deriver vers
+# authorized_validators[0].
+genesis_validator_public_key: "REMPLACER_cle_publique_hex_du_noeud_index_0"
+
+# Horodatage fige du genesis. Toute valeur convient tant qu elle est
+# LA MEME partout. Ne jamais utiliser l heure courante.
+genesis_timestamp: 1700000000
+
+# --- Parametres locaux ------------------------------------------------
+mempool_max_size: 1000
+
+# Intervalle entre deux tentatives de proposition, en secondes.
+# A garder identique partout pour un rythme regulier.
+block_interval_seconds: 5.0

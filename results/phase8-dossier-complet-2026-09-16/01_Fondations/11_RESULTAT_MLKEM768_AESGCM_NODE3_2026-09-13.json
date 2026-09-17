@@ -1,0 +1,668 @@
+{
+  "benchmark": "phase8-step3-mlkem768-aesgcm",
+  "benchmark_scope": "local off-chain confidentiality microbenchmark; not blockchain TPS",
+  "algorithm": "ML-KEM-768",
+  "api_level": "project src.crypto.ml_kem.MLKEM wrapper + PyCryptodome AES-GCM",
+  "kem_context_policy": "ML-KEM keygen/encapsulate/decapsulate timings include the context creation performed by the project wrapper",
+  "node_label": "node3",
+  "hostname": "node3",
+  "collected_at_utc": "2026-09-13T19:09:39.094882+00:00",
+  "python": "3.12.13",
+  "platform": "Linux-7.0.0-29-generic-x86_64-inconnu-with-glibc2.43",
+  "cpu_count_visible": 2,
+  "liboqs_version": "0.16.0",
+  "parameters": {
+    "warmup_operations": 100,
+    "measured_iterations_per_repetition": 1000,
+    "repetitions": 5,
+    "timer": "time.perf_counter_ns",
+    "plaintext_size_bytes": 1024,
+    "aes_mode": "AES-256-GCM",
+    "aes_nonce_size_bytes": 12,
+    "aes_tag_size_bytes": 16,
+    "aad": "v1",
+    "aes_encrypt_includes_nonce_rng": true
+  },
+  "validity_checks": {
+    "kem_shared_secret_matches": true,
+    "aes_gcm_round_trip": true,
+    "wrong_key_rejected": true,
+    "modified_ciphertext_rejected": true
+  },
+  "sizes": {
+    "public_key": {
+      "bytes": 1184,
+      "hex_characters": 2368
+    },
+    "secret_key": {
+      "bytes": 2400,
+      "hex_characters": 4800,
+      "reported": false
+    },
+    "kem_ciphertext": {
+      "bytes": 1088,
+      "hex_characters": 2176
+    },
+    "shared_secret": {
+      "bytes": 32,
+      "hex_characters": 64
+    },
+    "derived_aes256_key": {
+      "bytes": 32,
+      "hex_characters": 64
+    },
+    "plaintext_1KiB": {
+      "bytes": 1024,
+      "hex_characters": 2048
+    },
+    "aes_gcm_ciphertext_1KiB": {
+      "bytes": 1024,
+      "hex_characters": 2048
+    },
+    "aes_gcm_nonce": {
+      "bytes": 12,
+      "hex_characters": 24
+    },
+    "aes_gcm_tag": {
+      "bytes": 16,
+      "hex_characters": 32
+    },
+    "envelope_serialized_phase7_style": {
+      "bytes": 2162,
+      "description": "version + KEM ciphertext + nonce + tag + ciphertext, each field prefixed by a 4-byte length"
+    }
+  },
+  "measurements": {
+    "keygen": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 15.941,
+        "mean_us": 24.5322982,
+        "median_us": 19.0025,
+        "p95_us": 37.579,
+        "p99_us": 52.046,
+        "p25_us": 16.515,
+        "p75_us": 33.194,
+        "iqr_us": 16.679,
+        "max_us": 511.205,
+        "throughput_ops_s_from_median": 52624.65465070386
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 16.026,
+            "mean_us": 24.298470000000002,
+            "median_us": 21.671,
+            "p95_us": 38.747,
+            "p99_us": 49.032,
+            "p25_us": 16.809,
+            "p75_us": 29.374,
+            "iqr_us": 12.565,
+            "max_us": 206.995,
+            "throughput_ops_s_from_median": 46144.61723040007
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 16.013,
+            "mean_us": 18.716935000000003,
+            "median_us": 16.501,
+            "p95_us": 22.244,
+            "p99_us": 39.893,
+            "p25_us": 16.269,
+            "p75_us": 17.138,
+            "iqr_us": 0.869,
+            "max_us": 511.205,
+            "throughput_ops_s_from_median": 60602.38773407672
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 15.941,
+            "mean_us": 17.26092,
+            "median_us": 16.573,
+            "p95_us": 20.299,
+            "p99_us": 28.597,
+            "p25_us": 16.283,
+            "p75_us": 17.051,
+            "iqr_us": 0.768,
+            "max_us": 83.236,
+            "throughput_ops_s_from_median": 60339.10577445242
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 16.115,
+            "mean_us": 26.453622,
+            "median_us": 25.844,
+            "p95_us": 36.939,
+            "p99_us": 56.317,
+            "p25_us": 17.964,
+            "p75_us": 32.208,
+            "iqr_us": 14.244,
+            "max_us": 148.456,
+            "throughput_ops_s_from_median": 38693.70066553165
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 27.296,
+            "mean_us": 35.931544,
+            "median_us": 34.634,
+            "p95_us": 44.463,
+            "p99_us": 60.318,
+            "p25_us": 33.594,
+            "p75_us": 35.185,
+            "iqr_us": 1.591,
+            "max_us": 324.702,
+            "throughput_ops_s_from_median": 28873.361436738465
+          }
+        }
+      ]
+    },
+    "encapsulate": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 22.368,
+        "mean_us": 37.9428746,
+        "median_us": 36.056,
+        "p95_us": 48.464,
+        "p99_us": 81.453,
+        "p25_us": 32.409,
+        "p75_us": 37.686,
+        "iqr_us": 5.277,
+        "max_us": 3148.784,
+        "throughput_ops_s_from_median": 27734.635012203238
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 22.368,
+            "mean_us": 34.060807000000004,
+            "median_us": 35.226,
+            "p95_us": 43.314,
+            "p99_us": 62.945,
+            "p25_us": 28.275,
+            "p75_us": 36.37,
+            "iqr_us": 8.095,
+            "max_us": 273.197,
+            "throughput_ops_s_from_median": 28388.12240958383
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.904,
+            "mean_us": 39.05146,
+            "median_us": 36.339,
+            "p95_us": 49.599,
+            "p99_us": 102.731,
+            "p25_us": 35.669,
+            "p75_us": 37.679,
+            "iqr_us": 2.01,
+            "max_us": 359.144,
+            "throughput_ops_s_from_median": 27518.643881229535
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 26.649,
+            "mean_us": 37.589043,
+            "median_us": 34.9065,
+            "p95_us": 49.989,
+            "p99_us": 81.453,
+            "p25_us": 31.124,
+            "p75_us": 37.907,
+            "iqr_us": 6.783,
+            "max_us": 765.428,
+            "throughput_ops_s_from_median": 28647.959549081115
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 24.166,
+            "mean_us": 36.285778,
+            "median_us": 36.2635,
+            "p95_us": 47.046,
+            "p99_us": 80.188,
+            "p25_us": 30.647,
+            "p75_us": 38.173,
+            "iqr_us": 7.526,
+            "max_us": 235.628,
+            "throughput_ops_s_from_median": 27575.937237166847
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 26.58,
+            "mean_us": 42.727285,
+            "median_us": 36.13,
+            "p95_us": 50.433,
+            "p99_us": 101.292,
+            "p25_us": 33.411,
+            "p75_us": 38.064,
+            "iqr_us": 4.653,
+            "max_us": 3148.784,
+            "throughput_ops_s_from_median": 27677.830058123443
+          }
+        }
+      ]
+    },
+    "decapsulate": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 15.271,
+        "mean_us": 19.7049852,
+        "median_us": 16.283,
+        "p95_us": 34.688,
+        "p99_us": 45.832,
+        "p25_us": 15.677,
+        "p75_us": 20.562,
+        "iqr_us": 4.885,
+        "max_us": 188.711,
+        "throughput_ops_s_from_median": 61413.744395995825
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 20.067,
+            "mean_us": 30.964423,
+            "median_us": 29.4195,
+            "p95_us": 43.333,
+            "p99_us": 58.862,
+            "p25_us": 26.107,
+            "p75_us": 34.558,
+            "iqr_us": 8.451,
+            "max_us": 179.504,
+            "throughput_ops_s_from_median": 33991.06035112766
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 15.351,
+            "mean_us": 17.296741,
+            "median_us": 16.256,
+            "p95_us": 21.298,
+            "p99_us": 32.379,
+            "p25_us": 15.695,
+            "p75_us": 17.182,
+            "iqr_us": 1.487,
+            "max_us": 122.657,
+            "throughput_ops_s_from_median": 61515.74803149606
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 15.271,
+            "mean_us": 16.334362,
+            "median_us": 15.683,
+            "p95_us": 18.759,
+            "p99_us": 24.443,
+            "p25_us": 15.549,
+            "p75_us": 16.116,
+            "iqr_us": 0.567,
+            "max_us": 140.53,
+            "throughput_ops_s_from_median": 63763.31059108589
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 15.305,
+            "mean_us": 16.549952,
+            "median_us": 15.975,
+            "p95_us": 18.608,
+            "p99_us": 25.852,
+            "p25_us": 15.633,
+            "p75_us": 16.373,
+            "iqr_us": 0.74,
+            "max_us": 188.711,
+            "throughput_ops_s_from_median": 62597.809076682315
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 15.328,
+            "mean_us": 17.379448,
+            "median_us": 16.283,
+            "p95_us": 20.914,
+            "p99_us": 31.62,
+            "p25_us": 15.853,
+            "p75_us": 17.261,
+            "iqr_us": 1.408,
+            "max_us": 60.793,
+            "throughput_ops_s_from_median": 61413.744395995825
+          }
+        }
+      ]
+    },
+    "derive_aes256_key_sha256": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 0.322,
+        "mean_us": 0.3666214,
+        "median_us": 0.359,
+        "p95_us": 0.39,
+        "p99_us": 0.426,
+        "p25_us": 0.345,
+        "p75_us": 0.371,
+        "iqr_us": 0.026,
+        "max_us": 6.423,
+        "throughput_ops_s_from_median": 2785515.3203342617
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 0.361,
+            "mean_us": 0.38574,
+            "median_us": 0.378,
+            "p95_us": 0.402,
+            "p99_us": 0.414,
+            "p25_us": 0.372,
+            "p75_us": 0.384,
+            "iqr_us": 0.012,
+            "max_us": 4.118,
+            "throughput_ops_s_from_median": 2645502.6455026455
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 0.352,
+            "mean_us": 0.373,
+            "median_us": 0.364,
+            "p95_us": 0.387,
+            "p99_us": 0.413,
+            "p25_us": 0.359,
+            "p75_us": 0.371,
+            "iqr_us": 0.012,
+            "max_us": 4.319,
+            "throughput_ops_s_from_median": 2747252.7472527474
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 0.345,
+            "mean_us": 0.36244299999999996,
+            "median_us": 0.359,
+            "p95_us": 0.381,
+            "p99_us": 0.391,
+            "p25_us": 0.353,
+            "p75_us": 0.366,
+            "iqr_us": 0.013,
+            "max_us": 1.518,
+            "throughput_ops_s_from_median": 2785515.3203342617
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 0.33,
+            "mean_us": 0.35627,
+            "median_us": 0.345,
+            "p95_us": 0.366,
+            "p99_us": 0.491,
+            "p25_us": 0.338,
+            "p75_us": 0.349,
+            "iqr_us": 0.011,
+            "max_us": 6.423,
+            "throughput_ops_s_from_median": 2898550.724637681
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 0.322,
+            "mean_us": 0.35565399999999997,
+            "median_us": 0.34,
+            "p95_us": 0.362,
+            "p99_us": 0.52,
+            "p25_us": 0.336,
+            "p75_us": 0.345,
+            "iqr_us": 0.009,
+            "max_us": 5.656,
+            "throughput_ops_s_from_median": 2941176.470588235
+          }
+        }
+      ]
+    },
+    "aes_gcm_encrypt_1KiB": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 22.078,
+        "mean_us": 25.3573946,
+        "median_us": 24.333,
+        "p95_us": 30.647,
+        "p99_us": 42.301,
+        "p25_us": 23.78,
+        "p75_us": 25.256,
+        "iqr_us": 1.476,
+        "max_us": 93.901,
+        "throughput_ops_s_from_median": 41096.453376073645
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 22.245,
+            "mean_us": 25.42955,
+            "median_us": 24.2365,
+            "p95_us": 31.191,
+            "p99_us": 42.574,
+            "p25_us": 23.658,
+            "p75_us": 25.403,
+            "iqr_us": 1.745,
+            "max_us": 80.85,
+            "throughput_ops_s_from_median": 41260.082932766694
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 22.392,
+            "mean_us": 25.514576,
+            "median_us": 24.4285,
+            "p95_us": 31.31,
+            "p99_us": 41.396,
+            "p25_us": 23.85,
+            "p75_us": 25.63,
+            "iqr_us": 1.78,
+            "max_us": 93.803,
+            "throughput_ops_s_from_median": 40935.79220991874
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 22.623,
+            "mean_us": 25.264455,
+            "median_us": 24.3655,
+            "p95_us": 30.082,
+            "p99_us": 41.19,
+            "p25_us": 23.824,
+            "p75_us": 25.197,
+            "iqr_us": 1.373,
+            "max_us": 93.901,
+            "throughput_ops_s_from_median": 41041.63674047321
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 22.484,
+            "mean_us": 25.419266,
+            "median_us": 24.4215,
+            "p95_us": 30.838,
+            "p99_us": 43.636,
+            "p25_us": 23.833,
+            "p75_us": 25.24,
+            "iqr_us": 1.407,
+            "max_us": 61.531,
+            "throughput_ops_s_from_median": 40947.525745756815
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 22.078,
+            "mean_us": 25.159126,
+            "median_us": 24.2345,
+            "p95_us": 30.582,
+            "p99_us": 41.96,
+            "p25_us": 23.702,
+            "p75_us": 24.977,
+            "iqr_us": 1.275,
+            "max_us": 58.597,
+            "throughput_ops_s_from_median": 41263.488002640865
+          }
+        }
+      ]
+    },
+    "aes_gcm_decrypt_1KiB": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 28.357,
+        "mean_us": 37.3275248,
+        "median_us": 31.362,
+        "p95_us": 62.651,
+        "p99_us": 80.827,
+        "p25_us": 30.227,
+        "p75_us": 38.841,
+        "iqr_us": 8.614,
+        "max_us": 197.519,
+        "throughput_ops_s_from_median": 31885.72157387922
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.357,
+            "mean_us": 31.699182,
+            "median_us": 30.2355,
+            "p95_us": 36.627,
+            "p99_us": 51.366,
+            "p25_us": 29.738,
+            "p75_us": 31.55,
+            "iqr_us": 1.812,
+            "max_us": 197.519,
+            "throughput_ops_s_from_median": 33073.70475103769
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.427,
+            "mean_us": 44.868993,
+            "median_us": 42.6725,
+            "p95_us": 65.053,
+            "p99_us": 86.156,
+            "p25_us": 32.721,
+            "p75_us": 52.501,
+            "iqr_us": 19.78,
+            "max_us": 179.037,
+            "throughput_ops_s_from_median": 23434.296092331126
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 29.004,
+            "mean_us": 45.864097,
+            "median_us": 39.342,
+            "p95_us": 70.983,
+            "p99_us": 98.915,
+            "p25_us": 30.838,
+            "p75_us": 60.187,
+            "iqr_us": 29.349,
+            "max_us": 185.506,
+            "throughput_ops_s_from_median": 25418.128209038685
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.551,
+            "mean_us": 31.783955000000002,
+            "median_us": 30.658,
+            "p95_us": 37.492,
+            "p99_us": 50.018,
+            "p25_us": 30.109,
+            "p75_us": 31.628,
+            "iqr_us": 1.519,
+            "max_us": 87.369,
+            "throughput_ops_s_from_median": 32617.913758236024
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.62,
+            "mean_us": 32.421397,
+            "median_us": 30.851,
+            "p95_us": 38.725,
+            "p99_us": 53.125,
+            "p25_us": 30.185,
+            "p75_us": 32.417,
+            "iqr_us": 2.232,
+            "max_us": 138.051,
+            "throughput_ops_s_from_median": 32413.860166607243
+          }
+        }
+      ]
+    }
+  },
+  "interpretation": {
+    "scope": "confidentialité hors chaîne avant stockage IPFS",
+    "not_measured": [
+      "IPFS upload/download",
+      "blockchain transaction throughput",
+      "P2P propagation",
+      "consensus convergence"
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "benchmark": "phase8-b2-baseline-analysis",
+  "run_id": "b6-delay50ms-20260915",
+  "source_manifest": "results/raw_data/b6-delay50ms-20260915-node1-manifest.json",
+  "provenance": {
+    "source": "JSON complet fourni dans le message utilisateur après exécution de analyze_b2_baseline.py sur la machine de développement",
+    "archive_scope": "résumé compact des métriques du JSON complet fourni ; les IDs, timestamps et localisations détaillés restent ceux du JSON source de la machine de développement",
+    "analysis_command_completed": true,
+    "duplicate_submission_in_message": true,
+    "duplicate_handling": "les deux blocs JSON identiques ont été traités comme une seule source",
+    "qdisc_cleanup_evidence": "results/raw_data/b6-delay50ms-20260915-qdisc-cleanup.txt"
+  },
+  "scope": {
+    "ingress": "node1 only",
+    "p2p_path": "node1 -> peers",
+    "clients": 1,
+    "offered_rate_tx_s": 0.2,
+    "measurement_duration_s": 60,
+    "payload": "synthetic controlled data only",
+    "network_impairment": "tc-netem delay 50ms 10ms",
+    "packet_loss": "none",
+    "tps_definition": "benchmark transactions included on all three nodes / submitted measurement duration"
+  },
+  "counts": {
+    "submitted": 12,
+    "included_node1": 12,
+    "included_node2": 12,
+    "included_node3": 12,
+    "included_on_all_three": 12,
+    "missing_on_all_three": 0,
+    "duplicate_locations": {
+      "node1": 0,
+      "node2": 0,
+      "node3": 0
+    }
+  },
+  "rates": {
+    "offered_rate_from_manifest_tx_s": 0.2,
+    "committed_tps_all_three_over_submission_window": 0.2,
+    "success_rate_all_three": 1.0,
+    "accepted_rate_node1_direct_observation": 1.0
+  },
+  "success_failure": {
+    "committed_on_all_three": 12,
+    "not_committed_on_all_three": 0,
+    "rejected_by_node1_direct_observation": 0,
+    "note": "success means presence on all three persisted chains; no separate EVM receipt status is available here"
+  },
+  "final_chain": {
+    "node1": {
+      "height": 12,
+      "block_hash": "208956f7d2e3cbf3f4d3f7183aa15727d4a0894551c582fb5dc5ae51a8a33cb3",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "transaction_count": 1
+    },
+    "node2": {
+      "height": 12,
+      "block_hash": "208956f7d2e3cbf3f4d3f7183aa15727d4a0894551c582fb5dc5ae51a8a33cb3",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "transaction_count": 1
+    },
+    "node3": {
+      "height": 12,
+      "block_hash": "208956f7d2e3cbf3f4d3f7183aa15727d4a0894551c582fb5dc5ae51a8a33cb3",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "transaction_count": 1
+    }
+  },
+  "validity": {
+    "all_submitted_present_on_all_three": true,
+    "no_benchmark_transaction_duplicate_on_any_node": true,
+    "three_node_chain_converged_to_min_tip": true,
+    "load_files_valid": true
+  },
+  "convergence": {
+    "min_tip_height": 12,
+    "common_prefix_height": 12,
+    "all_same_to_min_tip": true,
+    "numeric_inter_vm_latency": "not_measured_without_independent_clock_synchronisation"
+  },
+  "network_cleanup": {
+    "required_before_closure": true,
+    "status": "verified",
+    "verified_on": [
+      "node1",
+      "node2",
+      "node3"
+    ],
+    "interfaces": {
+      "node1": "ens33",
+      "node2": "ens33",
+      "node3": "ens33"
+    },
+    "qdisc_after": {
+      "node1": "fq_codel",
+      "node2": "fq_codel",
+      "node3": "fq_codel"
+    },
+    "netem_present_after_cleanup": {
+      "node1": false,
+      "node2": false,
+      "node3": false
+    },
+    "closure_rule_satisfied": true,
+    "evidence_file": "results/raw_data/b6-delay50ms-20260915-qdisc-cleanup.txt",
+    "nodes_stopped_after_test_and_cleanup": true,
+    "source": "sorties ssh -tt fournies par l'utilisateur"
+  },
+  "interpretation": {
+    "accepted_rate_observed": true,
+    "remote_commit_times_not_inferred_from_unsynchronised_clocks": true,
+    "local_node1_persistence_observations_nonempty": true,
+    "node1_file_observation_not_used_as_end_to_end_latency": true,
+    "not_a_mlkem_or_aesgcm_measurement": true,
+    "not_a_bft_finality_certificate": true
+  },
+  "acceptance": {
+    "accepted_by_node1_direct_observation": 12,
+    "rejected_by_node1_direct_observation": 0,
+    "local_acceptance_observation_by_node": {
+      "node1": {
+        "accepted_count": 12,
+        "rejected_count": 0,
+        "status": "measured"
+      },
+      "node2": {
+        "accepted_count": 12,
+        "rejected_count": 0,
+        "status": "measured"
+      },
+      "node3": {
+        "accepted_count": 12,
+        "rejected_count": 0,
+        "status": "measured"
+      }
+    },
+    "log_status": "measured",
+    "log_path": "results/raw_data/b6-delay50ms-20260915-node1.log",
+    "errors": []
+  },
+  "latencies": {
+    "node1_inclusion_or_commit_from_submission_ms": {
+      "status": "measured",
+      "observed_count": 12,
+      "min": 118.991861,
+      "p50": 300.73351,
+      "p95": 438.500993,
+      "max": 470.723905,
+      "source": "node1 BENCHMARK_COMMIT commit_wall_ns minus manifest t_submit_wall_ns",
+      "cross_vm_comparability": "not_applicable_for_this_same-node calculation"
+    },
+    "node1_local_accept_to_commit_ms": {
+      "status": "measured",
+      "observed_count": 12,
+      "min": 103.84313,
+      "p50": 278.147781,
+      "p95": 427.391134,
+      "max": 448.388079,
+      "source": "same-node BENCHMARK_COMMIT minus BENCHMARK_ACCEPT",
+      "not_end_to_end_client_latency": true
+    },
+    "node2_local_accept_to_commit_ms": {
+      "status": "measured",
+      "observed_count": 12,
+      "min": 90.894388,
+      "p50": 216.845473,
+      "p95": 302.331062,
+      "max": 333.623844,
+      "source": "same-node BENCHMARK_COMMIT minus BENCHMARK_ACCEPT",
+      "not_end_to_end_client_latency": true
+    },
+    "node3_local_accept_to_commit_ms": {
+      "status": "measured",
+      "observed_count": 12,
+      "min": 113.205368,
+      "p50": 208.838697,
+      "p95": 331.312231,
+      "max": 355.429181,
+      "source": "same-node BENCHMARK_COMMIT minus BENCHMARK_ACCEPT",
+      "not_end_to_end_client_latency": true
+    },
+    "node1_local_file_observation_ms": {
+      "status": "measured",
+      "observed_count": 12,
+      "min": 163.57828,
+      "p50": 25003.425598,
+      "p95": 50003.426859,
+      "max": 54990.369624,
+      "interpretation": "indicateur de fichier local à conserver séparément ; ne pas le présenter comme latence blockchain end-to-end"
+    },
+    "cross_vm_convergence_latency": {
+      "status": "not_measured",
+      "reason": "commit_wall_ns est local à chaque VM et les horloges ne sont pas indépendamment synchronisées"
+    }
+  },
+  "timing": {
+    "submitted_duration_s": 60.0,
+    "drain_duration_s": 0.162947338,
+    "measurement_timestamps_source": "JSON complet fourni"
+  }
+}

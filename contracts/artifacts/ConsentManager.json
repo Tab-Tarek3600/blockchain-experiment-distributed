@@ -1,0 +1,367 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "patientRegistryAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "scope",
+          "type": "bytes32"
+        }
+      ],
+      "name": "ConsentNotFound",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "expiresAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "ExpirationInPast",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidBeneficiary",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPatientRegistry",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        }
+      ],
+      "name": "NotController",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "scope",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "expiresAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "ConsentGranted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "scope",
+          "type": "bytes32"
+        }
+      ],
+      "name": "ConsentRevoked",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "scope",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getConsent",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "granted",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiresAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "grantedAt",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "scope",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiresAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "grantConsent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "scope",
+          "type": "bytes32"
+        }
+      ],
+      "name": "hasValidConsent",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "patientRegistry",
+      "outputs": [
+        {
+          "internalType": "contract IPatientRegistryForConsent",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "beneficiary",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "scope",
+          "type": "bytes32"
+        }
+      ],
+      "name": "revokeConsent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60a060405234801561000f575f80fd5b5060405161060e38038061060e83398101604081905261002e91610066565b6001600160a01b0381166100555760405163354dcf7360e21b815260040160405180910390fd5b6001600160a01b0316608052610093565b5f60208284031215610076575f80fd5b81516001600160a01b038116811461008c575f80fd5b9392505050565b6080516105566100b85f395f8181609b01528181610199015261040b01526105565ff3fe608060405234801561000f575f80fd5b5060043610610055575f3560e01c806320adbabc146100595780634712eaae146100815780635250c6e21461009657806369753fa0146100d55780637280254e1461013d575b5f80fd5b61006c6100673660046104c0565b610150565b60405190151581526020015b60405180910390f35b61009461008f3660046104f2565b610239565b005b6100bd7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610078565b6101206100e33660046104c0565b5f928352602083815260408085206001600160a01b039490941685529281528284209184525290208054600182015460029092015460ff90911692565b604080519315158452602084019290925290820152606001610078565b61009461014b3660046104c0565b61033f565b5f838152602081815260408083206001600160a01b038616845282528083208484529091528120805460ff16158061020c575060405163170da40760e21b8152600481018690527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690635c36901c90602401602060405180830381865afa1580156101e6573d5f803e3d5ffd5b505050506040513d601f19601f8201168201806040525081019061020a919061052a565b155b1561021a575f915050610232565b6001810154158061022e5750806001015442105b9150505b9392505050565b610242846103ef565b6001600160a01b03831661026957604051631559b7d760e21b815260040160405180910390fd5b80158015906102785750428111155b1561029e576040516309817f9f60e11b8152600481018290526024015b60405180910390fd5b6040805160608101825260018082526020808301858152428486019081525f8a81528084528681206001600160a01b038b168083529085528782208a83528552908790209551865460ff19169015151786559151938501939093559151600290930192909255915183815284929187917f59d5c7fce0989e19cffd3c21cf89b0194f99dc5128ebe59ebd1ee60f561b19c7910160405180910390a450505050565b610348836103ef565b5f838152602081815260408083206001600160a01b038616845282528083208484529091529020805460ff166103aa57604051630d6f0e2960e11b8152600481018590526001600160a01b038416602482015260448101839052606401610295565b805460ff1916815560405182906001600160a01b0385169086907f369f75f602385d37bb1dcdde7674289b7449bb6115c97b00992c0288af9fda1e905f90a450505050565b604051632427473b60e01b8152600481018290523360248201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690632427473b90604401602060405180830381865afa158015610458573d5f803e3d5ffd5b505050506040513d601f19601f8201168201806040525081019061047c919061052a565b6104a257604051637349b3c360e11b815260048101829052336024820152604401610295565b50565b80356001600160a01b03811681146104bb575f80fd5b919050565b5f805f606084860312156104d2575f80fd5b833592506104e2602085016104a5565b9150604084013590509250925092565b5f805f8060808587031215610505575f80fd5b84359350610515602086016104a5565b93969395505050506040820135916060013590565b5f6020828403121561053a575f80fd5b81518015158114610232575f80fdfea164736f6c6343000818000a",
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.24+commit.e11b9ed9.Linux.g++"
+  },
+  "contractName": "ConsentManager",
+  "deployedBytecode": "0x608060405234801561000f575f80fd5b5060043610610055575f3560e01c806320adbabc146100595780634712eaae146100815780635250c6e21461009657806369753fa0146100d55780637280254e1461013d575b5f80fd5b61006c6100673660046104c0565b610150565b60405190151581526020015b60405180910390f35b61009461008f3660046104f2565b610239565b005b6100bd7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610078565b6101206100e33660046104c0565b5f928352602083815260408085206001600160a01b039490941685529281528284209184525290208054600182015460029092015460ff90911692565b604080519315158452602084019290925290820152606001610078565b61009461014b3660046104c0565b61033f565b5f838152602081815260408083206001600160a01b038616845282528083208484529091528120805460ff16158061020c575060405163170da40760e21b8152600481018690527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690635c36901c90602401602060405180830381865afa1580156101e6573d5f803e3d5ffd5b505050506040513d601f19601f8201168201806040525081019061020a919061052a565b155b1561021a575f915050610232565b6001810154158061022e5750806001015442105b9150505b9392505050565b610242846103ef565b6001600160a01b03831661026957604051631559b7d760e21b815260040160405180910390fd5b80158015906102785750428111155b1561029e576040516309817f9f60e11b8152600481018290526024015b60405180910390fd5b6040805160608101825260018082526020808301858152428486019081525f8a81528084528681206001600160a01b038b168083529085528782208a83528552908790209551865460ff19169015151786559151938501939093559151600290930192909255915183815284929187917f59d5c7fce0989e19cffd3c21cf89b0194f99dc5128ebe59ebd1ee60f561b19c7910160405180910390a450505050565b610348836103ef565b5f838152602081815260408083206001600160a01b038616845282528083208484529091529020805460ff166103aa57604051630d6f0e2960e11b8152600481018590526001600160a01b038416602482015260448101839052606401610295565b805460ff1916815560405182906001600160a01b0385169086907f369f75f602385d37bb1dcdde7674289b7449bb6115c97b00992c0288af9fda1e905f90a450505050565b604051632427473b60e01b8152600481018290523360248201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690632427473b90604401602060405180830381865afa158015610458573d5f803e3d5ffd5b505050506040513d601f19601f8201168201806040525081019061047c919061052a565b6104a257604051637349b3c360e11b815260048101829052336024820152604401610295565b50565b80356001600160a01b03811681146104bb575f80fd5b919050565b5f805f606084860312156104d2575f80fd5b833592506104e2602085016104a5565b9150604084013590509250925092565b5f805f8060808587031215610505575f80fd5b84359350610515602086016104a5565b93969395505050506040820135916060013590565b5f6020828403121561053a575f80fd5b81518015158114610232575f80fdfea164736f6c6343000818000a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"patientRegistryAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"scope\",\"type\":\"bytes32\"}],\"name\":\"ConsentNotFound\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"expiresAt\",\"type\":\"uint256\"}],\"name\":\"ExpirationInPast\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidBeneficiary\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidPatientRegistry\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"NotController\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"scope\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"expiresAt\",\"type\":\"uint256\"}],\"name\":\"ConsentGranted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"scope\",\"type\":\"bytes32\"}],\"name\":\"ConsentRevoked\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"scope\",\"type\":\"bytes32\"}],\"name\":\"getConsent\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"granted\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"expiresAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"grantedAt\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"scope\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"expiresAt\",\"type\":\"uint256\"}],\"name\":\"grantConsent\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"scope\",\"type\":\"bytes32\"}],\"name\":\"hasValidConsent\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"patientRegistry\",\"outputs\":[{\"internalType\":\"contract IPatientRegistryForConsent\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"scope\",\"type\":\"bytes32\"}],\"name\":\"revokeConsent\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"grantConsent(bytes32,address,bytes32,uint256)\":{\"details\":\"expiresAt == 0 means no explicit expiration.\"}},\"title\":\"ConsentManager\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"grantConsent(bytes32,address,bytes32,uint256)\":{\"notice\":\"Grants or renews one explicit scoped permission.\"},\"revokeConsent(bytes32,address,bytes32)\":{\"notice\":\"Revokes a permission. A later grant is a new explicit action.\"}},\"notice\":\"Stores scoped permissions without storing medical content.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"ConsentManager.sol\":\"ConsentManager\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"ConsentManager.sol\":{\"keccak256\":\"0x763dd2bc7f4fa7eeadb3d98d588d8946e630167f464883048485ac36917455b6\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://e5fd615e04101d5a2f492bb1cb6f24045dc2a3e5c501294f2686b1c7eddb2b46\",\"dweb:/ipfs/QmRzYnMBBSQkUymK5H9wUkTrGQUvqVQuXL26NMAG4fT2yS\"]}},\"version\":1}",
+  "settings": {
+    "evmVersion": "shanghai",
+    "metadata": {
+      "bytecodeHash": "none"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": false
+  },
+  "sourceName": "ConsentManager.sol",
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 38,
+        "contract": "ConsentManager.sol:ConsentManager",
+        "label": "_consents",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_bytes32,t_mapping(t_address,t_mapping(t_bytes32,t_struct(Consent)26_storage)))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_address,t_mapping(t_bytes32,t_struct(Consent)26_storage))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(bytes32 => struct ConsentManager.Consent))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_bytes32,t_struct(Consent)26_storage)"
+      },
+      "t_mapping(t_bytes32,t_mapping(t_address,t_mapping(t_bytes32,t_struct(Consent)26_storage)))": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => mapping(address => mapping(bytes32 => struct ConsentManager.Consent)))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_mapping(t_bytes32,t_struct(Consent)26_storage))"
+      },
+      "t_mapping(t_bytes32,t_struct(Consent)26_storage)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => struct ConsentManager.Consent)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Consent)26_storage"
+      },
+      "t_struct(Consent)26_storage": {
+        "encoding": "inplace",
+        "label": "struct ConsentManager.Consent",
+        "members": [
+          {
+            "astId": 21,
+            "contract": "ConsentManager.sol:ConsentManager",
+            "label": "granted",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool"
+          },
+          {
+            "astId": 23,
+            "contract": "ConsentManager.sol:ConsentManager",
+            "label": "expiresAt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 25,
+            "contract": "ConsentManager.sol:ConsentManager",
+            "label": "grantedAt",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "96"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

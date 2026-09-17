@@ -1,0 +1,55 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Packaging and generated build output
+*.egg-info/
+build/
+dist/
+.eggs/
+*.whl
+
+# Runtime blockchain state and local backups
+/data/
+.backups/
+*.log
+*.pid
+
+# Local validator keys and secrets — never commit these
+**/keys/
+*.pem
+*.key
+*.p12
+*.pfx
+*.secret
+*secret_key*
+.env
+.env.*
+!.env.example
+
+# Local/generated deployment files
+nodes.json
+config/nodes/**/node.local.yaml
+config/local/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary benchmark outputs
+/tmp/
+*.tmp

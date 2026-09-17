@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>PHASE 3 — Où en sommes-nous ?</title>
+</head>
+<body style="margin:0;padding:32px;background:#f4f6f8;font-family:'Segoe UI',Arial,sans-serif;color:#1c2430;">
+
+<div style="max-width:900px;margin:0 auto;">
+
+  <h1 style="margin:0 0 4px;font-size:28px;">PHASE 3 — EVM</h1>
+  <p style="margin:0 0 28px;color:#5b6774;font-size:15px;">
+    Où nous sommes · ce qui est fait · ce qui bloque
+  </p>
+
+  <!-- ENCADRE : la confusion -->
+  <div style="background:#fff8e1;border-left:5px solid #f0ad00;padding:16px 20px;border-radius:6px;margin-bottom:28px;">
+    <div style="font-weight:700;margin-bottom:6px;">Pourquoi vous avez eu l'impression de sauts</div>
+    <div style="font-size:14px;line-height:1.6;">
+      C'est ma faute. J'ai dit « point 1 » et « point 2 » pour parler de
+      <b>deux choses différentes</b> :<br>
+      &nbsp;&nbsp;• au début = les grands chantiers<br>
+      &nbsp;&nbsp;• récemment = deux <b>défauts trouvés à l'intérieur</b> du chantier D6<br>
+      <b>On n'a jamais reculé.</b> J'arrête cette numérotation, on dit D1…D8.
+    </div>
+  </div>
+
+  <!-- LA BARRE DE PROGRESSION -->
+  <div style="margin-bottom:10px;font-weight:700;font-size:15px;">Avancement</div>
+  <div style="display:flex;height:34px;border-radius:6px;overflow:hidden;margin-bottom:6px;">
+    <div style="flex:5;background:#2e9e5b;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">D1 → D5 terminés</div>
+    <div style="flex:1.4;background:#f0ad00;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">D6</div>
+    <div style="flex:2;background:#cfd6dd;color:#6b7784;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;">D7 · D8</div>
+  </div>
+  <div style="font-size:13px;color:#5b6774;margin-bottom:30px;">
+    Nous sommes dans la partie orange : <b>D6, dernière étape</b>.
+  </div>
+
+  <!-- LES CHANTIERS -->
+  <div style="font-weight:700;font-size:15px;margin-bottom:12px;">Les 8 chantiers</div>
+
+  <div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.12);margin-bottom:30px;">
+
+    <div style="display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #eef1f4;">
+      <div style="width:34px;font-size:19px;">✅</div>
+      <div style="width:44px;font-weight:700;color:#2e9e5b;">D1</div>
+      <div style="flex:1;">Analyse de départ</div>
+      <div style="color:#8a95a1;font-size:13px;">terminé</div>
+    </div>
+
+    <div style="display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #eef1f4;">
+      <div style="width:34px;font-size:19px;">✅</div>
+      <div style="width:44px;font-weight:700;color:#2e9e5b;">D2</div>
+      <div style="flex:1;">Socle EVM (py-evm branché)</div>
+      <div style="color:#8a95a1;font-size:13px;">terminé</div>
+    </div>
+
+    <div style="display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #eef1f4;">
+      <div style="width:34px;font-size:19px;">✅</div>
+      <div style="width:44px;font-weight:700;color:#2e9e5b;">D3</div>
+      <div style="flex:1;"><code style="background:#eef1f4;padding:1px 5px;border-radius:3px;">state_root</code> ajouté au bloc</div>
+      <div style="color:#8a95a1;font-size:13px;">terminé</div>
+    </div>
+
+    <div style="display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #eef1f4;">
+      <div style="width:34px;font-size:19px;">✅</div>
+      <div style="width:44px;font-weight:700;color:#2e9e5b;">D4</div>
+      <div style="flex:1;">Exécuteur de transactions</div>
+      <div style="color:#8a95a1;font-size:13px;">terminé</div>
+    </div>
+
+    <div style="display:flex;align-items:center;padding:13px 18px;border-bottom:1px solid #eef1f4;">
+      <div style="width:34px;font-size:19px;">✅</div>
+      <div style="width:44px;font-weight:700;color:#2e9e5b;">D5</div>
+      <div style="flex:1;">Rejeu de l'état depuis le disque</div>
+      <div style="color:#8a95a1;font-size:13px;">terminé</div>
+    </div>
+
+    <!-- D6 detaille -->
+    <div style="background:#fffbf0;border-left:5px solid #f0ad00;">
+      <div style="display:flex;align-items:center;padding:13px 18px;">
+        <div style="width:29px;font-size:19px;">👉</div>
+        <div style="width:44px;font-weight:700;color:#c98600;">D6</div>
+        <div style="flex:1;font-weight:700;">Le receveur vérifie la racine</div>
+        <div style="color:#c98600;font-size:13px;font-weight:700;">EN COURS</div>
+      </div>
+
+      <div style="padding:0 18px 14px 66px;font-size:14px;">
+        <div style="padding:5px 0;">✅ étape 1 — plafond de gas</div>
+        <div style="padding:5px 0;">✅ étape 2 — calcul à blanc de la racine</div>
+        <div style="padding:5px 0;">✅ étape 3 — branchement dans le nœud</div>
+        <div style="padding:5px 0;color:#5b6774;">✅ correctif A — <i>(l'ancien « point 1 »)</i></div>
+        <div style="padding:5px 0;color:#5b6774;">✅ correctif B — <i>(l'ancien « point 2 »)</i></div>
+        <div style="padding:8px 10px;margin-top:6px;background:#ffe9e6;border-radius:5px;font-weight:700;color:#b3261e;">
+          ⬜ étape 4 — essai sur les 3 VMs &nbsp;←&nbsp; NOUS SOMMES ICI
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;padding:13px 18px;border-top:1px solid #eef1f4;border-bottom:1px solid #eef1f4;">
+      <div style="width:34px;font-size:19px;">⬜</div>
+      <div style="width:44px;font-weight:700;color:#98a3af;">D7</div>
+      <div style="flex:1;color:#6b7784;">Racine des reçus</div>
+      <div style="color:#8a95a1;font-size:13px;">écarté pour l'instant</div>
+    </div>
+
+    <div style="display:flex;align-items:center;padding:13px 18px;">
+      <div style="width:34px;font-size:19px;">⬜</div>
+      <div style="width:44px;font-weight:700;color:#98a3af;">D8</div>
+      <div style="flex:1;color:#6b7784;">Contrats de bout en bout</div>
+      <div style="color:#8a95a1;font-size:13px;">ouvre la PHASE 4</div>
+    </div>
+
+  </div>
+
+  <!-- CE QUI MARCHE -->
+  <div style="display:flex;gap:18px;margin-bottom:30px;flex-wrap:wrap;">
+
+    <div style="flex:1;min-width:260px;background:#fff;border-top:4px solid #2e9e5b;border-radius:8px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.12);">
+      <div style="font-weight:700;margin-bottom:10px;color:#2e9e5b;">✅ Ce qui marche</div>
+      <div style="font-size:14px;line-height:1.85;">
+        <b>385 tests</b> passent<br>
+        Racine falsifiée → <b>rejetée</b><br>
+        Bloc trop gourmand → <b>rejeté</b><br>
+        Bloc honnête → <b>accepté</b><br>
+        Producteur et receveur d'accord
+      </div>
+      <div style="margin-top:12px;padding:8px 10px;background:#f4f6f8;border-radius:5px;font-size:13px;color:#5b6774;">
+        Mais seulement sur <b>ma machine</b>.
+      </div>
+    </div>
+
+    <div style="flex:1;min-width:260px;background:#fff;border-top:4px solid #b3261e;border-radius:8px;padding:18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.12);">
+      <div style="font-weight:700;margin-bottom:10px;color:#b3261e;">⛔ Ce qui bloque</div>
+      <div style="font-size:14px;line-height:1.7;">
+        Une seule chose :<br>
+        <b>py-evm est-il installé sur les 3 VMs ?</b>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px;text-align:center;font-size:12px;">
+        <div style="flex:1;background:#f4f6f8;border-radius:5px;padding:8px 4px;">node1<br><b style="color:#b3261e;">?</b></div>
+        <div style="flex:1;background:#f4f6f8;border-radius:5px;padding:8px 4px;">node2<br><b style="color:#b3261e;">?</b></div>
+        <div style="flex:1;background:#f4f6f8;border-radius:5px;padding:8px 4px;">node3<br><b style="color:#b3261e;">?</b></div>
+      </div>
+      <div style="margin-top:12px;font-size:13px;color:#5b6774;">
+        Sans lui, aucun test EVM ne peut tourner sur les VMs.
+        Tout le reste est prêt et attend.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LA SUITE -->
+  <div style="font-weight:700;font-size:15px;margin-bottom:12px;">L'étape 4, découpée en 6 fois</div>
+
+  <div style="background:#fff;border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.12);margin-bottom:28px;">
+    <div style="display:flex;align-items:center;padding:9px 0;">
+      <div style="width:38px;height:38px;border-radius:50%;background:#b3261e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;">4a</div>
+      <div style="flex:1;padding-left:16px;"><b>Vérifier py-evm</b> sur les 3 VMs</div>
+      <div style="background:#ffe9e6;color:#b3261e;padding:4px 12px;border-radius:12px;font-size:12px;font-weight:700;">À FAIRE</div>
+    </div>
+    <div style="margin-left:18px;border-left:2px dashed #cfd6dd;height:12px;"></div>
+
+    <div style="display:flex;align-items:center;padding:9px 0;opacity:.55;">
+      <div style="width:38px;height:38px;border-radius:50%;background:#cfd6dd;color:#4b5560;display:flex;align-items:center;justify-content:center;font-weight:700;">4b</div>
+      <div style="flex:1;padding-left:16px;">Copier les 20 fichiers (234 Ko)</div>
+    </div>
+    <div style="margin-left:18px;border-left:2px dashed #cfd6dd;height:12px;"></div>
+
+    <div style="display:flex;align-items:center;padding:9px 0;opacity:.55;">
+      <div style="width:38px;height:38px;border-radius:50%;background:#cfd6dd;color:#4b5560;display:flex;align-items:center;justify-content:center;font-weight:700;">4c</div>
+      <div style="flex:1;padding-left:16px;">Contrôler que rien n'est abîmé</div>
+    </div>
+    <div style="margin-left:18px;border-left:2px dashed #cfd6dd;height:12px;"></div>
+
+    <div style="display:flex;align-items:center;padding:9px 0;opacity:.55;">
+      <div style="width:38px;height:38px;border-radius:50%;background:#cfd6dd;color:#4b5560;display:flex;align-items:center;justify-content:center;font-weight:700;">4d</div>
+      <div style="flex:1;padding-left:16px;">Lancer les tests sur chaque VM</div>
+    </div>
+    <div style="margin-left:18px;border-left:2px dashed #cfd6dd;height:12px;"></div>
+
+    <div style="display:flex;align-items:center;padding:9px 0;opacity:.55;">
+      <div style="width:38px;height:38px;border-radius:50%;background:#cfd6dd;color:#4b5560;display:flex;align-items:center;justify-content:center;font-weight:700;">4e</div>
+      <div style="flex:1;padding-left:16px;">Lancer les 3 nœuds ensemble</div>
+    </div>
+    <div style="margin-left:18px;border-left:2px dashed #cfd6dd;height:12px;"></div>
+
+    <div style="display:flex;align-items:center;padding:9px 0;opacity:.55;">
+      <div style="width:38px;height:38px;border-radius:50%;background:#cfd6dd;color:#4b5560;display:flex;align-items:center;justify-content:center;font-weight:700;">4f</div>
+      <div style="flex:1;padding-left:16px;">Vérifier qu'ils sont tous d'accord</div>
+    </div>
+
+    <div style="margin-top:16px;padding:12px;background:#eaf7ef;border-radius:6px;text-align:center;font-weight:700;color:#2e9e5b;">
+      → D6 terminé, on passe à D8
+    </div>
+  </div>
+
+  <!-- LA COMMANDE -->
+  <div style="background:#1c2430;color:#e8edf2;border-radius:8px;padding:20px 22px;">
+    <div style="font-weight:700;margin-bottom:6px;">La seule commande à taper maintenant</div>
+    <div style="font-size:13px;color:#9fb0c0;margin-bottom:12px;">Sur chacune des 3 VMs :</div>
+    <pre style="margin:0;background:#0f151c;padding:14px 16px;border-radius:6px;overflow-x:auto;font-size:13px;line-height:1.6;"><code>cd ~/blockchain-experiment-distributed
+python3 -c "import eth, rlp; print('py-evm OK', eth.__version__)"</code></pre>
+    <div style="margin-top:14px;font-size:13px;line-height:1.8;">
+      <b>py-evm OK 0.12.1-beta.1</b> → parfait, on passe à 4b<br>
+      <b>ModuleNotFoundError</b> → py-evm manque, dites-moi si la VM a Internet<br>
+      <b>une autre version</b> → à traiter, ne pas continuer
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

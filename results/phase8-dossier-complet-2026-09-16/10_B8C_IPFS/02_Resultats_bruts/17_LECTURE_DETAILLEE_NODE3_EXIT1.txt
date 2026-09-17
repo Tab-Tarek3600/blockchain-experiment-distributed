@@ -1,0 +1,17 @@
+node=node3
+started: 2026-09-16T18:19:56+00:00
+liboqs-python faulthandler is disabled
+node       : node3
+height     : 242
+state_root : 56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+contract   : 0x368108079fe315817cde85b3ab02bd70d7024c0f
+view caller: 0x140db41bc9e14639e54dea0135eeca843b75634f
+Traceback (most recent call last):
+  File "/home/ismail/blockchain-experiment-distributed/scripts/testing/read_phase7_records.py", line 249, in <module>
+    raise SystemExit(main())
+                     ^^^^^^^^^^
+  File "/home/ismail/blockchain-experiment-distributed/scripts/testing/read_phase7_records.py", line 179, in main
+    raise RuntimeError(
+RuntimeError: transaction 4403be9bd7be8ed31e82c04703ac70affcbc11b48e934a8872b2d34a579fb2c1 absente du bloc 5
+finished: 2026-09-16T18:19:56+00:00
+EXIT=1

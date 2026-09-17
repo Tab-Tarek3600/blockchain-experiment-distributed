@@ -1,0 +1,35 @@
+B6 qdisc cleanup and post-run verification
+Run ID: b6-delay50ms-20260915
+Date of verification: 2026-09-15
+Source: machine de développement
+
+No validator secret, password, or private configuration is included in this archive.
+
+[node1 — 192.168.168.101]
+Command:
+ssh -tt ismail@192.168.168.101 'IFACE=$(ip route get 192.168.168.102 | sed -n "s/.* dev \([^ ]*\).*/\1/p"); printf "IFACE=%s\n" "$IFACE"; sudo tc qdisc del dev "$IFACE" root; echo "qdisc_after:"; tc qdisc show dev "$IFACE"'
+Output summary:
+IFACE=ens33
+qdisc_after:
+qdisc fq_codel 0: root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64
+
+[node2 — 192.168.168.102]
+Command:
+ssh -tt ismail@192.168.168.102 'IFACE=$(ip route get 192.168.168.101 | sed -n "s/.* dev \([^ ]*\).*/\1/p"); printf "IFACE=%s\n" "$IFACE"; sudo tc qdisc del dev "$IFACE" root; echo "qdisc_after:"; tc qdisc show dev "$IFACE"'
+Output summary:
+IFACE=ens33
+qdisc_after:
+qdisc fq_codel 0: root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64
+
+[node3 — 192.168.168.103]
+Command:
+ssh -tt ismail@192.168.168.103 'IFACE=$(ip route get 192.168.168.101 | sed -n "s/.* dev \([^ ]*\).*/\1/p"); printf "IFACE=%s\n" "$IFACE"; sudo tc qdisc del dev "$IFACE" root; echo "qdisc_after:"; tc qdisc show dev "$IFACE"'
+Output summary:
+IFACE=ens33
+qdisc_after:
+qdisc fq_codel 0: root refcnt 2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64
+
+Verification result:
+PASS — no output contains qdisc netem on node1, node2, or node3.
+The active root qdisc after cleanup is fq_codel on ens33 for all three VMs.
+According to the user, the three validator nodes were stopped after the test and cleanup.

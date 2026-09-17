@@ -1,0 +1,80 @@
+{
+  "benchmark": "phase8-b2-baseline",
+  "benchmark_scope": "three-node blockchain baseline; client sends only to node1; not a direct-to-three-nodes test",
+  "run_id": "b2-pilot-r02-2026-09-13",
+  "node1_config": "config/nodes/node1/node.yaml",
+  "node1_target": "192.168.168.101:9001",
+  "hostname": "node1",
+  "collected_at_utc": "2026-09-14T14:10:15.997217+00:00",
+  "parameters": {
+    "offered_rate_requested_tx_s": 0.2,
+    "duration_requested_s": 30.0,
+    "payload_size_bytes": 0,
+    "warmup": "none in pilot generator; use a separate pre-run if required",
+    "timer": "time.perf_counter_ns for local submission schedule",
+    "transactions_pre_signed_before_t2": true,
+    "synthetic_payload_only": true,
+    "node1_only_ingress": true
+  },
+  "timing": {
+    "measurement_start_monotonic_ns": 745285085007,
+    "measurement_end_monotonic_ns": 775285199644,
+    "measurement_start_wall_ns": 1789394955986217693,
+    "measurement_end_wall_ns": 1789394985986332995,
+    "drain_start_wall_ns": 1789394985986472116,
+    "drain_end_wall_ns": 1789395015997078758,
+    "submitted_duration_s": 30.000114637
+  },
+  "counts": {
+    "prebuilt": 6,
+    "submitted": 6,
+    "observed_persisted_on_node1": 0,
+    "local_observation_complete": false
+  },
+  "transactions": [
+    {
+      "sequence": 0,
+      "nonce": 1789394955970,
+      "tx_id": "2928005ee745eeb1077f41a912c65235af597000c7fb51af0e025bcd514f004a",
+      "t_submit_monotonic_ns": 745285094467,
+      "t_submit_wall_ns": 1789394955986226236
+    },
+    {
+      "sequence": 1,
+      "nonce": 1789394955971,
+      "tx_id": "c819c100b1d5257030b7bc0f0f4abebba522ad8c349bbff5dd13e816f9f87293",
+      "t_submit_monotonic_ns": 750285272213,
+      "t_submit_wall_ns": 1789394960986406285
+    },
+    {
+      "sequence": 2,
+      "nonce": 1789394955972,
+      "tx_id": "1a4700fb605c7847abf769475b5d4b571156a676f135ac73aed841c293a63492",
+      "t_submit_monotonic_ns": 755285260745,
+      "t_submit_wall_ns": 1789394965986394577
+    },
+    {
+      "sequence": 3,
+      "nonce": 1789394955973,
+      "tx_id": "fe28ee3164350dffbd0bcb4ee71777ef574a71931621cfa2e8133b06cc9013f7",
+      "t_submit_monotonic_ns": 760285237544,
+      "t_submit_wall_ns": 1789394970986371372
+    },
+    {
+      "sequence": 4,
+      "nonce": 1789394955974,
+      "tx_id": "15a8e87cafc050c03105ab392b9196f97420ae38b894daa2b9d3272ecde68a1f",
+      "t_submit_monotonic_ns": 765285296113,
+      "t_submit_wall_ns": 1789394975986429395
+    },
+    {
+      "sequence": 5,
+      "nonce": 1789394955975,
+      "tx_id": "cc94ee44ba6996122b42f7e68ee9bbe02e84056c1c0732eba42faeb06b93abf2",
+      "t_submit_monotonic_ns": 770285187244,
+      "t_submit_wall_ns": 1789394980986320720
+    }
+  ],
+  "node1_local_observations": {},
+  "secrets_policy": "validator secret key was read locally and is not serialized"
+}

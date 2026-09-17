@@ -1,0 +1,227 @@
+{
+  "benchmark": "phase8-b3-client-concurrency-comparison",
+  "date": "2026-09-15",
+  "scenario": {
+    "logical_clients": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "total_offered_rate_tx_s": 1.0,
+    "duration_s": 60.0,
+    "payload_size_bytes": 0,
+    "ingress": "node1 only",
+    "p2p_path": "node1 -> peers",
+    "synthetic_controlled_payload_only": true,
+    "note": "logical client streams on node1, not distinct client machines"
+  },
+  "runs": [
+    {
+      "run_id": "b3-client-01-1p0-20260915",
+      "logical_clients": 1,
+      "offered_rate_tx_s": 1.0,
+      "duration_s": 60.0,
+      "submitted": 60,
+      "included_on_all_three": 60,
+      "success_rate_all_three": 1.0,
+      "committed_tps_all_three": 1.0,
+      "rejected_node1": 0,
+      "duplicates": {
+        "node1": 0,
+        "node2": 0,
+        "node3": 0
+      },
+      "tip_height": 72,
+      "all_same_to_min_tip": true,
+      "final_block_hash": "b6609aea9c96027837d2e1026fd3b596bc8c0590ba1b2f48a7f1daf0c9784c54",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "node1_submission_to_commit_ms": {
+        "min": 108.552992,
+        "p50": 296.179304,
+        "p95": 391.74299,
+        "max": 440.34832
+      },
+      "local_accept_to_commit_ms": {
+        "node1": {
+          "min": 54.720932,
+          "p50": 263.770997,
+          "p95": 355.386963,
+          "max": 371.459912
+        },
+        "node2": {
+          "min": 15.475905,
+          "p50": 177.247351,
+          "p95": 285.740705,
+          "max": 358.861792
+        },
+        "node3": {
+          "min": 84.644087,
+          "p50": 166.688566,
+          "p95": 292.149608,
+          "max": 331.406555
+        }
+      },
+      "inter_vm_convergence_latency": "not_measured",
+      "source_summary": "results/raw_data/b3-client-01-1p0-20260915-summary.json"
+    },
+    {
+      "run_id": "b3-client-02-1p0-20260915",
+      "logical_clients": 2,
+      "offered_rate_tx_s": 1.0,
+      "duration_s": 60.0,
+      "submitted": 60,
+      "included_on_all_three": 60,
+      "success_rate_all_three": 1.0,
+      "committed_tps_all_three": 1.0,
+      "rejected_node1": 0,
+      "duplicates": {
+        "node1": 0,
+        "node2": 0,
+        "node3": 0
+      },
+      "tip_height": 117,
+      "all_same_to_min_tip": true,
+      "final_block_hash": "a6cbabadfba61918b29ebb851f9ac99413a3b639ff6c463407841b15415dcc60",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "node1_submission_to_commit_ms": {
+        "min": 116.2443,
+        "p50": 364.074908,
+        "p95": 763.113694,
+        "max": 922.289337
+      },
+      "local_accept_to_commit_ms": {
+        "node1": {
+          "min": 29.869981,
+          "p50": 281.656064,
+          "p95": 639.93737,
+          "max": 702.056927
+        },
+        "node2": {
+          "min": 38.749065,
+          "p50": 203.661566,
+          "p95": 433.830352,
+          "max": 558.993574
+        },
+        "node3": {
+          "min": 25.75748,
+          "p50": 212.452316,
+          "p95": 383.021923,
+          "max": 494.37004
+        }
+      },
+      "inter_vm_convergence_latency": "not_measured",
+      "source_summary": "results/raw_data/b3-client-02-1p0-20260915-summary.json"
+    },
+    {
+      "run_id": "b3-client-04-1p0-20260915",
+      "logical_clients": 4,
+      "offered_rate_tx_s": 1.0,
+      "duration_s": 60.0,
+      "submitted": 60,
+      "included_on_all_three": 60,
+      "success_rate_all_three": 1.0,
+      "committed_tps_all_three": 1.0,
+      "rejected_node1": 0,
+      "duplicates": {
+        "node1": 0,
+        "node2": 0,
+        "node3": 0
+      },
+      "tip_height": 150,
+      "all_same_to_min_tip": true,
+      "final_block_hash": "67fc796e393681c69647daf79ef0df81179caa3ee3c7dffab15ec4caf5d548a4",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "node1_submission_to_commit_ms": {
+        "min": 324.760232,
+        "p50": 729.073828,
+        "p95": 1206.474059,
+        "max": 1562.636365
+      },
+      "local_accept_to_commit_ms": {
+        "node1": {
+          "min": 119.841551,
+          "p50": 495.749112,
+          "p95": 833.249104,
+          "max": 869.672979
+        },
+        "node2": {
+          "min": 36.087469,
+          "p50": 328.384714,
+          "p95": 635.795435,
+          "max": 710.928058
+        },
+        "node3": {
+          "min": 39.367394,
+          "p50": 306.427556,
+          "p95": 544.720132,
+          "max": 674.973423
+        }
+      },
+      "inter_vm_convergence_latency": "not_measured",
+      "source_summary": "results/raw_data/b3-client-04-1p0-20260915-summary.json"
+    },
+    {
+      "run_id": "b3-client-08-1p0-20260915",
+      "logical_clients": 8,
+      "offered_rate_tx_s": 1.0,
+      "duration_s": 60.0,
+      "submitted": 60,
+      "included_on_all_three": 60,
+      "success_rate_all_three": 1.0,
+      "committed_tps_all_three": 1.0,
+      "rejected_node1": 0,
+      "duplicates": {
+        "node1": 0,
+        "node2": 0,
+        "node3": 0
+      },
+      "tip_height": 182,
+      "all_same_to_min_tip": true,
+      "final_block_hash": "87e55a3eea36ef2b36123a09cabef945ff9a3d3b78b9ac5391cf65c8c722d699",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "node1_submission_to_commit_ms": {
+        "min": 460.552635,
+        "p50": 1028.452066,
+        "p95": 1941.100191,
+        "max": 2008.367877
+      },
+      "local_accept_to_commit_ms": {
+        "node1": {
+          "min": 214.229778,
+          "p50": 674.892652,
+          "p95": 1104.387111,
+          "max": 1459.489614
+        },
+        "node2": {
+          "min": 106.020467,
+          "p50": 374.211128,
+          "p95": 851.518873,
+          "max": 1422.388976
+        },
+        "node3": {
+          "min": 34.421017,
+          "p50": 360.826887,
+          "p95": 1002.359266,
+          "max": 1157.568455
+        }
+      },
+      "inter_vm_convergence_latency": "not_measured",
+      "source_summary": "results/raw_data/b3-client-08-1p0-20260915-summary.json"
+    }
+  ],
+  "interpretation": {
+    "all_runs_successful": true,
+    "all_runs_no_duplicates": true,
+    "throughput_stable_at_offered_rate": true,
+    "latency_increases_with_concurrency_observed": true,
+    "numeric_inter_vm_convergence": "not_measured",
+    "resource_metrics": "not_collected_in_this_series"
+  },
+  "methodological_limits": [
+    "Les timestamps acceptation -> commit node2/node3 sont locaux à chaque VM et ne sont pas des latences end-to-end inter-VM.",
+    "La série mesure une concurrence de flux logiques exécutés sur node1, pas une scalabilité avec plusieurs machines clientes.",
+    "Les runs ont été exécutés séquentiellement sur la chaîne persistante ; aucun reset destructif des données n’est déduit.",
+    "La hausse de latence est observée sur cette série exploratoire, sans répétitions statistiques indépendantes."
+  ]
+}

@@ -1,0 +1,42 @@
+B8-C read-only blockchain verification
+node=node1
+command: python3 scripts/testing/read_phase7_records.py --node node1
+started: 2026-09-16T17:57:36+00:00
+liboqs-python faulthandler is disabled
+liboqs not found, installing it in /home/user/_oqs
+Installing in 5 seconds...
+Installing in 4 seconds...
+Installing in 3 seconds...
+Installing in 2 seconds...
+Installing in 1 seconds...
+Cloning into 'liboqs'...
+Note: switching to '5a1a854b0dc9f2141bdc771c555ee60c37950183'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+/bin/sh: 1: cmake: not found
+Error installing liboqs.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/oqs/oqs.py", line 272, in _load_liboqs
+    liboqs = _load_shared_obj(
+        name="oqs",
+        additional_searching_paths=[oqs_lib_dir, oqs_lib64_dir],
+    )
+  File "/usr/local/lib/python3.13/site-packages/oqs/oqs.py", line 161, in _load_shared_obj
+    raise RuntimeError(msg)
+RuntimeError: No oqs shared libraries found
+finished: 2026-09-16T17:57:44+00:00
+EXIT=1

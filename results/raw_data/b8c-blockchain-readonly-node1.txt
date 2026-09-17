@@ -1,0 +1,6 @@
+liboqs-python faulthandler is disabled
+node       : node1
+height     : 242
+state_root : 56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+contract   : 0x368108079fe315817cde85b3ab02bd70d7024c0f
+view caller: 0xf0aee1a1c916d0584a2805de88f2544099cc3e26

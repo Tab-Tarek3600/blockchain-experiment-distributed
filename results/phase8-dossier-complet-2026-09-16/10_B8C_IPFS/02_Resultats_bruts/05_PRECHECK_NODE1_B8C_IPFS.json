@@ -1,0 +1,60 @@
+{
+  "api_loopback_used": true,
+  "api_ok": true,
+  "api_url": "http://127.0.0.1:5001/api/v0",
+  "kubo": {
+    "id": {
+      "Addresses": [
+        "/p2p/12D3KooWPgLBkD7P5coWZNBceoGcBtZVBwfVoESV5BK3vLTj59rU"
+      ],
+      "AgentVersion": "kubo/0.43.0",
+      "ID": "12D3KooWPgLBkD7P5coWZNBceoGcBtZVBwfVoESV5BK3vLTj59rU",
+      "Protocols": [
+        "/ipfs/bitswap",
+        "/ipfs/bitswap/1.0.0",
+        "/ipfs/bitswap/1.1.0",
+        "/ipfs/bitswap/1.2.0",
+        "/ipfs/id/1.0.0",
+        "/ipfs/id/push/1.0.0",
+        "/ipfs/ping/1.0.0",
+        "/libp2p/autonat/1.0.0",
+        "/libp2p/autonat/2/dial-back",
+        "/libp2p/autonat/2/dial-request",
+        "/libp2p/circuit/relay/0.2.0/stop",
+        "/x/"
+      ],
+      "PublicKey": "CAESIM30uoYzrt0v7uXIprpz5lyjUyrtPaTU8wzbzeQJHdUV"
+    },
+    "version": {
+      "Commit": "e9914bb47",
+      "Golang": "go1.26.5",
+      "Repo": "18",
+      "System": "amd64/linux",
+      "Version": "0.43.0"
+    }
+  },
+  "listeners": "LISTEN 0      4096         0.0.0.0:4001      0.0.0.0:*   \nLISTEN 0      4096       127.0.0.1:5001      0.0.0.0:*",
+  "node": "node1",
+  "resources": {
+    "disk_ipfs": "Filesystem                         Size  Used Avail Use% Mounted on\n/dev/mapper/ubuntu--vg-ubuntu--lv   14G  6,4G  6,6G  50% /",
+    "free_h": "total        used        free      shared  buff/cache   available\nMem:           1,6Gi       545Mi       337Mi       1,4Mi       883Mi       1,0Gi\nSwap:          2,0Gi       4,0Ki       2,0Gi",
+    "hostname": "node1",
+    "kubo_pids": [
+      {
+        "Threads": "7",
+        "VmRSS": "67448 kB",
+        "VmSize": "1788168 kB",
+        "nonvoluntary_ctxt_switches": "260",
+        "pid": 1093,
+        "voluntary_ctxt_switches": "36"
+      }
+    ],
+    "memory_events": {
+      "unavailable": "cgroup memory events not readable"
+    },
+    "oom_errors_last_24h": "",
+    "timestamp": "2026-09-16T17:30:18.255304+00:00"
+  },
+  "schema_version": "b8c-precheck-v1",
+  "timestamp": "2026-09-16T17:30:18.243550+00:00"
+}

@@ -1,0 +1,2336 @@
+{
+  "benchmark": "phase8-b3-client-concurrency",
+  "benchmark_scope": "logical concurrent client streams; every stream sends only to node1; node2 and node3 receive transactions through normal P2P relay",
+  "run_id": "b3-rate-3p0-20260914",
+  "node1_config": "config/nodes/node1/node.yaml",
+  "node1_target": "192.168.168.101:9001",
+  "hostname": "node1",
+  "collected_at_utc": "2026-09-14T20:11:05.476135+00:00",
+  "parameters": {
+    "offered_rate_requested_tx_s": 3.0,
+    "duration_requested_s": 60.0,
+    "payload_size_bytes": 0,
+    "logical_clients": 1,
+    "transactions_pre_signed_before_t2": true,
+    "synthetic_payload_only": true,
+    "node1_only_ingress": true,
+    "nonce_ranges_disjoint_by_client": true
+  },
+  "timing": {
+    "measurement_start_monotonic_ns": 20283012111297,
+    "measurement_end_monotonic_ns": 20342679456337,
+    "measurement_start_wall_ns": 1789416305788752071,
+    "measurement_end_wall_ns": 1789416365456097017,
+    "drain_start_wall_ns": 1789416365456348496,
+    "drain_end_wall_ns": 1789416665476012020,
+    "submitted_duration_s": 60.0
+  },
+  "counts": {
+    "prebuilt": 180,
+    "submitted": 180,
+    "observed_persisted_on_node1": 121,
+    "local_observation_complete": false
+  },
+  "client_allocation": {
+    "b3-client-01": 180
+  },
+  "transactions": [
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 0,
+      "nonce": 1789416305763,
+      "tx_id": "49bad111dbc71bf17bb0702a10224474307aef2fef43d5d11dee2a851a36598b",
+      "t_submit_monotonic_ns": 20283024654660,
+      "t_submit_wall_ns": 1789416305801295097
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 1,
+      "nonce": 1789416305764,
+      "tx_id": "abc407d2b9140901abbd057ba587e3365f1a9ad0a9e57015e88b17bc165cddf7",
+      "t_submit_monotonic_ns": 20283346076219,
+      "t_submit_wall_ns": 1789416306122717881
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 2,
+      "nonce": 1789416305765,
+      "tx_id": "ab3b6c9dbed3d627c9fe8bad415eefbcc00885db098e6ac3ac9411d300e57d1b",
+      "t_submit_monotonic_ns": 20283678912176,
+      "t_submit_wall_ns": 1789416306455554857
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 3,
+      "nonce": 1789416305766,
+      "tx_id": "d515a4a5525fca969e235ca6233b1be8d7f80933c117906fd2d496de0a740916",
+      "t_submit_monotonic_ns": 20284012291975,
+      "t_submit_wall_ns": 1789416306788933709
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 4,
+      "nonce": 1789416305767,
+      "tx_id": "eec9bb27bc1f0a2f5b0047581f7e62d94d10d02d821f8a767f80f2d29677ed3c",
+      "t_submit_monotonic_ns": 20284346055341,
+      "t_submit_wall_ns": 1789416307122696448
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 5,
+      "nonce": 1789416305768,
+      "tx_id": "9ac231ed29e4798432b4599a3511e64466400910d33e9453ae15d41618487043",
+      "t_submit_monotonic_ns": 20284678948316,
+      "t_submit_wall_ns": 1789416307455590974
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 6,
+      "nonce": 1789416305769,
+      "tx_id": "786ad10a7e43acdb775a6849437777771e044cf363bbaf77d03f376056bb3fa3",
+      "t_submit_monotonic_ns": 20285012330169,
+      "t_submit_wall_ns": 1789416307788972244
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 7,
+      "nonce": 1789416305770,
+      "tx_id": "a7311a86a0ccd802b5288bf7985732c0ae314eb3262cac68a007fb449ae95b53",
+      "t_submit_monotonic_ns": 20285345530746,
+      "t_submit_wall_ns": 1789416308122171976
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 8,
+      "nonce": 1789416305771,
+      "tx_id": "065c461ef3470282e831cdbadaae0afcfd83a8d4a95e1a8c9b34d81e1ce42a06",
+      "t_submit_monotonic_ns": 20285678954240,
+      "t_submit_wall_ns": 1789416308455596356
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 9,
+      "nonce": 1789416305772,
+      "tx_id": "3f9f09918ecc8c6c5fc0d4996d84fd4ec73d566eaeddfd32edeb07351f3b87d1",
+      "t_submit_monotonic_ns": 20286012339511,
+      "t_submit_wall_ns": 1789416308788982386
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 10,
+      "nonce": 1789416305773,
+      "tx_id": "4b555abeb5f5d4bb035b890d5c69a6d26bda0f3709cb89ce0cd74cae7d094163",
+      "t_submit_monotonic_ns": 20286346055276,
+      "t_submit_wall_ns": 1789416309122696823
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 11,
+      "nonce": 1789416305774,
+      "tx_id": "3e86c64f55c90194a32d1b06fbdc4505bc3215dd0ced1a1586fca112e6287773",
+      "t_submit_monotonic_ns": 20286679041063,
+      "t_submit_wall_ns": 1789416309455685677
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 12,
+      "nonce": 1789416305775,
+      "tx_id": "84dc47f2a78685ed20c1279114d12b0a15296fae41b2c99ea2c8f3545b73cee3",
+      "t_submit_monotonic_ns": 20287012346513,
+      "t_submit_wall_ns": 1789416309788991087
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 13,
+      "nonce": 1789416305776,
+      "tx_id": "941b09b85bc42f50f696e426b21cb940f55cedd5ee83f11e049125ef532e9b46",
+      "t_submit_monotonic_ns": 20287345631199,
+      "t_submit_wall_ns": 1789416310122272993
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 14,
+      "nonce": 1789416305777,
+      "tx_id": "088d64f167159708d420be6df6a0060215b24dab4d962acc9c3bdcbc2835a581",
+      "t_submit_monotonic_ns": 20287678946673,
+      "t_submit_wall_ns": 1789416310455588591
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 15,
+      "nonce": 1789416305778,
+      "tx_id": "b2a2eea7ed808555bd1956f6d58920fa56866d60d9021108031a22b8c65c8e23",
+      "t_submit_monotonic_ns": 20288012233761,
+      "t_submit_wall_ns": 1789416310788875437
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 16,
+      "nonce": 1789416305779,
+      "tx_id": "3e31379018bee350db45bebfb3c968c3bb8fb1f1edd519c80b44622e5199dc0f",
+      "t_submit_monotonic_ns": 20288345624718,
+      "t_submit_wall_ns": 1789416311122267353
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 17,
+      "nonce": 1789416305780,
+      "tx_id": "24447d6100750f3a391398f9bae0d304804918df42281de3325932d1be392128",
+      "t_submit_monotonic_ns": 20288679035999,
+      "t_submit_wall_ns": 1789416311455677255
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 18,
+      "nonce": 1789416305781,
+      "tx_id": "9531b9a4a0fa91f2cda784b3664bc86e63651b314046be699913bbbee4acff54",
+      "t_submit_monotonic_ns": 20289013030937,
+      "t_submit_wall_ns": 1789416311789672227
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 19,
+      "nonce": 1789416305782,
+      "tx_id": "29e9b5d50fe206b800c59d34fc84c4a06178fd5789c9af04da0d81747296a47d",
+      "t_submit_monotonic_ns": 20289345528159,
+      "t_submit_wall_ns": 1789416312122169649
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 20,
+      "nonce": 1789416305783,
+      "tx_id": "8573432f36fcfc65d971cf345dbf95e481debec6863f8f012439b885b3742784",
+      "t_submit_monotonic_ns": 20289678854262,
+      "t_submit_wall_ns": 1789416312455495364
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 21,
+      "nonce": 1789416305784,
+      "tx_id": "d1035bbaef3141e9c14a6d1803c68f7ec74c1020984c7d9887742ff6013e389d",
+      "t_submit_monotonic_ns": 20290012326910,
+      "t_submit_wall_ns": 1789416312788968818
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 22,
+      "nonce": 1789416305785,
+      "tx_id": "657f8a4b07a515d1210c68b6c34c6fcd748a5a4664a2ee435829e197acf2f586",
+      "t_submit_monotonic_ns": 20290346049112,
+      "t_submit_wall_ns": 1789416313122691102
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 23,
+      "nonce": 1789416305786,
+      "tx_id": "d7ae92642608d8da09be982e32c605bf1ad817eef2b23043cffe49e3ea673dbf",
+      "t_submit_monotonic_ns": 20290678858993,
+      "t_submit_wall_ns": 1789416313455500750
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 24,
+      "nonce": 1789416305787,
+      "tx_id": "d192e827f42b8aaf04667764c0824ee53cdfe289200cea5998899c800a7b7251",
+      "t_submit_monotonic_ns": 20291013043692,
+      "t_submit_wall_ns": 1789416313789685131
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 25,
+      "nonce": 1789416305788,
+      "tx_id": "5389c35f772207c2937b6d7442e946aed7272592e9e49f62ba5cd1929eb210be",
+      "t_submit_monotonic_ns": 20291345523898,
+      "t_submit_wall_ns": 1789416314122164749
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 26,
+      "nonce": 1789416305789,
+      "tx_id": "58707f05fdfea395dfeeaa541b41975db5b2b30fac35dbcab4d2595147cc0479",
+      "t_submit_monotonic_ns": 20291678879139,
+      "t_submit_wall_ns": 1789416314455520543
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 27,
+      "nonce": 1789416305790,
+      "tx_id": "4eff5769ad1a99c7a20d867d7dbaa83ec4cd05e9f9dad590cbebbe6897ffa6ce",
+      "t_submit_monotonic_ns": 20292013060514,
+      "t_submit_wall_ns": 1789416314789702221
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 28,
+      "nonce": 1789416305791,
+      "tx_id": "2ba32e8e3943cd20b91ee801640398672a2873cfa929a1d62cd12538a3277230",
+      "t_submit_monotonic_ns": 20292345639733,
+      "t_submit_wall_ns": 1789416315122282068
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 29,
+      "nonce": 1789416305792,
+      "tx_id": "52d940534e0113c942d4ddaac3a219ed06b43ef5771f2d2af6ed31b9e96ddb23",
+      "t_submit_monotonic_ns": 20292678961453,
+      "t_submit_wall_ns": 1789416315455603646
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 30,
+      "nonce": 1789416305793,
+      "tx_id": "b8a49e159ecf76ef62494ad158d17723f495a4951636a12c6efdc8a336d1bfcf",
+      "t_submit_monotonic_ns": 20293012337577,
+      "t_submit_wall_ns": 1789416315788979648
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 31,
+      "nonce": 1789416305794,
+      "tx_id": "b9bb9fd77e809973f20b9e5320413c914d96c2e8a181bfa6092e6563943e9e51",
+      "t_submit_monotonic_ns": 20293346276196,
+      "t_submit_wall_ns": 1789416316122922418
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 32,
+      "nonce": 1789416305795,
+      "tx_id": "26cc1384363ab289e6dbc185137315ce7ed440b7bf0e6379ce16ab96cc845557",
+      "t_submit_monotonic_ns": 20293678965373,
+      "t_submit_wall_ns": 1789416316455608035
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 33,
+      "nonce": 1789416305796,
+      "tx_id": "c33cf489444ecda2a48b77d3ca608e45bed594e3ee777fc8695c23c1c240bcf5",
+      "t_submit_monotonic_ns": 20294012273368,
+      "t_submit_wall_ns": 1789416316788915455
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 34,
+      "nonce": 1789416305797,
+      "tx_id": "c616b21ca78d1ab7b90b4187019c2b3cc8e8e9fe44cad79433f96aafb6311d2f",
+      "t_submit_monotonic_ns": 20294345639139,
+      "t_submit_wall_ns": 1789416317122281548
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 35,
+      "nonce": 1789416305798,
+      "tx_id": "60a9654364d541b1ac1cc2b0999ace60fd61a684ab9c216ba5d4728648fece5b",
+      "t_submit_monotonic_ns": 20294678915013,
+      "t_submit_wall_ns": 1789416317455557634
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 36,
+      "nonce": 1789416305799,
+      "tx_id": "8e45ff932de7c0048389f7b01e88663de4fe2fe17b0e1e4003e5b1be08571d58",
+      "t_submit_monotonic_ns": 20295012298284,
+      "t_submit_wall_ns": 1789416317788940745
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 37,
+      "nonce": 1789416305800,
+      "tx_id": "ab08b8ba19b27b586571653ccd45384cb6c8cc54686e1d7dd3a5cf62d42c4430",
+      "t_submit_monotonic_ns": 20295345604830,
+      "t_submit_wall_ns": 1789416318122247139
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 38,
+      "nonce": 1789416305801,
+      "tx_id": "ac9ce8e019068965f61fbf7aa55ce1beec8bd465f4f9df6c0a2b00e2976427f5",
+      "t_submit_monotonic_ns": 20295678887572,
+      "t_submit_wall_ns": 1789416318455529269
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 39,
+      "nonce": 1789416305802,
+      "tx_id": "3f798ad3b6d9d98ed2d521234d2d04fe578764da3602c093592abe01b1a88d2a",
+      "t_submit_monotonic_ns": 20296012245875,
+      "t_submit_wall_ns": 1789416318788888441
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 40,
+      "nonce": 1789416305803,
+      "tx_id": "a1d9c0652367a07d6a708c4f8c02813d74db58514e39138f330d968c218a1370",
+      "t_submit_monotonic_ns": 20296345637428,
+      "t_submit_wall_ns": 1789416319122279265
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 41,
+      "nonce": 1789416305804,
+      "tx_id": "385fd3cf922e42bdf1967e6676c0c05b238d5d21e181d288c3dc4ffcc982880f",
+      "t_submit_monotonic_ns": 20296678872809,
+      "t_submit_wall_ns": 1789416319455514556
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 42,
+      "nonce": 1789416305805,
+      "tx_id": "1cc0a02045884a8c5c3088318eb5815c4022c1c191e341e978d312297b6d7ab0",
+      "t_submit_monotonic_ns": 20297013043075,
+      "t_submit_wall_ns": 1789416319789684590
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 43,
+      "nonce": 1789416305806,
+      "tx_id": "718b7c61b9d6e62b5cd911cc371661f113b9009864598ae11848d3152a942ce9",
+      "t_submit_monotonic_ns": 20297345543321,
+      "t_submit_wall_ns": 1789416320122185124
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 44,
+      "nonce": 1789416305807,
+      "tx_id": "78d48d0f1362efb948a0e34844d3b1e8c23a74bc3e17901cc946485b85d3a862",
+      "t_submit_monotonic_ns": 20297678862602,
+      "t_submit_wall_ns": 1789416320455504501
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 45,
+      "nonce": 1789416305808,
+      "tx_id": "4e16a300ea552a565be3192702e0f8f0f7230de922f7d2426092772cc1accdd0",
+      "t_submit_monotonic_ns": 20298012187195,
+      "t_submit_wall_ns": 1789416320788828754
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 46,
+      "nonce": 1789416305809,
+      "tx_id": "599767d0bc2b71b1d201cd6212038ebfb74e0808d2292848fbd847b373611b07",
+      "t_submit_monotonic_ns": 20298346047439,
+      "t_submit_wall_ns": 1789416321122689233
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 47,
+      "nonce": 1789416305810,
+      "tx_id": "b865de4d2291817482bc7fc5f2590c188a3c429e0af5efafa6df5afdfb4beb20",
+      "t_submit_monotonic_ns": 20298678888122,
+      "t_submit_wall_ns": 1789416321455530446
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 48,
+      "nonce": 1789416305811,
+      "tx_id": "9387fd1aad80319a7cb2ac34cc64fbceea3647b39cf9869b44bcefe10d2245d9",
+      "t_submit_monotonic_ns": 20299012260018,
+      "t_submit_wall_ns": 1789416321788902160
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 49,
+      "nonce": 1789416305812,
+      "tx_id": "7175289502ad414dc06d000217f7c90266ac4d3cbcf6b9d64835462bbd12e759",
+      "t_submit_monotonic_ns": 20299345575742,
+      "t_submit_wall_ns": 1789416322122216935
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 50,
+      "nonce": 1789416305813,
+      "tx_id": "cd50c811d7037c75863b959bbce3ffbf7d3c4e1d76f73cd675ab910fdfc65103",
+      "t_submit_monotonic_ns": 20299678860023,
+      "t_submit_wall_ns": 1789416322455501754
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 51,
+      "nonce": 1789416305814,
+      "tx_id": "3ba29d647564872f0df2662fe81a86c47cd849f462ed1fa014179330aec884eb",
+      "t_submit_monotonic_ns": 20300012230691,
+      "t_submit_wall_ns": 1789416322788872626
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 52,
+      "nonce": 1789416305815,
+      "tx_id": "973a4af1ac67aa1b393ee2d9569bd53100ba25a1445d697d7a22f1c5a3bfcad7",
+      "t_submit_monotonic_ns": 20300345562493,
+      "t_submit_wall_ns": 1789416323122204385
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 53,
+      "nonce": 1789416305816,
+      "tx_id": "668022286b17c86de2a4fb5b96bed782664f6fc50bcb741bb007f001306fcb21",
+      "t_submit_monotonic_ns": 20300679030158,
+      "t_submit_wall_ns": 1789416323455672324
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 54,
+      "nonce": 1789416305817,
+      "tx_id": "8eab960249d559e7ddbc0c299f83b6216495129b3d977fe87c597abdcc6de89a",
+      "t_submit_monotonic_ns": 20301012265680,
+      "t_submit_wall_ns": 1789416323788907918
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 55,
+      "nonce": 1789416305818,
+      "tx_id": "57bf882a685c68dbcd0e1e1206c109730ca760fffdc98c8b5f3436fedcac77db",
+      "t_submit_monotonic_ns": 20301345721891,
+      "t_submit_wall_ns": 1789416324122363676
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 56,
+      "nonce": 1789416305819,
+      "tx_id": "b93aeab564faa0c1a187e7bd63c3031e2839d35f127f557e98a40daa9936b8e7",
+      "t_submit_monotonic_ns": 20301679055279,
+      "t_submit_wall_ns": 1789416324455697501
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 57,
+      "nonce": 1789416305820,
+      "tx_id": "41e98629d02a2c4662c60fbedee20ca4c286bea7ae26e7f7e38156bb2597e0d9",
+      "t_submit_monotonic_ns": 20302012251431,
+      "t_submit_wall_ns": 1789416324788893173
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 58,
+      "nonce": 1789416305821,
+      "tx_id": "3b6955b7aede592dd1f11dc7af9430e2e1dd62936afc27a09a17428d85d46da8",
+      "t_submit_monotonic_ns": 20302345566796,
+      "t_submit_wall_ns": 1789416325122208226
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 59,
+      "nonce": 1789416305822,
+      "tx_id": "c8b4edaf77af561eabe2d9704623ba7b3220fe3ff84e845f869e901b393f229f",
+      "t_submit_monotonic_ns": 20302678875880,
+      "t_submit_wall_ns": 1789416325455517659
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 60,
+      "nonce": 1789416305823,
+      "tx_id": "e4826e3e2792582e29affd96cbdbe8b69db437fd0b33327412ade9e791897a07",
+      "t_submit_monotonic_ns": 20303012213752,
+      "t_submit_wall_ns": 1789416325788855246
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 61,
+      "nonce": 1789416305824,
+      "tx_id": "c027b0419170212606381ede98527dad76072919f0fab4fd324576253c661020",
+      "t_submit_monotonic_ns": 20303345662334,
+      "t_submit_wall_ns": 1789416326122304771
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 62,
+      "nonce": 1789416305825,
+      "tx_id": "06d036b5bee7fb036dc8286afb58824940c2571773f3e8bd007da779ab921516",
+      "t_submit_monotonic_ns": 20303678986494,
+      "t_submit_wall_ns": 1789416326455628618
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 63,
+      "nonce": 1789416305826,
+      "tx_id": "5c35e1c07695af7e1f85fe092231c08c828e5c56564a144f08e2a0f1186a6c3d",
+      "t_submit_monotonic_ns": 20304012205732,
+      "t_submit_wall_ns": 1789416326788847451
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 64,
+      "nonce": 1789416305827,
+      "tx_id": "f0500b75d880fa687ef4e955a125e8bc8f660bc9644aa4542238f42bbb44cb85",
+      "t_submit_monotonic_ns": 20304345630930,
+      "t_submit_wall_ns": 1789416327122273254
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 65,
+      "nonce": 1789416305828,
+      "tx_id": "aeae15c6ab3746bfb57c961caee01bce426b9ca14fa91e12399a2fb6a396789a",
+      "t_submit_monotonic_ns": 20304678883358,
+      "t_submit_wall_ns": 1789416327455525232
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 66,
+      "nonce": 1789416305829,
+      "tx_id": "e3836b9be8a6d1260397277f2b9d500a2bb38add3cb323a3aea8bf0534d909fa",
+      "t_submit_monotonic_ns": 20305012287076,
+      "t_submit_wall_ns": 1789416327788928379
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 67,
+      "nonce": 1789416305830,
+      "tx_id": "da0f4609906c9d71d0ccaa8b2866c02cdfaa8d7150bc097ec8da0820430c4181",
+      "t_submit_monotonic_ns": 20305345711187,
+      "t_submit_wall_ns": 1789416328122353563
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 68,
+      "nonce": 1789416305831,
+      "tx_id": "a674d67ed1ba54d0cbef3731b54b99389fb1cffedc3cf461561777315162d3ce",
+      "t_submit_monotonic_ns": 20305679905070,
+      "t_submit_wall_ns": 1789416328456547316
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 69,
+      "nonce": 1789416305832,
+      "tx_id": "83366ae77fadac1f716a9181a26819769f62b54d4076d4047953f52344d02d1c",
+      "t_submit_monotonic_ns": 20306012285630,
+      "t_submit_wall_ns": 1789416328788928380
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 70,
+      "nonce": 1789416305833,
+      "tx_id": "d2bf28e670330f3ee98f68fb47f6f6ee1ff01e4c826789a912e346b5044893dc",
+      "t_submit_monotonic_ns": 20306345600401,
+      "t_submit_wall_ns": 1789416329122242721
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 71,
+      "nonce": 1789416305834,
+      "tx_id": "580783ad4ae7a41d95be92855ad3e5994b558ccc16c9a375b8cc626adb2ea610",
+      "t_submit_monotonic_ns": 20306679126958,
+      "t_submit_wall_ns": 1789416329455769863
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 72,
+      "nonce": 1789416305835,
+      "tx_id": "53778104af6236ec67f5777de7d190996e02eaaf622d97c323133ebac29a35cd",
+      "t_submit_monotonic_ns": 20307012246932,
+      "t_submit_wall_ns": 1789416329788890962
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 73,
+      "nonce": 1789416305836,
+      "tx_id": "5a0ea963d07881a30cc52cd0d864efd5754a199555308fcbd1afa53bb65214ae",
+      "t_submit_monotonic_ns": 20307345587542,
+      "t_submit_wall_ns": 1789416330122229424
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 74,
+      "nonce": 1789416305837,
+      "tx_id": "30e31402c260b25dc6bf1069d09032eff2e4ce88a54ef02eab596f9396d8492d",
+      "t_submit_monotonic_ns": 20307679399381,
+      "t_submit_wall_ns": 1789416330456042043
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 75,
+      "nonce": 1789416305838,
+      "tx_id": "80c48c2204b3adf6f1e4004b0d36ed1242079ae34b35453944d15389ef5e9ccd",
+      "t_submit_monotonic_ns": 20308012302029,
+      "t_submit_wall_ns": 1789416330788943955
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 76,
+      "nonce": 1789416305839,
+      "tx_id": "b5487bc23d94eea16fb45a2f4a48e4714e2c4d9211754a6c99c4c53d6cf08b23",
+      "t_submit_monotonic_ns": 20308345703876,
+      "t_submit_wall_ns": 1789416331122346103
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 77,
+      "nonce": 1789416305840,
+      "tx_id": "b07a188f36759bbb8d6882f11c977fd9bcd471c8ddea0ece4df8d387e70574dd",
+      "t_submit_monotonic_ns": 20308678895182,
+      "t_submit_wall_ns": 1789416331455536845
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 78,
+      "nonce": 1789416305841,
+      "tx_id": "191b3c4090f7cb338453c5aad738b0457b5123ade0af9126e985634d99e759e3",
+      "t_submit_monotonic_ns": 20309012223486,
+      "t_submit_wall_ns": 1789416331788865236
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 79,
+      "nonce": 1789416305842,
+      "tx_id": "a08b879674ea817ee59cd64b64ac95c42e9dc860270cbf84267210fde8adf8bc",
+      "t_submit_monotonic_ns": 20309345570481,
+      "t_submit_wall_ns": 1789416332122212879
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 80,
+      "nonce": 1789416305843,
+      "tx_id": "ffaff7a3b125858db8f367acda710abcfe6f162c8affc687b22c0a281211b96e",
+      "t_submit_monotonic_ns": 20309678976820,
+      "t_submit_wall_ns": 1789416332455618738
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 81,
+      "nonce": 1789416305844,
+      "tx_id": "825eccf17633186e7625adb22628389dd3ca9a9fc1237769e28ef1477e612cd9",
+      "t_submit_monotonic_ns": 20310014035755,
+      "t_submit_wall_ns": 1789416332790677734
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 82,
+      "nonce": 1789416305845,
+      "tx_id": "6bcb337f7d8d4567f20b37acfab3a64ff1377ee4e0ef6b7066ab57bcebdcaf81",
+      "t_submit_monotonic_ns": 20310345584066,
+      "t_submit_wall_ns": 1789416333122225904
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 83,
+      "nonce": 1789416305846,
+      "tx_id": "a3a125c49981f2170d7a5ac7f4f4acc5a99d82aeaa541c075f561aecf6e6534e",
+      "t_submit_monotonic_ns": 20310679048152,
+      "t_submit_wall_ns": 1789416333455689964
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 84,
+      "nonce": 1789416305847,
+      "tx_id": "050bd92240273cd43f6182901788946770b7e62bf94d54bbf6237c319957feed",
+      "t_submit_monotonic_ns": 20311012362774,
+      "t_submit_wall_ns": 1789416333789005163
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 85,
+      "nonce": 1789416305848,
+      "tx_id": "104b485a7d36a62758f8ffe7430893e8f15ed70157b69fc12c66470464692b6a",
+      "t_submit_monotonic_ns": 20311345616439,
+      "t_submit_wall_ns": 1789416334122258199
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 86,
+      "nonce": 1789416305849,
+      "tx_id": "4f9a02823408d1dee4d8a4f783eb0043eb404885141d8577a1b899052bf5abf0",
+      "t_submit_monotonic_ns": 20311678899791,
+      "t_submit_wall_ns": 1789416334455541546
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 87,
+      "nonce": 1789416305850,
+      "tx_id": "195c489255c0e50b4ef3da9bb1ba9e8b9820ef4859f1eb66654537eced7c1c55",
+      "t_submit_monotonic_ns": 20312012307872,
+      "t_submit_wall_ns": 1789416334788950058
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 88,
+      "nonce": 1789416305851,
+      "tx_id": "621ae49ac192622b1a70bd41d8abf76ab26423c2351e172706f3d49d1769de7c",
+      "t_submit_monotonic_ns": 20312345655340,
+      "t_submit_wall_ns": 1789416335122297549
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 89,
+      "nonce": 1789416305852,
+      "tx_id": "4ba622b72c3db872ad43b8b768b40f4c53a4386211c0d753211da42a838f36d4",
+      "t_submit_monotonic_ns": 20312678959152,
+      "t_submit_wall_ns": 1789416335455601498
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 90,
+      "nonce": 1789416305853,
+      "tx_id": "1f65f47cb0931d4e47d453a3d92aca99ca455401c1500584316916888f873463",
+      "t_submit_monotonic_ns": 20313012227781,
+      "t_submit_wall_ns": 1789416335788869244
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 91,
+      "nonce": 1789416305854,
+      "tx_id": "ab96c95a28ad5049805c99eebad36066452971b9228499e0392d4fad43937e56",
+      "t_submit_monotonic_ns": 20313345540220,
+      "t_submit_wall_ns": 1789416336122182249
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 92,
+      "nonce": 1789416305855,
+      "tx_id": "6b32e1b265cc02723fe5706817fa122597e90cdeaa3a47c15c8056c5092b0fb7",
+      "t_submit_monotonic_ns": 20313679481181,
+      "t_submit_wall_ns": 1789416336456123280
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 93,
+      "nonce": 1789416305856,
+      "tx_id": "3f0d2746491e18bd61f67f02d59d3520a0157a1772fb549b39c8f97ed1df470f",
+      "t_submit_monotonic_ns": 20314012262346,
+      "t_submit_wall_ns": 1789416336788904407
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 94,
+      "nonce": 1789416305857,
+      "tx_id": "471d5a3ad5b724b119fa16bd8724d30525352509a54de2c082275e9b3f572eb9",
+      "t_submit_monotonic_ns": 20314345621661,
+      "t_submit_wall_ns": 1789416337122264044
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 95,
+      "nonce": 1789416305858,
+      "tx_id": "390732ef1d7c5162e2d1802dcb44667b926752d2af94b957bbfe809794990af1",
+      "t_submit_monotonic_ns": 20314678918183,
+      "t_submit_wall_ns": 1789416337455560301
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 96,
+      "nonce": 1789416305859,
+      "tx_id": "c39e22b8c8e7d24705866f6569c96db865ff10f2ee46c0b02f7a652eed3618b8",
+      "t_submit_monotonic_ns": 20315012756497,
+      "t_submit_wall_ns": 1789416337789399866
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 97,
+      "nonce": 1789416305860,
+      "tx_id": "771f5919d6a1158eb57730b5f736f98f6ff50c94db1b8bef77c09b5cfc24590c",
+      "t_submit_monotonic_ns": 20315345640144,
+      "t_submit_wall_ns": 1789416338122283192
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 98,
+      "nonce": 1789416305861,
+      "tx_id": "85f2c95a3c13b1afc25e9f681b53433d5ac9931a3d098524a82c7ae54c008637",
+      "t_submit_monotonic_ns": 20315678979418,
+      "t_submit_wall_ns": 1789416338455622765
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 99,
+      "nonce": 1789416305862,
+      "tx_id": "fe195c52d6ea73ae594a2eee03d95ab69ac28a3e0b54120c0b42511be74d58de",
+      "t_submit_monotonic_ns": 20316012254695,
+      "t_submit_wall_ns": 1789416338788896914
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 100,
+      "nonce": 1789416305863,
+      "tx_id": "72bb12850b066b29bc4c6066a316d5fc1615f90d29c7c590f744f6eef0974026",
+      "t_submit_monotonic_ns": 20316345728908,
+      "t_submit_wall_ns": 1789416339122370529
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 101,
+      "nonce": 1789416305864,
+      "tx_id": "21500b2e7006876a674fd2168cc534a68a95b6ae7be8355164c8e0d7c7cab827",
+      "t_submit_monotonic_ns": 20316678956123,
+      "t_submit_wall_ns": 1789416339455598506
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 102,
+      "nonce": 1789416305865,
+      "tx_id": "f475fc5a7c8f8519fb3e034d8686d0a409509a09514e7f9e6aa6d89255fa5089",
+      "t_submit_monotonic_ns": 20317012371328,
+      "t_submit_wall_ns": 1789416339789013289
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 103,
+      "nonce": 1789416305866,
+      "tx_id": "7afc72609885b95bdbd50d67d3dbca425c071ace42f45975cdc0bb7a675cd090",
+      "t_submit_monotonic_ns": 20317345586997,
+      "t_submit_wall_ns": 1789416340122229564
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 104,
+      "nonce": 1789416305867,
+      "tx_id": "ec64b2e3a9b4ef7eabbab950bdddf714ad06d151a32ef2edba3df963ba9d1a77",
+      "t_submit_monotonic_ns": 20317678875697,
+      "t_submit_wall_ns": 1789416340455517920
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 105,
+      "nonce": 1789416305868,
+      "tx_id": "a9ebd18a8c57ad9f771325654d3bf94aaac9ba8b4fa8938e6ea1e963c6ecda1a",
+      "t_submit_monotonic_ns": 20318012278989,
+      "t_submit_wall_ns": 1789416340788921092
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 106,
+      "nonce": 1789416305869,
+      "tx_id": "8d94bbac525bb1a5d2455c9a1f6863245518539564edfb0170cf64c7b4a91291",
+      "t_submit_monotonic_ns": 20318345675664,
+      "t_submit_wall_ns": 1789416341122318329
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 107,
+      "nonce": 1789416305870,
+      "tx_id": "e83052872b0d30b25d5d0e2073ba18c35ccb8d6f8db853dc2ad47c5e7798d0cc",
+      "t_submit_monotonic_ns": 20318678955652,
+      "t_submit_wall_ns": 1789416341455597709
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 108,
+      "nonce": 1789416305871,
+      "tx_id": "60ac16dfd4bc5403c4b9778ba4d95c32a076f5602484169562fefb8f0ede5e53",
+      "t_submit_monotonic_ns": 20319012386849,
+      "t_submit_wall_ns": 1789416341789028518
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 109,
+      "nonce": 1789416305872,
+      "tx_id": "57c0d73d45e7db94fc233196e4b54792c2d31b5fbd05b6779b6f17c6e28870f3",
+      "t_submit_monotonic_ns": 20319345540662,
+      "t_submit_wall_ns": 1789416342122182238
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 110,
+      "nonce": 1789416305873,
+      "tx_id": "fed0af08dfe562ca8b62a0e5a27c7485a608a4aa290558926ff764d64e98a57d",
+      "t_submit_monotonic_ns": 20319678963030,
+      "t_submit_wall_ns": 1789416342455604910
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 111,
+      "nonce": 1789416305874,
+      "tx_id": "087381bf0cd0748907c93183e3ca88a926404d0341101e7404887c523d7904c0",
+      "t_submit_monotonic_ns": 20320012468640,
+      "t_submit_wall_ns": 1789416342789110155
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 112,
+      "nonce": 1789416305875,
+      "tx_id": "8638f136ee9bbbe1a133f2d3c86200ffa85af14ecfa031d13d3330573a5a4ef4",
+      "t_submit_monotonic_ns": 20320345637643,
+      "t_submit_wall_ns": 1789416343122279901
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 113,
+      "nonce": 1789416305876,
+      "tx_id": "7933f6f4d9b3a82e94bbcbe454fe381547a38134c3699a5dae90257c91a11cf0",
+      "t_submit_monotonic_ns": 20320679045800,
+      "t_submit_wall_ns": 1789416343455688119
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 114,
+      "nonce": 1789416305877,
+      "tx_id": "d9b1f790aee619f146e732564f51783df644802d3d0659c73d67b41a58bf54a4",
+      "t_submit_monotonic_ns": 20321012323830,
+      "t_submit_wall_ns": 1789416343788966595
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 115,
+      "nonce": 1789416305878,
+      "tx_id": "074c290b0025374b0be100691f56e2226809b8f41ab5a7724165a28827061aeb",
+      "t_submit_monotonic_ns": 20321345730774,
+      "t_submit_wall_ns": 1789416344122372781
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 116,
+      "nonce": 1789416305879,
+      "tx_id": "d3b59b16a580896417a004663adbbead749ac1159b141b747c8f3bbeb7f01d8f",
+      "t_submit_monotonic_ns": 20321678983485,
+      "t_submit_wall_ns": 1789416344455625826
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 117,
+      "nonce": 1789416305880,
+      "tx_id": "100c8aba17d0f92586c2a32833ab3a21d8d3b970cbe3da862181edcf8f2c9bfd",
+      "t_submit_monotonic_ns": 20322012309642,
+      "t_submit_wall_ns": 1789416344788952265
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 118,
+      "nonce": 1789416305881,
+      "tx_id": "c0e059f50abd8316650a6800ffae83a113fc9778a20a4daca72c243e263e398a",
+      "t_submit_monotonic_ns": 20322345691037,
+      "t_submit_wall_ns": 1789416345122333381
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 119,
+      "nonce": 1789416305882,
+      "tx_id": "8b242e1aba0af6f4a52182a07d1a9e7a1c688a9755d6e08e98aaf6234f21582f",
+      "t_submit_monotonic_ns": 20322679111149,
+      "t_submit_wall_ns": 1789416345455756159
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 120,
+      "nonce": 1789416305883,
+      "tx_id": "a1827583b2e4d6edf4174c190cb4039136db9ca57c507cd6b87d3a60717e074e",
+      "t_submit_monotonic_ns": 20323012242587,
+      "t_submit_wall_ns": 1789416345788884903
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 121,
+      "nonce": 1789416305884,
+      "tx_id": "5ebbbf8464971a2afca11d94ab5a1d4a8fe01de8af198581a6b88231909a10ce",
+      "t_submit_monotonic_ns": 20323345581114,
+      "t_submit_wall_ns": 1789416346122223026
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 122,
+      "nonce": 1789416305885,
+      "tx_id": "343815fa49b3c49957543049b9742b90cbe90c63ec335b3a688c7c5c5694303b",
+      "t_submit_monotonic_ns": 20323678874873,
+      "t_submit_wall_ns": 1789416346455516548
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 123,
+      "nonce": 1789416305886,
+      "tx_id": "111abd0fe1335f3b092b775d41e48bf2d0f533ff0f7214e7f3ae9c8790fe0a27",
+      "t_submit_monotonic_ns": 20324012207779,
+      "t_submit_wall_ns": 1789416346788849619
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 124,
+      "nonce": 1789416305887,
+      "tx_id": "1625e21a1a66097f788300091c0cf0fe7909fb36c0640c9bcad56ecfa348c3f9",
+      "t_submit_monotonic_ns": 20324345543871,
+      "t_submit_wall_ns": 1789416347122186004
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 125,
+      "nonce": 1789416305888,
+      "tx_id": "45d2bdf549d2dbfdc40f947928f9d708bb11b75f0ff4cb7b7463331464fb1221",
+      "t_submit_monotonic_ns": 20324678884714,
+      "t_submit_wall_ns": 1789416347455526364
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 126,
+      "nonce": 1789416305889,
+      "tx_id": "74579de8b18975ab55becf231e6403299cbfe8b8d984d64f26d9e1e93d166a8f",
+      "t_submit_monotonic_ns": 20325012222081,
+      "t_submit_wall_ns": 1789416347788863853
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 127,
+      "nonce": 1789416305890,
+      "tx_id": "c35853d90c1d8ad561d97d49f57b1098b24f703d99c329571eadb2a9237be8c6",
+      "t_submit_monotonic_ns": 20325345570462,
+      "t_submit_wall_ns": 1789416348122212672
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 128,
+      "nonce": 1789416305891,
+      "tx_id": "694972ea20245b7a5438454fb7d6350e79cf3f4499fc977bee1c023d051fd39f",
+      "t_submit_monotonic_ns": 20325678884368,
+      "t_submit_wall_ns": 1789416348455526434
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 129,
+      "nonce": 1789416305892,
+      "tx_id": "e1e0304353ea98f91079ab113f8951ccf1f1c382e88c0b347ca73794987c3668",
+      "t_submit_monotonic_ns": 20326012204979,
+      "t_submit_wall_ns": 1789416348788846967
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 130,
+      "nonce": 1789416305893,
+      "tx_id": "d097ea9e7e2946b0e13b6aee4a2f58ee569e463ca90abca88a7f6cd562cf85b5",
+      "t_submit_monotonic_ns": 20326345696478,
+      "t_submit_wall_ns": 1789416349122338467
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 131,
+      "nonce": 1789416305894,
+      "tx_id": "933c61e48d791aa759ccb1074bd6d424192065ba2956a3b5bedc986fa906721b",
+      "t_submit_monotonic_ns": 20326678890441,
+      "t_submit_wall_ns": 1789416349455532247
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 132,
+      "nonce": 1789416305895,
+      "tx_id": "3565d37eabef6e6d6cfd37c109b4fa1e8fdf2177d8f89f6dc92baafaedb05065",
+      "t_submit_monotonic_ns": 20327012213697,
+      "t_submit_wall_ns": 1789416349788855590
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 133,
+      "nonce": 1789416305896,
+      "tx_id": "438bf9a3fa483eb12cf9607398c07de5568ecee5de23df33da236c8ddd605f9e",
+      "t_submit_monotonic_ns": 20327345553368,
+      "t_submit_wall_ns": 1789416350122195495
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 134,
+      "nonce": 1789416305897,
+      "tx_id": "ed2cbc9bf00a1e4fe97519c593cebffb8b6a4136844f5207267d927bb54420ee",
+      "t_submit_monotonic_ns": 20327678981398,
+      "t_submit_wall_ns": 1789416350455626239
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 135,
+      "nonce": 1789416305898,
+      "tx_id": "929e98b90b21f39024e966aadf02ef4af1c23733741452c342db3e0e64890d0c",
+      "t_submit_monotonic_ns": 20328012247184,
+      "t_submit_wall_ns": 1789416350788889326
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 136,
+      "nonce": 1789416305899,
+      "tx_id": "26a521b875917f2e26e38caf0f2bf300bffebfe2036df885193b71593b1e33c4",
+      "t_submit_monotonic_ns": 20328345629941,
+      "t_submit_wall_ns": 1789416351122272271
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 137,
+      "nonce": 1789416305900,
+      "tx_id": "1f3773b1c8728783b0e012cdf23b5e4294f4b16950326ec391f45f306a4a25eb",
+      "t_submit_monotonic_ns": 20328678878476,
+      "t_submit_wall_ns": 1789416351455520292
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 138,
+      "nonce": 1789416305901,
+      "tx_id": "1a19d7837ca01d6e16203880e7f30ec53c0f63ccc9b176b89b257af9c7103640",
+      "t_submit_monotonic_ns": 20329012207246,
+      "t_submit_wall_ns": 1789416351788849074
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 139,
+      "nonce": 1789416305902,
+      "tx_id": "a58c492e4c053d7003aecd02641edeb6e403caeaf3e9dd204798ebe43786eb87",
+      "t_submit_monotonic_ns": 20329345552656,
+      "t_submit_wall_ns": 1789416352122194486
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 140,
+      "nonce": 1789416305903,
+      "tx_id": "7f849f014092bb96b29ea45f1bf11e76979586cac1e63f90dc79a771ed713db2",
+      "t_submit_monotonic_ns": 20329678881829,
+      "t_submit_wall_ns": 1789416352455524036
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 141,
+      "nonce": 1789416305904,
+      "tx_id": "5905f926b1bf180ecccf0d024f40a03e07c8dfb23be77c76a60905990b4eed28",
+      "t_submit_monotonic_ns": 20330012362639,
+      "t_submit_wall_ns": 1789416352789004747
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 142,
+      "nonce": 1789416305905,
+      "tx_id": "23a59c9c12ec3fde10172f4cf922eef32676f6418c5f26c5ad9213379d5d4551",
+      "t_submit_monotonic_ns": 20330345551627,
+      "t_submit_wall_ns": 1789416353122193799
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 143,
+      "nonce": 1789416305906,
+      "tx_id": "c619ea93aead0f654a99f1718c70c527717f992fcaf634e17af6feb67f23aaeb",
+      "t_submit_monotonic_ns": 20330681659014,
+      "t_submit_wall_ns": 1789416353458310267
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 144,
+      "nonce": 1789416305907,
+      "tx_id": "0ce254d996f20ee20656b158185d2af60750a63d2bce0fe90acf94062df72890",
+      "t_submit_monotonic_ns": 20331012226938,
+      "t_submit_wall_ns": 1789416353788868845
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 145,
+      "nonce": 1789416305908,
+      "tx_id": "646c2804c6449048019266e7d2000dc3ee5071b7b5aa67115198c5c6623c6e83",
+      "t_submit_monotonic_ns": 20331345672299,
+      "t_submit_wall_ns": 1789416354122314049
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 146,
+      "nonce": 1789416305909,
+      "tx_id": "1ead2ae7ba844b399d1d4c6c82bc1d48ce1905df83c0c05003f05ad915f25622",
+      "t_submit_monotonic_ns": 20331678884546,
+      "t_submit_wall_ns": 1789416354455526482
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 147,
+      "nonce": 1789416305910,
+      "tx_id": "8457de2dbf7b871acb419bdcec053db959d0979e1d09b6929b2d4fc87ce6166d",
+      "t_submit_monotonic_ns": 20332012354446,
+      "t_submit_wall_ns": 1789416354788996213
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 148,
+      "nonce": 1789416305911,
+      "tx_id": "02b702f272c7878525897a1244255628d5b9fffd39bda9068fe6924cc5a040a0",
+      "t_submit_monotonic_ns": 20332345550192,
+      "t_submit_wall_ns": 1789416355122191865
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 149,
+      "nonce": 1789416305912,
+      "tx_id": "01f1e329ceac819defeb7d3b5c80a865be2048324411465a01af2e69a6647a27",
+      "t_submit_monotonic_ns": 20332678875103,
+      "t_submit_wall_ns": 1789416355455516993
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 150,
+      "nonce": 1789416305913,
+      "tx_id": "9b77803e57c38b093e2e3643d23f882d39605f07d47626e5506b6ebd715bd6c8",
+      "t_submit_monotonic_ns": 20333012217884,
+      "t_submit_wall_ns": 1789416355788859890
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 151,
+      "nonce": 1789416305914,
+      "tx_id": "aaccb3e79dc99ad91157f355d0776bd69e9ff470d1ed247d3ea3e0d3ff5268c4",
+      "t_submit_monotonic_ns": 20333345558612,
+      "t_submit_wall_ns": 1789416356122200694
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 152,
+      "nonce": 1789416305915,
+      "tx_id": "7ce4d17d0c71c68872e362d474fe706ae287541055d00810c7c82cc6d4ee4335",
+      "t_submit_monotonic_ns": 20333685657600,
+      "t_submit_wall_ns": 1789416356462308842
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 153,
+      "nonce": 1789416305916,
+      "tx_id": "a075e8a4d334bb09b9da1469069609e38b4506dab03c099742afb5b030e8f041",
+      "t_submit_monotonic_ns": 20334012206809,
+      "t_submit_wall_ns": 1789416356788848979
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 154,
+      "nonce": 1789416305917,
+      "tx_id": "105cecac3c83697d34023126b59704d09099dafd582e59a31efe670a9e4d9e74",
+      "t_submit_monotonic_ns": 20334345714499,
+      "t_submit_wall_ns": 1789416357122357092
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 155,
+      "nonce": 1789416305918,
+      "tx_id": "387c45632eeb0b0c6205be42ca444cb2dda71c2ece13f72cf4d2d790e3df56e5",
+      "t_submit_monotonic_ns": 20334678880206,
+      "t_submit_wall_ns": 1789416357455522003
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 156,
+      "nonce": 1789416305919,
+      "tx_id": "cb7ab2f34a238753beeaa17cee646056c2789f25ed00410ec23f67423e6777b5",
+      "t_submit_monotonic_ns": 20335012218490,
+      "t_submit_wall_ns": 1789416357788860619
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 157,
+      "nonce": 1789416305920,
+      "tx_id": "4d117c96b1510ace5a0bcab5a5d0b905402e8f89dd7d972282a8418578f45d45",
+      "t_submit_monotonic_ns": 20335345563393,
+      "t_submit_wall_ns": 1789416358122205330
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 158,
+      "nonce": 1789416305921,
+      "tx_id": "56e2f10293eae0d9f7180023ba429cd69d69a3ad1e4539fa75f5c3cc38eaba4f",
+      "t_submit_monotonic_ns": 20335678884438,
+      "t_submit_wall_ns": 1789416358455526718
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 159,
+      "nonce": 1789416305922,
+      "tx_id": "b62824983ebf9965abb05ac86456f0855b5caa8358eb4172b066ba3c7a6cf232",
+      "t_submit_monotonic_ns": 20336012211706,
+      "t_submit_wall_ns": 1789416358788853730
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 160,
+      "nonce": 1789416305923,
+      "tx_id": "efe98f68f0e9ee6df479c4cb772bd0c837549d3fc8ad441ba75e200d01dd6cce",
+      "t_submit_monotonic_ns": 20336345567738,
+      "t_submit_wall_ns": 1789416359122209424
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 161,
+      "nonce": 1789416305924,
+      "tx_id": "e1aaf15b64d0ab37b0be333a99c80cbb4317edf6e7dc3f5d3472702780111073",
+      "t_submit_monotonic_ns": 20336678889432,
+      "t_submit_wall_ns": 1789416359455531298
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 162,
+      "nonce": 1789416305925,
+      "tx_id": "731105b2ad2fe882251c2f413cbef8e4a23cacca9ffae88704fbdcc3c927cb5f",
+      "t_submit_monotonic_ns": 20337012211819,
+      "t_submit_wall_ns": 1789416359788853740
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 163,
+      "nonce": 1789416305926,
+      "tx_id": "15dd9e401353e9a3f180901e5b6b953ccb95136e9a9064dc9933c1115f4b732b",
+      "t_submit_monotonic_ns": 20337345556491,
+      "t_submit_wall_ns": 1789416360122198479
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 164,
+      "nonce": 1789416305927,
+      "tx_id": "6f365beac5daf87dea5de9494f164ba0909cd8c25c1cf60412fd9803ee9c31ab",
+      "t_submit_monotonic_ns": 20337679044453,
+      "t_submit_wall_ns": 1789416360455686486
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 165,
+      "nonce": 1789416305928,
+      "tx_id": "eeb8bd1933faf673b88804f56fe69a31e53b9087407e22f3584a70f1631b4d84",
+      "t_submit_monotonic_ns": 20338012206723,
+      "t_submit_wall_ns": 1789416360788848570
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 166,
+      "nonce": 1789416305929,
+      "tx_id": "45a1ad42d5a0c2635adecbf006c927f75535405e35568d8a9cc5e1f82a7b2974",
+      "t_submit_monotonic_ns": 20338345550193,
+      "t_submit_wall_ns": 1789416361122191953
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 167,
+      "nonce": 1789416305930,
+      "tx_id": "ea05e0fa42e756ff824cb5008392ad5bec387400230570b8e71e56abbb2fc84c",
+      "t_submit_monotonic_ns": 20338678976768,
+      "t_submit_wall_ns": 1789416361455618609
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 168,
+      "nonce": 1789416305931,
+      "tx_id": "c5b79e9775794874c0b81826f036d70cbb23623ecb0f43a50a8117623d29b75e",
+      "t_submit_monotonic_ns": 20339012554686,
+      "t_submit_wall_ns": 1789416361789196914
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 169,
+      "nonce": 1789416305932,
+      "tx_id": "74e63675586fb7d35930921eac20cfc3bf3b53f662a7d278a9fdd73bd731144d",
+      "t_submit_monotonic_ns": 20339345572966,
+      "t_submit_wall_ns": 1789416362122214611
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 170,
+      "nonce": 1789416305933,
+      "tx_id": "6f03f1d42895eb0a2f01448d0f50c4ae30d220e9205ca7104263c6ee5609606d",
+      "t_submit_monotonic_ns": 20339678950405,
+      "t_submit_wall_ns": 1789416362455593168
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 171,
+      "nonce": 1789416305934,
+      "tx_id": "557b93710b977c0985d006ae7f0da380bd56ea0bdb3d930533d95dc938f84542",
+      "t_submit_monotonic_ns": 20340012356819,
+      "t_submit_wall_ns": 1789416362788999158
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 172,
+      "nonce": 1789416305935,
+      "tx_id": "2b0be6e862cfcbc32683ca00b957442667656397dd5f45dbde30f360b1401c04",
+      "t_submit_monotonic_ns": 20340345621550,
+      "t_submit_wall_ns": 1789416363122263032
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 173,
+      "nonce": 1789416305936,
+      "tx_id": "9588f04bc3e53dabd9b0f77d6a0676e86846d4024bd2533000d44979f3eed2f0",
+      "t_submit_monotonic_ns": 20340678876050,
+      "t_submit_wall_ns": 1789416363455517582
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 174,
+      "nonce": 1789416305937,
+      "tx_id": "5d48d45a3a8eb57c8fb045c8bf16a620dcb76aa38ec8eefe0f24e091e70fda0f",
+      "t_submit_monotonic_ns": 20341012424777,
+      "t_submit_wall_ns": 1789416363789066455
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 175,
+      "nonce": 1789416305938,
+      "tx_id": "36ae411f8e96eb05e4cecad35ad61ea0d45fddd5c1b3ea3f8a0f43fa70d77feb",
+      "t_submit_monotonic_ns": 20341345656541,
+      "t_submit_wall_ns": 1789416364122298923
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 176,
+      "nonce": 1789416305939,
+      "tx_id": "c01509c750e665aede501772f785a0c0dba758e2001efc7bf1f4198eca0fc5a3",
+      "t_submit_monotonic_ns": 20341678961840,
+      "t_submit_wall_ns": 1789416364455603633
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 177,
+      "nonce": 1789416305940,
+      "tx_id": "54deb3bd4bfb31ddca372444da18831c9a5323d981a2c268874ad77df0370d0b",
+      "t_submit_monotonic_ns": 20342012210235,
+      "t_submit_wall_ns": 1789416364788851872
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 178,
+      "nonce": 1789416305941,
+      "tx_id": "12ff81c9752d060cbe20e40cb5d3f34d2269201e30c18dea36041e1188cdc6b9",
+      "t_submit_monotonic_ns": 20342345564064,
+      "t_submit_wall_ns": 1789416365122206150
+    },
+    {
+      "client_id": "b3-client-01",
+      "client_sequence": 179,
+      "nonce": 1789416305942,
+      "tx_id": "f48e8756b4666286994e1069c50897dfb03b7256bda744445759f7ba1f36d69f",
+      "t_submit_monotonic_ns": 20342678887324,
+      "t_submit_wall_ns": 1789416365455528917
+    }
+  ],
+  "node1_local_observations": {
+    "c39e22b8c8e7d24705866f6569c96db865ff10f2ee46c0b02f7a652eed3618b8": {
+      "height": 95,
+      "block_hash": "1b2e5d1e1ee235012dd5f3dc424cf94c6b0fb669289699c9b865495839265b76",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000095.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "a1d9c0652367a07d6a708c4f8c02813d74db58514e39138f330d968c218a1370": {
+      "height": 41,
+      "block_hash": "c010f2349b1cd47606fcb9d6a01e3ca4880cc819f8f6549879366661d850baa1",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000041.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "1cc0a02045884a8c5c3088318eb5815c4022c1c191e341e978d312297b6d7ab0": {
+      "height": 43,
+      "block_hash": "a82d638ad2ca7befda0fb7fb2d4904cb897dd2f41de531963a95c85c7a80295c",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000043.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "ab08b8ba19b27b586571653ccd45384cb6c8cc54686e1d7dd3a5cf62d42c4430": {
+      "height": 38,
+      "block_hash": "2e4917070cc2584b2f2de1b0a23d85de67b16c0e8f21879750bc2d2d0d64da89",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000038.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "cd50c811d7037c75863b959bbce3ffbf7d3c4e1d76f73cd675ab910fdfc65103": {
+      "height": 51,
+      "block_hash": "4ec2bd6e8949bf42b8d1e9e400d1e421912e1be68c00e2da976099d2de44d47b",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000051.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "21500b2e7006876a674fd2168cc534a68a95b6ae7be8355164c8e0d7c7cab827": {
+      "height": 99,
+      "block_hash": "7094369fb1de55474bd37966b2fb987b447f4549c802972e9a188c772a3f582c",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000099.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "83366ae77fadac1f716a9181a26819769f62b54d4076d4047953f52344d02d1c": {
+      "height": 69,
+      "block_hash": "b6ed5c7c44224ec9fb0e5de4bfb9d7b2637cf65a3c8a204311e11afdd57b4d70",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000069.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "78d48d0f1362efb948a0e34844d3b1e8c23a74bc3e17901cc946485b85d3a862": {
+      "height": 45,
+      "block_hash": "d9781ac75faea83062d25455c2d47a3dd69cc5ea9151ea374ca9cbc4f9d174a4",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000045.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "aeae15c6ab3746bfb57c961caee01bce426b9ca14fa91e12399a2fb6a396789a": {
+      "height": 65,
+      "block_hash": "c94ee36256587a7913e572db61e155d5ed7f84b30bb41b1763d007ea14c9dd7d",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000065.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "104b485a7d36a62758f8ffe7430893e8f15ed70157b69fc12c66470464692b6a": {
+      "height": 85,
+      "block_hash": "2c1abe51289257bcd69496ee3c2a020de6bde279a6f8cbb59ae33ec36ac18c3a",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000085.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "24447d6100750f3a391398f9bae0d304804918df42281de3325932d1be392128": {
+      "height": 18,
+      "block_hash": "82b9c14e6c5e246af027712cb0afb1cf90f70c81ca10578adf2a14cd4f2843f7",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000018.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "4f9a02823408d1dee4d8a4f783eb0043eb404885141d8577a1b899052bf5abf0": {
+      "height": 86,
+      "block_hash": "f2fc8e614179f9110fcb823d549c1628393c57f2fdef143b51af1c5cc38b0527",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000086.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "5a0ea963d07881a30cc52cd0d864efd5754a199555308fcbd1afa53bb65214ae": {
+      "height": 73,
+      "block_hash": "a7ecc06110123f7aabfeb9376d66ddb3cd3bdd4f885aa7c5e6ba352f0e953f31",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000073.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "d2bf28e670330f3ee98f68fb47f6f6ee1ff01e4c826789a912e346b5044893dc": {
+      "height": 70,
+      "block_hash": "396c3e2f1a6a6b1951ef797705d64cbcfc71958ba31ed05107244a8aee8ee00b",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000070.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "050bd92240273cd43f6182901788946770b7e62bf94d54bbf6237c319957feed": {
+      "height": 84,
+      "block_hash": "6367d51c0082bc3d18769f0d35c978b2391c72c8d0cba2c519f9d4cd95385782",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000084.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "ec64b2e3a9b4ef7eabbab950bdddf714ad06d151a32ef2edba3df963ba9d1a77": {
+      "height": 102,
+      "block_hash": "7531c035cc9bd97bf5afb056f8470089bc732572bc1a6e4d6ece0bdaf4ac7cfd",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000102.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "7afc72609885b95bdbd50d67d3dbca425c071ace42f45975cdc0bb7a675cd090": {
+      "height": 101,
+      "block_hash": "bcfac9cdf6dfd459ea7ada8bedccdd90a495c574991ed620072d1fd50cd108d4",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000101.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "c616b21ca78d1ab7b90b4187019c2b3cc8e8e9fe44cad79433f96aafb6311d2f": {
+      "height": 35,
+      "block_hash": "ba3ec1a29fa1c1f43af9f798583052a39f494493703d14f8e7b13e719efd9c80",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000035.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "771f5919d6a1158eb57730b5f736f98f6ff50c94db1b8bef77c09b5cfc24590c": {
+      "height": 96,
+      "block_hash": "a12e62d97ab65af1991dc335a14b95a75d4d0feab42b38c8c59aa0d7b6126a24",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000096.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "621ae49ac192622b1a70bd41d8abf76ab26423c2351e172706f3d49d1769de7c": {
+      "height": 87,
+      "block_hash": "5877881dca575477827d1e0c9fb4658e52dbc1a00020a7e01b696eae828f6b94",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000087.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "8eab960249d559e7ddbc0c299f83b6216495129b3d977fe87c597abdcc6de89a": {
+      "height": 55,
+      "block_hash": "e656a299b5243550deb715350632a6aeae7808fbc27a771d35195f09794715c2",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000055.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "52d940534e0113c942d4ddaac3a219ed06b43ef5771f2d2af6ed31b9e96ddb23": {
+      "height": 30,
+      "block_hash": "1d5adb333f2a597b2241d36e95a2bc7d982df9a853b2d2949db2fb478f38e3c1",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000030.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "825eccf17633186e7625adb22628389dd3ca9a9fc1237769e28ef1477e612cd9": {
+      "height": 81,
+      "block_hash": "0c9d94fc174172e4b339cb95d4bd5da71e5d02c1b2344dbe038182a198d22f11",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000081.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "f0500b75d880fa687ef4e955a125e8bc8f660bc9644aa4542238f42bbb44cb85": {
+      "height": 65,
+      "block_hash": "c94ee36256587a7913e572db61e155d5ed7f84b30bb41b1763d007ea14c9dd7d",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000065.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "a08b879674ea817ee59cd64b64ac95c42e9dc860270cbf84267210fde8adf8bc": {
+      "height": 79,
+      "block_hash": "8182168e7b5727752785886c8cdffdd73145cf444527aa2f194feb02ab059fef",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000079.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "b07a188f36759bbb8d6882f11c977fd9bcd471c8ddea0ece4df8d387e70574dd": {
+      "height": 77,
+      "block_hash": "fe2613466ffc04780f03b3870637a5eeaffdbc02ae8b16d4b4fd4f49a34f6f65",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000077.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "d3b59b16a580896417a004663adbbead749ac1159b141b747c8f3bbeb7f01d8f": {
+      "height": 112,
+      "block_hash": "4ff11bcaf160715800e9b121efeef27bc8e01c928a9939ed399a1b6093355731",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000112.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "599767d0bc2b71b1d201cd6212038ebfb74e0808d2292848fbd847b373611b07": {
+      "height": 47,
+      "block_hash": "47c61e0013c0fed14f7d3c57f18fe5b3c528d54144dab92ca1830641bc818942",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000047.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "b2a2eea7ed808555bd1956f6d58920fa56866d60d9021108031a22b8c65c8e23": {
+      "height": 16,
+      "block_hash": "8826ea283d3d62915ca1e3450d2d74f26c2403db047d2edb1f088403929f33bb",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000016.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "eec9bb27bc1f0a2f5b0047581f7e62d94d10d02d821f8a767f80f2d29677ed3c": {
+      "height": 5,
+      "block_hash": "0cbeb7f5b2092d6396ff22f076797d5e05ed95e9c1186aa96ad89bbb095a0b0c",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000005.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "9ac231ed29e4798432b4599a3511e64466400910d33e9453ae15d41618487043": {
+      "height": 6,
+      "block_hash": "5367e18c73212fd8da51695d3932defaf47e3b534f232e68e55620c3f24dae43",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000006.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "84dc47f2a78685ed20c1279114d12b0a15296fae41b2c99ea2c8f3545b73cee3": {
+      "height": 13,
+      "block_hash": "295e80681a68b8578f368462438694729ffa29b7d2902519211b18419bc1e5e3",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000013.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "4b555abeb5f5d4bb035b890d5c69a6d26bda0f3709cb89ce0cd74cae7d094163": {
+      "height": 11,
+      "block_hash": "4e1f9777108e5c272482f3c33aed7e0db998281670d6bfabfbc336a10ef242dd",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000011.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "3b6955b7aede592dd1f11dc7af9430e2e1dd62936afc27a09a17428d85d46da8": {
+      "height": 59,
+      "block_hash": "479b19d9b7a157b8cbc495f5448f184b6ae35460afc2aa62ec34468cb1ec189f",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000059.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "b865de4d2291817482bc7fc5f2590c188a3c429e0af5efafa6df5afdfb4beb20": {
+      "height": 48,
+      "block_hash": "4257ba63ab2528d279834f8ebcf2646510948de4bb7f774f9c7f6245c5a008f8",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000048.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "1f65f47cb0931d4e47d453a3d92aca99ca455401c1500584316916888f873463": {
+      "height": 89,
+      "block_hash": "601a50f45e002a678d106aac9d46df19184373d4d331a357566f3e0eaba959ef",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000089.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "a9ebd18a8c57ad9f771325654d3bf94aaac9ba8b4fa8938e6ea1e963c6ecda1a": {
+      "height": 102,
+      "block_hash": "7531c035cc9bd97bf5afb056f8470089bc732572bc1a6e4d6ece0bdaf4ac7cfd",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000102.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "065c461ef3470282e831cdbadaae0afcfd83a8d4a95e1a8c9b34d81e1ce42a06": {
+      "height": 9,
+      "block_hash": "bae6aab9640c73e151baba89b6236c7f6e0cd810b645a63bf1765ca40d80fc87",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000009.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "3e86c64f55c90194a32d1b06fbdc4505bc3215dd0ced1a1586fca112e6287773": {
+      "height": 12,
+      "block_hash": "3825a944aeca6d2e918b50471fc9eb8cfd8fb1d849b65d3b006bb3666330b2b8",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000012.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "57bf882a685c68dbcd0e1e1206c109730ca760fffdc98c8b5f3436fedcac77db": {
+      "height": 56,
+      "block_hash": "d23e126ffe397e719989ba4867fc650e16bb90ae053112fc656c0fe297d0a373",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000056.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "6bcb337f7d8d4567f20b37acfab3a64ff1377ee4e0ef6b7066ab57bcebdcaf81": {
+      "height": 82,
+      "block_hash": "38d2290d3276fbd93f860c9ba148488b8d7c2f0ba1911e5cdcab1b470440d4ff",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000082.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "385fd3cf922e42bdf1967e6676c0c05b238d5d21e181d288c3dc4ffcc982880f": {
+      "height": 42,
+      "block_hash": "7df227b350a9dcbad7856623708808807267803512fa783523e84753f41c609b",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000042.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "fed0af08dfe562ca8b62a0e5a27c7485a608a4aa290558926ff764d64e98a57d": {
+      "height": 107,
+      "block_hash": "3897a4c9259c24c4c7b6f98271a1c985ecb8030cbe9f80a452f889b6396fb2b7",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000107.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "b9bb9fd77e809973f20b9e5320413c914d96c2e8a181bfa6092e6563943e9e51": {
+      "height": 32,
+      "block_hash": "e8dafd203fafb84b5ab24d61e2e4891526de503ee689869a37faa54ca84a9e95",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000032.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "29e9b5d50fe206b800c59d34fc84c4a06178fd5789c9af04da0d81747296a47d": {
+      "height": 20,
+      "block_hash": "f802c7d23437b95758455534ed612067455ebfd3cb77e41de73e6dd4ac70b7ae",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000020.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "60ac16dfd4bc5403c4b9778ba4d95c32a076f5602484169562fefb8f0ede5e53": {
+      "height": 105,
+      "block_hash": "dd4c00493a38292d99f4c76a42a134c3179cd49912a6e445a624c825de36b82c",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000105.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "06d036b5bee7fb036dc8286afb58824940c2571773f3e8bd007da779ab921516": {
+      "height": 63,
+      "block_hash": "3afb2fc9c822452ccf77a8edd6f38f34ac768d8b91fd0223b257353dc56b8434",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000063.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "100c8aba17d0f92586c2a32833ab3a21d8d3b970cbe3da862181edcf8f2c9bfd": {
+      "height": 113,
+      "block_hash": "c505ee4cf16a16a223744c2f3efee7f142f449636818d3343b7b78c80c9cb440",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000113.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "abc407d2b9140901abbd057ba587e3365f1a9ad0a9e57015e88b17bc165cddf7": {
+      "height": 2,
+      "block_hash": "48d5461df06c4079146766886903bb65f7d415f397b81eb2fc8592834572e4eb",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000002.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "7933f6f4d9b3a82e94bbcbe454fe381547a38134c3699a5dae90257c91a11cf0": {
+      "height": 110,
+      "block_hash": "82dd3b9235f5ce1a5ecc74735be7d6c81c8f847033aa762e409fe99dbfba7087",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000110.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "718b7c61b9d6e62b5cd911cc371661f113b9009864598ae11848d3152a942ce9": {
+      "height": 44,
+      "block_hash": "c218968bd36146fd4dfdc8cabbabdb5080bf778a934992accded08247963f534",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000044.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "580783ad4ae7a41d95be92855ad3e5994b558ccc16c9a375b8cc626adb2ea610": {
+      "height": 71,
+      "block_hash": "f315c50f2a798d10ba296c3101bcf67f43e038bef6410abbd48ead7d2729dbde",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000071.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "5389c35f772207c2937b6d7442e946aed7272592e9e49f62ba5cd1929eb210be": {
+      "height": 26,
+      "block_hash": "1a4fd79c6f44f49a7af6c3313253ee5ca044f661dba69ca5e28c1d23082e4f3a",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000026.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "d515a4a5525fca969e235ca6233b1be8d7f80933c117906fd2d496de0a740916": {
+      "height": 4,
+      "block_hash": "16e72b99a3499c95b80e2a2379100071e6a8465654ac5b1b7ff168a840cd0322",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000004.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "087381bf0cd0748907c93183e3ca88a926404d0341101e7404887c523d7904c0": {
+      "height": 108,
+      "block_hash": "3e3413e8925c20de7dd0f028543e086ce4ffabd0d881dd084023974547e7da24",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000108.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "53778104af6236ec67f5777de7d190996e02eaaf622d97c323133ebac29a35cd": {
+      "height": 72,
+      "block_hash": "7581804e150efb9e502eee8bce45bb607143a836c4174cc038f69e6d23330977",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000072.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "e4826e3e2792582e29affd96cbdbe8b69db437fd0b33327412ade9e791897a07": {
+      "height": 61,
+      "block_hash": "483c6b8bde315d33983ede298267719c5b9f4f6ea1d3a41da1b3841cce8851a9",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000061.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "57c0d73d45e7db94fc233196e4b54792c2d31b5fbd05b6779b6f17c6e28870f3": {
+      "height": 106,
+      "block_hash": "cceccbfbfcfb4ad315475aae836b86a6e0ff3ef3b6052662327a5d24c7748dc5",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000106.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "60a9654364d541b1ac1cc2b0999ace60fd61a684ab9c216ba5d4728648fece5b": {
+      "height": 36,
+      "block_hash": "012afa598b8d9c5c2ffed89d977cf8a9d40101ad19e90ffc67d4f72cfa1e4d82",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000036.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "ab96c95a28ad5049805c99eebad36066452971b9228499e0392d4fad43937e56": {
+      "height": 90,
+      "block_hash": "3bae81e10ae7397db2deda65fbba6d039afc2a4e6001a1dbae561a8877cc3434",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000090.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "85f2c95a3c13b1afc25e9f681b53433d5ac9931a3d098524a82c7ae54c008637": {
+      "height": 96,
+      "block_hash": "a12e62d97ab65af1991dc335a14b95a75d4d0feab42b38c8c59aa0d7b6126a24",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000096.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "5c35e1c07695af7e1f85fe092231c08c828e5c56564a144f08e2a0f1186a6c3d": {
+      "height": 64,
+      "block_hash": "ae5cddee401f05ef96cee5c0799ce96e2e5571630f44566831d095b92a24ba86",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000064.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "088d64f167159708d420be6df6a0060215b24dab4d962acc9c3bdcbc2835a581": {
+      "height": 15,
+      "block_hash": "d4a1435e9f086fbaad264daec9d2fcde7ef4900809b113069bb942bdde213ab3",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000015.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "3ba29d647564872f0df2662fe81a86c47cd849f462ed1fa014179330aec884eb": {
+      "height": 52,
+      "block_hash": "6b62e8282950173907c996fc01bae62bb96391af445cdb3c4ec1f3ca0612e8e8",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000052.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "41e98629d02a2c4662c60fbedee20ca4c286bea7ae26e7f7e38156bb2597e0d9": {
+      "height": 58,
+      "block_hash": "e9a71421f5ffbce1e74ed51fe8dcb397183c8c1db193e2fe1a7521c6326e9a8e",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000058.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "973a4af1ac67aa1b393ee2d9569bd53100ba25a1445d697d7a22f1c5a3bfcad7": {
+      "height": 53,
+      "block_hash": "8ff3f935aeb824d6b687d12685623728a0e4f031ff2f750291aee55ea920efe4",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000053.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "8638f136ee9bbbe1a133f2d3c86200ffa85af14ecfa031d13d3330573a5a4ef4": {
+      "height": 109,
+      "block_hash": "7bfa45967abb9c54f26d0ae248dc00f5cec9f5c3deed05513e01f80c6dac8805",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000109.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "668022286b17c86de2a4fb5b96bed782664f6fc50bcb741bb007f001306fcb21": {
+      "height": 54,
+      "block_hash": "4c1f3ae3d3d15b24e4d6de3fbc1830089a88588020361e075f5da718601d3b2f",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000054.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "471d5a3ad5b724b119fa16bd8724d30525352509a54de2c082275e9b3f572eb9": {
+      "height": 93,
+      "block_hash": "39bf8d132a1456404b1722d60b8096afe3d2bcbb1de431b9953a181b1d021b65",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000093.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "72bb12850b066b29bc4c6066a316d5fc1615f90d29c7c590f744f6eef0974026": {
+      "height": 98,
+      "block_hash": "3aa38c8dfc2f808590779a7d13e5f332e13986bdac7e0da913d5267a85770011",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000098.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "c8b4edaf77af561eabe2d9704623ba7b3220fe3ff84e845f869e901b393f229f": {
+      "height": 60,
+      "block_hash": "6a1c9dfe29ea8f94c19137a5de171ddf68697877d557d5f77d183122e076f0e7",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000060.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "d192e827f42b8aaf04667764c0824ee53cdfe289200cea5998899c800a7b7251": {
+      "height": 25,
+      "block_hash": "a520da1c6d5a503dec32703402f7c49a6e3229169587416024aa0dbef9a41d43",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000025.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "3f0d2746491e18bd61f67f02d59d3520a0157a1772fb549b39c8f97ed1df470f": {
+      "height": 92,
+      "block_hash": "574d60d407de5768c7803ce2470b0a5f470695083727b96b863f5fdc7fa865dd",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000092.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "e3836b9be8a6d1260397277f2b9d500a2bb38add3cb323a3aea8bf0534d909fa": {
+      "height": 66,
+      "block_hash": "04e2cff7116e8d8cd22cc52759244874f78a4138956f4a1ea791223dce3493ad",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000066.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "b8a49e159ecf76ef62494ad158d17723f495a4951636a12c6efdc8a336d1bfcf": {
+      "height": 31,
+      "block_hash": "191ff37bc9787194a085190fff38ba41585e963811be02783abd3665a427a11f",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000031.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "30e31402c260b25dc6bf1069d09032eff2e4ce88a54ef02eab596f9396d8492d": {
+      "height": 74,
+      "block_hash": "16d5cef30f90400191039f96758eac9047342c292c704cd23d9a7aeeb8830bc3",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000074.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "6b32e1b265cc02723fe5706817fa122597e90cdeaa3a47c15c8056c5092b0fb7": {
+      "height": 91,
+      "block_hash": "f7ad681c333ae4aaf99de889b6ce8f8ee68c2c7c9711398f059ca436256df63a",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000091.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "8b242e1aba0af6f4a52182a07d1a9e7a1c688a9755d6e08e98aaf6234f21582f": {
+      "height": 115,
+      "block_hash": "2267351ff15de26a61e869233dd19925ba529b4ffde501ddd79dcf05947bf90f",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000115.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "9387fd1aad80319a7cb2ac34cc64fbceea3647b39cf9869b44bcefe10d2245d9": {
+      "height": 49,
+      "block_hash": "3b66601365a6302245a39be69ccfca2c5c6137c89563384ea48dcf13d507ed1c",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000049.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "d9b1f790aee619f146e732564f51783df644802d3d0659c73d67b41a58bf54a4": {
+      "height": 111,
+      "block_hash": "eb7f91d5f44d5283b1130ee7059380019d7eb34503b3de8ccc1fc757e638814f",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000111.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "ffaff7a3b125858db8f367acda710abcfe6f162c8affc687b22c0a281211b96e": {
+      "height": 80,
+      "block_hash": "a0d15f21213398bbb0f89a41a1873eaffb838180ed91254f2cfdb81c003f03f4",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000080.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "b93aeab564faa0c1a187e7bd63c3031e2839d35f127f557e98a40daa9936b8e7": {
+      "height": 57,
+      "block_hash": "cfc0c4139715b00f19ab56abb6750cdec25a351e512920bf2ab08b5958013435",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000057.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "4e16a300ea552a565be3192702e0f8f0f7230de922f7d2426092772cc1accdd0": {
+      "height": 46,
+      "block_hash": "49f54927456c1422125bec20d765c096f5d277f4e5802dd6f1ece6b20b0aa0e9",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000046.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "b5487bc23d94eea16fb45a2f4a48e4714e2c4d9211754a6c99c4c53d6cf08b23": {
+      "height": 76,
+      "block_hash": "38e044c3a492e4d68419a06a5f8210bb834413b883c23b1061f186356af2d3e1",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000076.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "ab3b6c9dbed3d627c9fe8bad415eefbcc00885db098e6ac3ac9411d300e57d1b": {
+      "height": 3,
+      "block_hash": "93b1c36f0e6d2a20e6591e9efe578f9bf68e8a3833b1c8fd9064e65bd7c3051f",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000003.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "80c48c2204b3adf6f1e4004b0d36ed1242079ae34b35453944d15389ef5e9ccd": {
+      "height": 75,
+      "block_hash": "175e5f7217f024df8e037f0cfe46d34cffa61d175e1b1b9f0c018e8df845924f",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000075.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "191b3c4090f7cb338453c5aad738b0457b5123ade0af9126e985634d99e759e3": {
+      "height": 78,
+      "block_hash": "3cdc17741cf3f982269ff2c34b2fe2be911b85a46b803cecc2eac7360976c393",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000078.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "941b09b85bc42f50f696e426b21cb940f55cedd5ee83f11e049125ef532e9b46": {
+      "height": 14,
+      "block_hash": "6fe80b3d3f34b7b7760db0d81655e7a9f6300812eddd1584d5427cec307cd5c7",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000014.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "c027b0419170212606381ede98527dad76072919f0fab4fd324576253c661020": {
+      "height": 62,
+      "block_hash": "8f9ddb13dea0d758bb119f48b8c5024dcdea8b63b0cedfdc273d8e8dbec9864c",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000062.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "a674d67ed1ba54d0cbef3731b54b99389fb1cffedc3cf461561777315162d3ce": {
+      "height": 68,
+      "block_hash": "72ed0b9d648fd9ba13dc8346788ed1f2509ed4d62161b396ea1d2218b685baaf",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000068.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "d7ae92642608d8da09be982e32c605bf1ad817eef2b23043cffe49e3ea673dbf": {
+      "height": 24,
+      "block_hash": "ad13d17b658ab1baa9cdf886b5f7bdac725860b68b5de1507d7d5b237d65e213",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000024.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "195c489255c0e50b4ef3da9bb1ba9e8b9820ef4859f1eb66654537eced7c1c55": {
+      "height": 87,
+      "block_hash": "5877881dca575477827d1e0c9fb4658e52dbc1a00020a7e01b696eae828f6b94",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000087.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "fe195c52d6ea73ae594a2eee03d95ab69ac28a3e0b54120c0b42511be74d58de": {
+      "height": 97,
+      "block_hash": "21b53d9d48ca8b26f7b7e3cc74dfdf671b104f8964393b7b1cc3267afa9a4c12",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000097.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "2ba32e8e3943cd20b91ee801640398672a2873cfa929a1d62cd12538a3277230": {
+      "height": 29,
+      "block_hash": "085e0181eab2ad12823e0fd447a109acead5580616e0f4166e1d39d350a97e34",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000029.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "390732ef1d7c5162e2d1802dcb44667b926752d2af94b957bbfe809794990af1": {
+      "height": 94,
+      "block_hash": "821f89505d7480137a1db083c87a1a9013f8ced404b47acb681aaec6df4e2ba2",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000094.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "ac9ce8e019068965f61fbf7aa55ce1beec8bd465f4f9df6c0a2b00e2976427f5": {
+      "height": 39,
+      "block_hash": "3b475a6f97b29fd32c1caa3b14ffd9c80faea0310f9bd3b677e944cd79d7e9a2",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000039.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "9531b9a4a0fa91f2cda784b3664bc86e63651b314046be699913bbbee4acff54": {
+      "height": 19,
+      "block_hash": "87e4ab6d490425396a2d6cad10b16a763e91866527fe69eb4b1f68f0e13e47b3",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000019.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "58707f05fdfea395dfeeaa541b41975db5b2b30fac35dbcab4d2595147cc0479": {
+      "height": 27,
+      "block_hash": "39da8c4bbe9b850c814525e5ac840cb006b2a9d5531bbb67ecb7692abb7cb817",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000027.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "49bad111dbc71bf17bb0702a10224474307aef2fef43d5d11dee2a851a36598b": {
+      "height": 1,
+      "block_hash": "71494831e471148bd6e97809dcc5f14aedf11c5704287948aa5e3ea1301d0888",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000001.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "8d94bbac525bb1a5d2455c9a1f6863245518539564edfb0170cf64c7b4a91291": {
+      "height": 103,
+      "block_hash": "5febd31fa640a4623a5558045fd8211f5fbe4d4d60d1b3d3d49141b5d856651e",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000103.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "3f798ad3b6d9d98ed2d521234d2d04fe578764da3602c093592abe01b1a88d2a": {
+      "height": 40,
+      "block_hash": "b7a972ca60e4cc9f87d66cf6fa6f2a0fbf53c2fd98efe88fe0cb9083e7341e55",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000040.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "e83052872b0d30b25d5d0e2073ba18c35ccb8d6f8db853dc2ad47c5e7798d0cc": {
+      "height": 104,
+      "block_hash": "ca5a3a85332c17c0a837b5cc4ead9b3dc21cc367e8ba2c69a1d64df52c360923",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000104.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "7175289502ad414dc06d000217f7c90266ac4d3cbcf6b9d64835462bbd12e759": {
+      "height": 50,
+      "block_hash": "64a41f77115d327484d034acdd2cb325490c54bf16020ec6e218dfe24ee97b25",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000050.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "da0f4609906c9d71d0ccaa8b2866c02cdfaa8d7150bc097ec8da0820430c4181": {
+      "height": 67,
+      "block_hash": "ad334cf46be0f3e9e93538762050d5e9f1ce25af32b38042663c0a64ffcac813",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000067.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "d1035bbaef3141e9c14a6d1803c68f7ec74c1020984c7d9887742ff6013e389d": {
+      "height": 22,
+      "block_hash": "84060ce724f26af00acd0b2cc85ec6a0d085a6b195a50cfd984700f6d4b4d93a",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000022.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "4ba622b72c3db872ad43b8b768b40f4c53a4386211c0d753211da42a838f36d4": {
+      "height": 88,
+      "block_hash": "6b7b6220a644f0dde307f0dc45df4a2f9f34f1439af68faacd9e231c75103552",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000088.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "8e45ff932de7c0048389f7b01e88663de4fe2fe17b0e1e4003e5b1be08571d58": {
+      "height": 37,
+      "block_hash": "a45fbb207b3f143a6d2a949fd09cecd5f4e1ed1168657f98374ac30816bb6068",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000037.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "786ad10a7e43acdb775a6849437777771e044cf363bbaf77d03f376056bb3fa3": {
+      "height": 7,
+      "block_hash": "2d67d95a956ebdc926280a1c73eae0b4fd2f07798bc1fdc0cbd6c8320a9824ad",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000007.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "3f9f09918ecc8c6c5fc0d4996d84fd4ec73d566eaeddfd32edeb07351f3b87d1": {
+      "height": 10,
+      "block_hash": "61d2ff4066d4d43d22e9dd3b7e32d9e578d1f416d156186e42627080b2d85ef9",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000010.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "a7311a86a0ccd802b5288bf7985732c0ae314eb3262cac68a007fb449ae95b53": {
+      "height": 8,
+      "block_hash": "cf8326e818f70bcb398301dc9901be61b84eafb57718a55df08a48aabe4dab8e",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000008.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "c33cf489444ecda2a48b77d3ca608e45bed594e3ee777fc8695c23c1c240bcf5": {
+      "height": 34,
+      "block_hash": "fae530b42a3b78aafcc9808d3eb31dcee840f5acdf8bc935be3c0d78b2507df9",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000034.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "8573432f36fcfc65d971cf345dbf95e481debec6863f8f012439b885b3742784": {
+      "height": 21,
+      "block_hash": "d5a9ae91e4463f3812813b3f7f9ed47dd5b15c44865092bcd7feecd1d0d44d7a",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000021.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "c0e059f50abd8316650a6800ffae83a113fc9778a20a4daca72c243e263e398a": {
+      "height": 114,
+      "block_hash": "b9582d3635e8e465ce0a56149ece17a5adc0f34d67187de3aab787a920e036e6",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000114.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "4eff5769ad1a99c7a20d867d7dbaa83ec4cd05e9f9dad590cbebbe6897ffa6ce": {
+      "height": 28,
+      "block_hash": "975dedc8d41cb3051177cebb6aac78f4ef4c39bf96d406377a95808a8dbd2946",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000028.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "a3a125c49981f2170d7a5ac7f4f4acc5a99d82aeaa541c075f561aecf6e6534e": {
+      "height": 83,
+      "block_hash": "43e8baa062348565d61cbd3013bce4fbf8f4c1e210be97be8271b09297284810",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000083.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "3e31379018bee350db45bebfb3c968c3bb8fb1f1edd519c80b44622e5199dc0f": {
+      "height": 17,
+      "block_hash": "a192881c794ff97a3dbfc93d547a3818b2ce4c98602797689594674ae818fdd6",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000017.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "f475fc5a7c8f8519fb3e034d8686d0a409509a09514e7f9e6aa6d89255fa5089": {
+      "height": 100,
+      "block_hash": "11c98cedd544580e5859e0c29964c8c1b81e7ab0c373d152e5b0c055354b9824",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000100.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "657f8a4b07a515d1210c68b6c34c6fcd748a5a4664a2ee435829e197acf2f586": {
+      "height": 23,
+      "block_hash": "6db21c634fdec488eabe5886e9dcb596ad8674d429231e66d208b9d8f08e28f8",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000023.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "26cc1384363ab289e6dbc185137315ce7ed440b7bf0e6379ce16ab96cc845557": {
+      "height": 33,
+      "block_hash": "2da7ea703740aa4d44860a3bc2ec69fff1aef8197a6889fe79496c0b55e90770",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000033.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "074c290b0025374b0be100691f56e2226809b8f41ab5a7724165a28827061aeb": {
+      "height": 111,
+      "block_hash": "eb7f91d5f44d5283b1130ee7059380019d7eb34503b3de8ccc1fc757e638814f",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000111.json",
+      "t_observed_node1_wall_ns": 1789416365485750835
+    },
+    "a1827583b2e4d6edf4174c190cb4039136db9ca57c507cd6b87d3a60717e074e": {
+      "height": 116,
+      "block_hash": "ada7e99af1b85fa3d181c0f3695479239b524fa99b109e6bb771b81b85fc9a68",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+      "block_file": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks/00000000000000000116.json",
+      "t_observed_node1_wall_ns": 1789416365632768331
+    }
+  },
+  "node1_local_observation_diagnostics": {
+    "data_dir": "/home/ismail/blockchain-experiment-distributed/data/node1",
+    "blocks_dir": "/home/ismail/blockchain-experiment-distributed/data/node1/blocks",
+    "blocks_dir_exists_at_start": true,
+    "last_scan_transaction_count": 121
+  },
+  "errors": [],
+  "secrets_policy": "validator secret key was read locally and is not serialized"
+}

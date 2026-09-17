@@ -1,0 +1,307 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "InvalidController",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        }
+      ],
+      "name": "NotController",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "PatientAlreadyInactive",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "PatientAlreadyRegistered",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "PatientNotRegistered",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "deactivatedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "PatientDeactivated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "controller",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "registeredAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "PatientRegistered",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "controllerOf",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "deactivatePatient",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isActive",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "candidate",
+          "type": "address"
+        }
+      ],
+      "name": "isController",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isRegistered",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "patientId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "registerPatient",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561000f575f80fd5b5061036d8061001d5f395ff3fe608060405234801561000f575f80fd5b5060043610610060575f3560e01c80632427473b1461006457806327258b221461008c5780635c36901c146100b65780638ebc10d9146100db578063b68b7f0a146100f0578063d2b4678b14610103575b5f80fd5b610077610072366004610310565b610143565b60405190151581526020015b60405180910390f35b61007761009a366004610349565b5f908152602081905260409020546001600160a01b0316151590565b6100776100c4366004610349565b5f9081526020819052604090206002015460ff1690565b6100ee6100e9366004610349565b610178565b005b6100ee6100fe366004610349565b61023d565b61012b610111366004610349565b5f908152602081905260409020546001600160a01b031690565b6040516001600160a01b039091168152602001610083565b5f828152602081905260408120600281015460ff168015610170575080546001600160a01b038481169116145b949350505050565b33610196576040516336abb4df60e11b815260040160405180910390fd5b5f81815260208190526040902080546001600160a01b0316156101d45760405163dc4510ad60e01b8152600481018390526024015b60405180910390fd5b80546001600160a01b03191633908117825542600180840182905560028401805460ff1916909117905560405184917fdcaeb97fdf2d04101d13647007fcc0358c1aa1a91b806e75139c04340d16a8fb9161023191815260200190565b60405180910390a35050565b5f81815260208190526040902080546001600160a01b0316610275576040516342228d9960e11b8152600481018390526024016101cb565b80546001600160a01b031633146102a857604051637349b3c360e11b8152600481018390523360248201526044016101cb565b600281015460ff166102d05760405163f4a88e0360e01b8152600481018390526024016101cb565b60028101805460ff19169055604051428152339083907f3e89b2df4b4487497026bb63f67fdec138b20c5daa8762c1bf8a0522a0d4af8990602001610231565b5f8060408385031215610321575f80fd5b8235915060208301356001600160a01b038116811461033e575f80fd5b809150509250929050565b5f60208284031215610359575f80fd5b503591905056fea164736f6c6343000818000a",
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.24+commit.e11b9ed9.Linux.g++"
+  },
+  "contractName": "PatientRegistry",
+  "deployedBytecode": "0x608060405234801561000f575f80fd5b5060043610610060575f3560e01c80632427473b1461006457806327258b221461008c5780635c36901c146100b65780638ebc10d9146100db578063b68b7f0a146100f0578063d2b4678b14610103575b5f80fd5b610077610072366004610310565b610143565b60405190151581526020015b60405180910390f35b61007761009a366004610349565b5f908152602081905260409020546001600160a01b0316151590565b6100776100c4366004610349565b5f9081526020819052604090206002015460ff1690565b6100ee6100e9366004610349565b610178565b005b6100ee6100fe366004610349565b61023d565b61012b610111366004610349565b5f908152602081905260409020546001600160a01b031690565b6040516001600160a01b039091168152602001610083565b5f828152602081905260408120600281015460ff168015610170575080546001600160a01b038481169116145b949350505050565b33610196576040516336abb4df60e11b815260040160405180910390fd5b5f81815260208190526040902080546001600160a01b0316156101d45760405163dc4510ad60e01b8152600481018390526024015b60405180910390fd5b80546001600160a01b03191633908117825542600180840182905560028401805460ff1916909117905560405184917fdcaeb97fdf2d04101d13647007fcc0358c1aa1a91b806e75139c04340d16a8fb9161023191815260200190565b60405180910390a35050565b5f81815260208190526040902080546001600160a01b0316610275576040516342228d9960e11b8152600481018390526024016101cb565b80546001600160a01b031633146102a857604051637349b3c360e11b8152600481018390523360248201526044016101cb565b600281015460ff166102d05760405163f4a88e0360e01b8152600481018390526024016101cb565b60028101805460ff19169055604051428152339083907f3e89b2df4b4487497026bb63f67fdec138b20c5daa8762c1bf8a0522a0d4af8990602001610231565b5f8060408385031215610321575f80fd5b8235915060208301356001600160a01b038116811461033e575f80fd5b809150509250929050565b5f60208284031215610359575f80fd5b503591905056fea164736f6c6343000818000a",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"InvalidController\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"NotController\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"}],\"name\":\"PatientAlreadyInactive\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"}],\"name\":\"PatientAlreadyRegistered\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"}],\"name\":\"PatientNotRegistered\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"deactivatedAt\",\"type\":\"uint256\"}],\"name\":\"PatientDeactivated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"controller\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"registeredAt\",\"type\":\"uint256\"}],\"name\":\"PatientRegistered\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"}],\"name\":\"controllerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"}],\"name\":\"deactivatePatient\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"}],\"name\":\"isActive\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"candidate\",\"type\":\"address\"}],\"name\":\"isController\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"}],\"name\":\"isRegistered\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"patientId\",\"type\":\"bytes32\"}],\"name\":\"registerPatient\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"No real-world identity or medical data is accepted by this contract.\",\"kind\":\"dev\",\"methods\":{\"isController(bytes32,address)\":{\"details\":\"This checks both identity of the controller and active status.\"}},\"title\":\"PatientRegistry\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"deactivatePatient(bytes32)\":{\"notice\":\"Deactivates a patient without deleting its historical entry.\"},\"registerPatient(bytes32)\":{\"notice\":\"Registers a pseudonymous patient identifier for msg.sender.\"}},\"notice\":\"Stores only pseudonymous patient identifiers and their controller.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"PatientRegistry.sol\":\"PatientRegistry\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"PatientRegistry.sol\":{\"keccak256\":\"0x601fbb828d97b05ad903ad196a568e7cc1b8c6f9533e6e87460925a8edcb219e\",\"license\":\"Apache-2.0\",\"urls\":[\"bzz-raw://0156761f2c2a4d5ae0114a347ed0c911495999474fa32cc397ec722d1b50203c\",\"dweb:/ipfs/Qmc3yjPN4bt6kc2b1owY8Z8hiE6Qg6t2mZteptoQJHGejo\"]}},\"version\":1}",
+  "settings": {
+    "evmVersion": "shanghai",
+    "metadata": {
+      "bytecodeHash": "none"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": false
+  },
+  "sourceName": "PatientRegistry.sol",
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 746,
+        "contract": "PatientRegistry.sol:PatientRegistry",
+        "label": "_patients",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_bytes32,t_struct(Patient)741_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_bytes32,t_struct(Patient)741_storage)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => struct PatientRegistry.Patient)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Patient)741_storage"
+      },
+      "t_struct(Patient)741_storage": {
+        "encoding": "inplace",
+        "label": "struct PatientRegistry.Patient",
+        "members": [
+          {
+            "astId": 736,
+            "contract": "PatientRegistry.sol:PatientRegistry",
+            "label": "controller",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address"
+          },
+          {
+            "astId": 738,
+            "contract": "PatientRegistry.sol:PatientRegistry",
+            "label": "registeredAt",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 740,
+            "contract": "PatientRegistry.sol:PatientRegistry",
+            "label": "active",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_bool"
+          }
+        ],
+        "numberOfBytes": "96"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

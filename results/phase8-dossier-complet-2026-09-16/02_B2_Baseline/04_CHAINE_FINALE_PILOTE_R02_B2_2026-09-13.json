@@ -1,0 +1,52 @@
+{
+  "benchmark": "phase8-b2-baseline",
+  "run_id": "b2-pilot-r02-2026-09-13",
+  "source": "summary JSON fourni après collecte scp des trois VMs",
+  "tip_height": 6,
+  "per_node": {
+    "node1": {
+      "height": 6,
+      "block_hash": "276601ce46dd6e39161dda1b2285bd6d67b06507a34095f7efc1002022814945",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+    },
+    "node2": {
+      "height": 6,
+      "block_hash": "276601ce46dd6e39161dda1b2285bd6d67b06507a34095f7efc1002022814945",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+    },
+    "node3": {
+      "height": 6,
+      "block_hash": "276601ce46dd6e39161dda1b2285bd6d67b06507a34095f7efc1002022814945",
+      "state_root": "56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421"
+    }
+  },
+  "convergence": {
+    "common_prefix_height": 6,
+    "all_same_to_min_tip": true,
+    "genesis_block_hash": "3ff93ff7c581582d53d9218d0368e4a35cc4c6828c0a6a683b54986f1c8fa590",
+    "all_heights_checked": "0..6"
+  },
+  "benchmark_counts": {
+    "submitted": 6,
+    "included_node1": 6,
+    "included_node2": 6,
+    "included_node3": 6,
+    "included_on_all_three": 6,
+    "missing_on_all_three": 0,
+    "duplicates_node1": 0,
+    "duplicates_node2": 0,
+    "duplicates_node3": 0
+  },
+  "rates": {
+    "submitted_duration_s": 30.000114637,
+    "committed_tps_all_three": 0.1999992357562537,
+    "success_rate_all_three": 1.0
+  },
+  "limitations": {
+    "accepted_by_node1_direct_ack": false,
+    "local_observed": 0,
+    "inclusion_latency_available": false,
+    "cross_vm_convergence_latency_available": false,
+    "final_mempool_size_observed": false
+  }
+}
