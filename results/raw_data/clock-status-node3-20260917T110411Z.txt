@@ -1,0 +1,48 @@
+node=node3
+captured_at=2026-09-17T11:04:47,856804272+00:00
+hostname=node3
+date=2026-09-17T11:04:47,865339487+00:00
+===== timedatectl status =====
+               Local time: jeu. 2026-09-17 11:04:47 UTC
+           Universal time: jeu. 2026-09-17 11:04:47 UTC
+                 RTC time: jeu. 2026-09-17 11:04:47
+                Time zone: Etc/UTC (UTC, +0000)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no
+===== NTPSynchronized =====
+yes
+===== chrony service =====
+active
+active
+===== chronyc tracking =====
+Reference ID    : B97DBE7B (ntp-nts-3.ps5.canonical.com)
+Stratum         : 3
+Ref time (UTC)  : Thu Sep 17 10:45:32 2026
+System time     : 0.000000732 seconds fast of NTP time
+Last offset     : -0.007862717 seconds
+RMS offset      : 0.055898111 seconds
+Frequency       : 10.089 ppm fast
+Residual freq   : -0.480 ppm
+Skew            : 4.345 ppm
+Root delay      : 0.063547850 seconds
+Root dispersion : 0.008670866 seconds
+Update interval : 1486.2 seconds
+Leap status     : Normal
+===== chronyc sources -v =====
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current best, '+' = combined, '-' = not combined,
+| /             'x' = may be in error, '~' = too variable, '?' = unusable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- ntp-nts-2.ps5.canonical.>     2   7   377   645  +1903us[+1903us] +/-   32ms
+^* ntp-nts-3.ps5.canonical.>     2   7   377  1155   -209us[-8072us] +/-   32ms
+^- ntp-nts-2.ps6.canonical.>     2   8   377    57    +25ms[  +25ms] +/-  115ms
+^- ntp-nts-3.ps6.canonical.>     2   7   377   316    +26ms[  +26ms] +/-  123ms
+^- ntp-nts-1.ps6.canonical.>     2   8   377   188    +25ms[  +25ms] +/-  114ms

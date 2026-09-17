@@ -1,6 +1,7 @@
 # Dossier complet — Phase 8
 
-**Date de consolidation :** 16 septembre 2026  
+**Date de consolidation initiale :** 16 septembre 2026  
+**Mise à jour de clôture :** 17 septembre 2026 — synchronisation NTP/chrony vérifiée sur les trois nœuds  
 **Périmètre :** Phase 8 complète, des fondations jusqu'à B8-C  
 **Sous-phases incluses :** fondations, B2, B3/B3-N, B4, B5, B6, B7, B8-A, B8-B et B8-C  
 **Répertoire source :** `results/raw_data/`  
@@ -22,6 +23,13 @@ originaux restent conservés dans `results/raw_data/`.
 Les étapes d'environnement, ML-DSA-44, ML-KEM-768/AES-GCM et la baseline B2
 sont regroupées dans `01_Fondations/`. Les résultats cryptographiques et les
 procédures d'environnement sont conservés avec leurs fichiers JSON bruts.
+
+Une vérification indépendante NTP/chrony des trois nœuds a été ajoutée le
+17 septembre 2026 dans `01_Fondations/06_SYNCHRONISATION_HORLOGES_2026-09-17.md`.
+Les trois nœuds indiquent `NTPSynchronized=yes`, `Leap status: Normal` et une
+source NTP sélectionnée. Cette preuve corrige le manque documentaire pour la
+campagne de clôture du 17 septembre, sans réécrire les limites historiques des
+campagnes exécutées avant cette date.
 
 ### B2 — baseline de débit
 
@@ -108,6 +116,7 @@ Phase 7. Cette distinction est documentée dans les analyses B8-C.
 ├── environnement et runbook général ;
 ├── étapes ML-DSA-44 et ML-KEM-768/AES-GCM ;
 ├── baseline B2 ;
+├── synchronisation NTP/chrony vérifiée le 17/09/2026 ;
 └── résultats JSON cryptographiques par nœud.
 
 02_B2_Baseline/
@@ -160,8 +169,12 @@ Phase 7. Cette distinction est documentée dans les analyses B8-C.
 
 ## 5. Limites documentées
 
-- La synchronisation indépendante des horloges des VMs n'est pas établie ; les
-  latences numériques de convergence inter-VM ne sont donc pas publiées.
+- Pour les campagnes historiques des 13 au 16 septembre, la synchronisation
+  indépendante des horloges n'était pas établie au moment des mesures ; les
+  latences numériques de convergence inter-VM restent donc non publiées pour
+  ces campagnes. Une vérification NTP/chrony indépendante des trois nœuds a
+  ensuite été réussie le 17 septembre 2026 ; voir
+  `01_Fondations/06_SYNCHRONISATION_HORLOGES_2026-09-17.md`.
 - B5 mesure une reprise fonctionnelle, mais pas un temps de failover précisément
   instrumenté.
 - `memory.events` n'était pas disponible dans les pré-vérifications B8-C ;
@@ -173,14 +186,15 @@ Phase 7. Cette distinction est documentée dans les analyses B8-C.
 
 ## 6. Fichiers à ouvrir en premier
 
-1. `02_B2_Baseline/01_ANALYSE_RESULTATS_B2_2026-09-14.md`
-2. `03_B3_Charge_Concurrence/04_ANALYSE_SURCHARGE_3TPS_2026-09-15.md`
-3. `04_B4_Latence/02_ANALYSE_B4_LATENCE_2026-09-15.md`
-4. `05_B5_Crash_Reprise/02_ANALYSE_B5_CRASH_REPRISE_2026-09-15.md`
-5. `06_B6_Reseau/02_ANALYSE_B6_DELAY_50MS_2026-09-15.md`
-6. `07_B7_Ressources/02_ANALYSE_B7_RESSOURCES_2026-09-15.md`
-7. `08_B8A_EVM/01_ANALYSE_B8A_EVM_2026-09-16.md`
-8. `10_B8C_IPFS/01_Analyses_et_procedures/01_ANALYSE_FINALE_B8C_IPFS_2026-09-16.md`
+1. `01_Fondations/06_SYNCHRONISATION_HORLOGES_2026-09-17.md`
+2. `02_B2_Baseline/01_ANALYSE_RESULTATS_B2_2026-09-14.md`
+3. `03_B3_Charge_Concurrence/04_ANALYSE_SURCHARGE_3TPS_2026-09-15.md`
+4. `04_B4_Latence/02_ANALYSE_B4_LATENCE_2026-09-15.md`
+5. `05_B5_Crash_Reprise/02_ANALYSE_B5_CRASH_REPRISE_2026-09-15.md`
+6. `06_B6_Reseau/02_ANALYSE_B6_DELAY_50MS_2026-09-15.md`
+7. `07_B7_Ressources/02_ANALYSE_B7_RESSOURCES_2026-09-15.md`
+8. `08_B8A_EVM/01_ANALYSE_B8A_EVM_2026-09-16.md`
+9. `10_B8C_IPFS/01_Analyses_et_procedures/01_ANALYSE_FINALE_B8C_IPFS_2026-09-16.md`
 
 ## 7. Traçabilité
 

@@ -1,0 +1,19 @@
+echo "node=$NODE_LABEL"
+echo "captured_at=$(date -Ins)"
+echo "hostname=$(hostname)"
+echo "date=$(date -Ins)"
+echo
+echo "===== timedatectl status ====="
+timedatectl status || true
+echo
+echo "===== NTPSynchronized ====="
+timedatectl show -p NTPSynchronized --value || true
+echo
+echo "===== chrony service ====="
+systemctl is-active chrony chronyd 2>/dev/null || true
+echo
+echo "===== chronyc tracking ====="
+chronyc tracking || true
+echo
+echo "===== chronyc sources -v ====="
+chronyc sources -v || true

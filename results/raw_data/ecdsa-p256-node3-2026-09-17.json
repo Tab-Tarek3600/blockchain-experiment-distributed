@@ -1,0 +1,269 @@
+{
+  "benchmark": "phase8-pqc-baseline-ecdsa-p256",
+  "scope": "local cryptographic microbenchmark; not blockchain TPS",
+  "algorithm": "ECDSA-P256-SHA256",
+  "node_label": "node3",
+  "collected_at_utc": "2026-09-17T10:08:27.132985+00:00",
+  "python": "3.12.13",
+  "platform": "Linux-7.0.0-31-generic-x86_64-inconnu-with-glibc2.43",
+  "cryptography_version": "50.0.1",
+  "parameters": {
+    "warmup_operations": 100,
+    "measured_iterations_per_repetition": 1000,
+    "repetitions": 5,
+    "message_bytes": 32,
+    "timer": "time.perf_counter_ns"
+  },
+  "validity_checks": {
+    "verify_32B": true
+  },
+  "sizes": {
+    "public_key_der_bytes": 91,
+    "signature_der_bytes": 71
+  },
+  "measurements": {
+    "keygen": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 16.805,
+        "mean_us": 18.8520598,
+        "median_us": 17.288,
+        "p95_us": 23.513,
+        "p99_us": 41.951,
+        "max_us": 236.141,
+        "throughput_ops_s_from_median": 57843.59093012494
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 16.891,
+            "mean_us": 21.440215,
+            "median_us": 17.372,
+            "p95_us": 30.1,
+            "p99_us": 88.931,
+            "max_us": 236.141,
+            "throughput_ops_s_from_median": 57563.89592447617
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 16.873,
+            "mean_us": 18.583534,
+            "median_us": 17.2605,
+            "p95_us": 23.563,
+            "p99_us": 33.546,
+            "max_us": 85.347,
+            "throughput_ops_s_from_median": 57935.74925407723
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 16.805,
+            "mean_us": 17.746969,
+            "median_us": 17.201,
+            "p95_us": 20.796,
+            "p99_us": 27.339,
+            "max_us": 46.106,
+            "throughput_ops_s_from_median": 58136.15487471659
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 16.933,
+            "mean_us": 18.209965,
+            "median_us": 17.32,
+            "p95_us": 21.94,
+            "p99_us": 28.928,
+            "max_us": 177.841,
+            "throughput_ops_s_from_median": 57736.72055427252
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 16.93,
+            "mean_us": 18.279616,
+            "median_us": 17.3025,
+            "p95_us": 22.732,
+            "p99_us": 31.898,
+            "max_us": 74.55,
+            "throughput_ops_s_from_median": 57795.11631267158
+          }
+        }
+      ]
+    },
+    "sign_32B": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 28.838,
+        "mean_us": 32.1513936,
+        "median_us": 29.3525,
+        "p95_us": 39.931,
+        "p99_us": 56.533,
+        "max_us": 188.398,
+        "throughput_ops_s_from_median": 34068.64832637765
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.863,
+            "mean_us": 32.41209,
+            "median_us": 29.2965,
+            "p95_us": 42.045,
+            "p99_us": 66.201,
+            "max_us": 175.52,
+            "throughput_ops_s_from_median": 34133.770245592474
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.838,
+            "mean_us": 30.905665000000003,
+            "median_us": 29.24,
+            "p95_us": 37.132,
+            "p99_us": 46.933,
+            "max_us": 91.116,
+            "throughput_ops_s_from_median": 34199.72640218878
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.892,
+            "mean_us": 31.737016,
+            "median_us": 29.5425,
+            "p95_us": 38.669,
+            "p99_us": 51.09,
+            "max_us": 188.398,
+            "throughput_ops_s_from_median": 33849.53880003385
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.93,
+            "mean_us": 33.789872,
+            "median_us": 32.13,
+            "p95_us": 41.392,
+            "p99_us": 54.698,
+            "max_us": 151.824,
+            "throughput_ops_s_from_median": 31123.56053532524
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 28.851,
+            "mean_us": 31.912325,
+            "median_us": 29.3035,
+            "p95_us": 39.548,
+            "p99_us": 49.509,
+            "max_us": 115.855,
+            "throughput_ops_s_from_median": 34125.61639394612
+          }
+        }
+      ]
+    },
+    "verify_32B": {
+      "summary_all_repetitions": {
+        "count": 5000,
+        "min_us": 73.929,
+        "mean_us": 79.80030280000001,
+        "median_us": 75.0275,
+        "p95_us": 93.979,
+        "p99_us": 139.128,
+        "max_us": 605.527,
+        "throughput_ops_s_from_median": 13328.446236379994
+      },
+      "repetitions": [
+        {
+          "repetition": 1,
+          "summary": {
+            "count": 1000,
+            "min_us": 73.996,
+            "mean_us": 81.889989,
+            "median_us": 75.111,
+            "p95_us": 113.25,
+            "p99_us": 170.212,
+            "max_us": 430.358,
+            "throughput_ops_s_from_median": 13313.629162173316
+          }
+        },
+        {
+          "repetition": 2,
+          "summary": {
+            "count": 1000,
+            "min_us": 74.045,
+            "mean_us": 79.12441,
+            "median_us": 74.8555,
+            "p95_us": 90.515,
+            "p99_us": 120.743,
+            "max_us": 605.527,
+            "throughput_ops_s_from_median": 13359.071811690525
+          }
+        },
+        {
+          "repetition": 3,
+          "summary": {
+            "count": 1000,
+            "min_us": 73.929,
+            "mean_us": 79.77102599999999,
+            "median_us": 75.0345,
+            "p95_us": 95.129,
+            "p99_us": 131.055,
+            "max_us": 266.425,
+            "throughput_ops_s_from_median": 13327.202820036116
+          }
+        },
+        {
+          "repetition": 4,
+          "summary": {
+            "count": 1000,
+            "min_us": 73.949,
+            "mean_us": 79.617439,
+            "median_us": 75.936,
+            "p95_us": 91.711,
+            "p99_us": 117.193,
+            "max_us": 350.681,
+            "throughput_ops_s_from_median": 13168.98440792246
+          }
+        },
+        {
+          "repetition": 5,
+          "summary": {
+            "count": 1000,
+            "min_us": 73.986,
+            "mean_us": 78.59864999999999,
+            "median_us": 74.97,
+            "p95_us": 90.746,
+            "p99_us": 113.546,
+            "max_us": 230.269,
+            "throughput_ops_s_from_median": 13338.668800853675
+          }
+        }
+      ]
+    }
+  },
+  "not_measured": [
+    "network",
+    "mempool",
+    "consensus",
+    "blockchain TPS"
+  ]
+}
